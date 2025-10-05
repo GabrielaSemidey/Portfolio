@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle del proyecto - Gabriela Ojeda Semidey">
+    <title>Proyecto - Gabriela Ojeda Semidey</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-project="lumi">
+    
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Gabriela OS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="../index.html#frontend" class="nav-link"><i class="fas fa-code"></i> Frontend</a></li>
+                <li><a href="../index.html#sobre-mi" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="../index.html#proyectos" class="nav-link active"><i class="fas fa-rocket"></i> Proyectos</a></li>
+                <li><a href="../index.html#contacto" class="nav-link nav-cta"><i class="fas fa-paper-plane"></i> Contacto</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Project Hero con Imagen -->
+    <section class="project-hero-visual">
+        <!-- Fondo de imagen del proyecto -->
+        <div class="hero-background" style="background-image: url('../assets/images/proyecto-lumi-hero.jpg');">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content-visual">
+                <a href="todos-proyectos.html" class="back-link-visual">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Volver a proyectos</span>
+                </a>
+                
+                <!-- Badges -->
+                <div class="project-badges">
+                    <span class="badge badge-primary"><i class="fas fa-code"></i> Frontend</span>
+                    <span class="badge badge-secondary"><i class="fas fa-calendar"></i> 2024</span>
+                    <span class="badge badge-success"><i class="fas fa-check-circle"></i> En desarrollo</span>
+                </div>
+                
+                <!-- Título -->
+                <h1 class="project-title-hero">Lumi - AI Integration Project</h1>
+                
+                <!-- Descripción corta -->
+                <p class="project-subtitle-hero">
+                    Aplicación web innovadora que integra inteligencia artificial para crear experiencias interactivas y personalizadas con los usuarios.
+                </p>
+                
+                <!-- Botones de acción -->
+                <div class="hero-actions-visual">
+                    <a href="https://github.com/tu-usuario/lumi" target="_blank" class="btn btn-primary btn-hero">
+                        <i class="fab fa-github"></i>
+                        <span>Ver en GitHub</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-secondary btn-hero">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver Demo Live</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de Info Rápida -->
+    <section class="project-quick-info">
+        <div class="container">
+            <div class="quick-info-grid">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="info-label">Año</span>
+                        <span class="info-value">2024</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="info-label">Duración</span>
+                        <span class="info-value">3 meses</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <span class="info-label">Equipo</span>
+                        <span class="info-value">Proyecto individual</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <span class="info-label">Rol</span>
+                        <span class="info-value">Frontend Developer</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span class="info-label">Estado</span>
+                        <span class="info-value status-active">En desarrollo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="project-content-detailed section">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Columna Principal -->
+                <div class="main-content">
+                    
+                    <!-- El Desafío -->
+                    <div class="content-block challenge-block">
+                        <div class="block-header">
+                            <div class="block-icon challenge-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h2>El Desafío</h2>
+                        </div>
+                        <div class="block-content">
+                            <p>
+                                Durante el curso de IA, identificamos la necesidad de crear interfaces más intuitivas para interactuar con modelos de lenguaje. El desafío principal era hacer la tecnología accesible sin sacrificar funcionalidad.
+                            </p>
+                            <blockquote class="project-quote">
+                                <i class="fas fa-quote-left"></i>
+                                ¿Cómo hacer que la inteligencia artificial se sienta natural y no intimidante para usuarios no técnicos?
+                            </blockquote>
+                            <p>
+                                Los usuarios necesitaban una forma de comunicarse con la IA que sintiera como una conversación natural, sin complejidad técnica visible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- La Solución -->
+                    <div class="content-block solution-block">
+                        <div class="block-header">
+                            <div class="block-icon solution-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h2>La Solución</h2>
+                        </div>
+                        <div class="block-content">
+                            <p>
+                                Desarrollé una interfaz conversacional que permite a los usuarios interactuar naturalmente con la IA, incluyendo manejo de contexto, historial de conversaciones y respuestas en tiempo real.
+                            </p>
+                            <ul class="solution-list">
+                                <li><i class="fas fa-check-circle"></i> Interfaz de chat intuitiva con feedback visual inmediato</li>
+                                <li><i class="fas fa-check-circle"></i> Sistema de contexto que recuerda conversaciones previas</li>
+                                <li><i class="fas fa-check-circle"></i> Diseño responsive que funciona en todos los dispositivos</li>
+                                <li><i class="fas fa-check-circle"></i> Integración fluida con OpenAI API</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Stack Técnico -->
+                    <div class="content-block tech-block">
+                        <div class="block-header">
+                            <div class="block-icon tech-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h2>Stack Técnico</h2>
+                        </div>
+                        <div class="block-content">
+                            <div class="tech-categories">
+                                
+                                <!-- Frontend -->
+                                <div class="tech-category">
+                                    <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                                    <div class="tech-pills">
+                                        <span class="tech-pill" data-tooltip="Lógica de aplicación y manejo de estados">
+                                            <i class="fab fa-js"></i> JavaScript ES6+
+                                        </span>
+                                        <span class="tech-pill" data-tooltip="Estructura y diseño responsive">
+                                            <i class="fab fa-html5"></i> HTML5 & CSS3
+                                        </span>
+                                        <span class="tech-pill" data-tooltip="Framework de componentes">
+                                            <i class="fab fa-react"></i> React (learning)
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Backend & APIs -->
+                                <div class="tech-category">
+                                    <h4><i class="fas fa-server"></i> Backend & Services</h4>
+                                    <div class="tech-pills">
+                                        <span class="tech-pill" data-tooltip="Integración con modelos de IA">
+                                            <i class="fas fa-brain"></i> OpenAI API
+                                        </span>
+                                        <span class="tech-pill" data-tooltip="Base de datos y autenticación">
+                                            <i class="fas fa-fire"></i> Firebase
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Tools -->
+                                <div class="tech-category">
+                                    <h4><i class="fas fa-tools"></i> Tools & Workflow</h4>
+                                    <div class="tech-pills">
+                                        <span class="tech-pill" data-tooltip="Diseño y prototipado">
+                                            <i class="fab fa-figma"></i> Figma
+                                        </span>
+                                        <span class="tech-pill" data-tooltip="Control de versiones">
+                                            <i class="fab fa-git-alt"></i> Git & GitHub
+                                        </span>
+                                        <span class="tech-pill" data-tooltip="Editor de código">
+                                            <i class="fas fa-terminal"></i> VS Code
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proceso de Desarrollo -->
+                    <div class="content-block process-block">
+                        <div class="block-header">
+                            <div class="block-icon process-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h2>Proceso de Desarrollo</h2>
+                        </div>
+                        <div class="block-content">
+                            <div class="timeline-vertical">
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>1. Research & Planning</h4>
+                                        <p>Investigación de APIs disponibles, análisis de UX de chatbots existentes, y definición de features principales.</p>
+                                        <div class="timeline-tags">
+                                            <span class="tag">User Research</span>
+                                            <span class="tag">Competitive Analysis</span>
+                                            <span class="tag">Feature Planning</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <i class="fas fa-pencil-ruler"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>2. Design & Prototyping</h4>
+                                        <p>Creación de wireframes en Figma, definición de flujos de usuario, y diseño del sistema de componentes.</p>
+                                        <div class="timeline-tags">
+                                            <span class="tag">Wireframing</span>
+                                            <span class="tag">UI Design</span>
+                                            <span class="tag">Design System</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>3. Development</h4>
+                                        <p>Implementación de la interfaz, integración con OpenAI API, manejo de estados, y desarrollo de features principales.</p>
+                                        <div class="timeline-tags">
+                                            <span class="tag">Frontend Dev</span>
+                                            <span class="tag">API Integration</span>
+                                            <span class="tag">State Management</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <i class="fas fa-vial"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>4. Testing & Refinement</h4>
+                                        <p>Testing con usuarios reales, ajustes de UX, optimización de rendimiento, y mejora continua de prompts.</p>
+                                        <div class="timeline-tags">
+                                            <span class="tag">User Testing</span>
+                                            <span class="tag">Optimization</span>
+                                            <span class="tag">Bug Fixing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Principales -->
+                    <div class="content-block features-block">
+                        <div class="block-header">
+                            <div class="block-icon features-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h2>Features Principales</h2>
+                        </div>
+                        <div class="block-content">
+                            <div class="features-grid">
+                                
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h4>Conversación Natural</h4>
+                                    <p>Interfaz conversacional intuitiva con manejo de contexto y memoria de conversaciones previas.</p>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-history"></i>
+                                    </div>
+                                    <h4>Historial Completo</h4>
+                                    <p>Guarda y recupera todas tus conversaciones pasadas con búsqueda y filtros avanzados.</p>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>100% Responsive</h4>
+                                    <p>Funciona perfectamente en móviles, tablets y desktop con experiencia optimizada.</p>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h4>Tiempo Real</h4>
+                                    <p>Respuestas instantáneas con feedback visual y animaciones fluidas mientras procesa.</p>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>Seguridad</h4>
+                                    <p>Autenticación segura y encriptación de datos sensibles con Firebase Auth.</p>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <h4>Personalizable</h4>
+                                    <p>Temas claros/oscuros y personalización de la interfaz según preferencias del usuario.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados & Aprendizajes -->
+                    <div class="content-block results-block">
+                        <div class="block-header">
+                            <div class="block-icon results-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h2>Resultados & Aprendizajes</h2>
+                        </div>
+                        <div class="block-content">
+                            
+                            <!-- Métricas -->
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-value">95%</div>
+                                    <div class="metric-label">Satisfacción de Usuarios</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">Responsive Design</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-value">< 2s</div>
+                                    <div class="metric-label">Tiempo de Respuesta</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aprendizajes -->
+                            <div class="learnings-section">
+                                <h4><i class="fas fa-graduation-cap"></i> Aprendizajes Clave</h4>
+                                <div class="learning-badges">
+                                    <span class="learning-badge"><i class="fas fa-check"></i> Integración con APIs de IA</span>
+                                    <span class="learning-badge"><i class="fas fa-check"></i> Manejo de Estados Complejos</span>
+                                    <span class="learning-badge"><i class="fas fa-check"></i> Diseño de Interfaces Conversacionales</span>
+                                    <span class="learning-badge"><i class="fas fa-check"></i> Performance Optimization</span>
+                                    <span class="learning-badge"><i class="fas fa-check"></i> UX para Aplicaciones de IA</span>
+                                    <span class="learning-badge"><i class="fas fa-check"></i> Firebase Real-time Database</span>
+                                </div>
+                            </div>
+
+                            <!-- Quote de reflexión -->
+                            <blockquote class="project-quote reflection-quote">
+                                <i class="fas fa-quote-left"></i>
+                                Este proyecto me enseñó que la mejor tecnología es la que se vuelve invisible para el usuario. La IA debe sentirse como magia, no como complejidad.
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Galería -->
+                    <div class="content-block gallery-block">
+                        <div class="block-header">
+                            <div class="block-icon gallery-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h2>Galería del Proyecto</h2>
+                        </div>
+                        <div class="block-content">
+                            <div class="project-gallery-masonry">
+                                <div class="gallery-item large" data-lightbox="gallery">
+                                    <img src="../assets/images/lumi-screenshot-1.jpg" alt="Lumi - Vista principal">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-search-plus"></i>
+                                        <span>Vista Principal</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" data-lightbox="gallery">
+                                    <img src="../assets/images/lumi-screenshot-2.jpg" alt="Lumi - Chat interface">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-search-plus"></i>
+                                        <span>Chat Interface</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" data-lightbox="gallery">
+                                    <img src="../assets/images/lumi-screenshot-3.jpg" alt="Lumi - Historial">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-search-plus"></i>
+                                        <span>Historial</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item tall" data-lightbox="gallery">
+                                    <img src="../assets/images/lumi-screenshot-4.jpg" alt="Lumi - Mobile view">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-search-plus"></i>
+                                        <span>Vista Móvil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="gallery-note">
+                                <i class="fas fa-info-circle"></i>
+                                Haz click en las imágenes para verlas en tamaño completo
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar-sticky">
+                    
+                    <!-- Info del Proyecto -->
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-info-circle"></i> Info del Proyecto</h3>
+                        <div class="sidebar-info-list">
+                            <div class="sidebar-info-item">
+                                <span class="info-icon"><i class="fas fa-calendar"></i></span>
+                                <div>
+                                    <span class="info-label-sidebar">Fecha</span>
+                                    <span class="info-value-sidebar">2024</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-info-item">
+                                <span class="info-icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="info-label-sidebar">Duración</span>
+                                    <span class="info-value-sidebar">3 meses</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-info-item">
+                                <span class="info-icon"><i class="fas fa-user"></i></span>
+                                <div>
+                                    <span class="info-label-sidebar">Rol</span>
+                                    <span class="info-value-sidebar">Frontend Developer</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-info-item">
+                                <span class="info-icon"><i class="fas fa-users"></i></span>
+                                <div>
+                                    <span class="info-label-sidebar">Equipo</span>
+                                    <span class="info-value-sidebar">Individual</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-info-item">
+                                <span class="info-icon"><i class="fas fa-cog"></i></span>
+                                <div>
+                                    <span class="info-label-sidebar">Estado</span>
+                                    <span class="info-value-sidebar status-badge active">En desarrollo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enlaces -->
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-link"></i> Enlaces</h3>
+                        <div class="sidebar-links">
+                            <a href="https://github.com/tu-usuario/lumi" target="_blank" class="sidebar-link-button">
+                                <i class="fab fa-github"></i>
+                                <span>Repositorio</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" target="_blank" class="sidebar-link-button">
+                                <i class="fas fa-globe"></i>
+                                <span>Demo Live</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-tags"></i> Tecnologías</h3>
+                        <div class="sidebar-tags-cloud">
+                            <span class="sidebar-tag">JavaScript</span>
+                            <span class="sidebar-tag">HTML/CSS</span>
+                            <span class="sidebar-tag">OpenAI API</span>
+                            <span class="sidebar-tag">Firebase</span>
+                            <span class="sidebar-tag">Figma</span>
+                            <span class="sidebar-tag">Git</span>
+                            <span class="sidebar-tag">Responsive</span>
+                            <span class="sidebar-tag">AI</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="sidebar-card sidebar-cta-card">
+                        <h3><i class="fas fa-heart"></i> ¿Te gustó?</h3>
+                        <p>Si tienes un proyecto similar o quieres colaborar, ¡hablemos!</p>
+                        <a href="index.html#contacto" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Contactar</span>
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegación entre Proyectos -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="pomodoro.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <span class="nav-label">Proyecto Anterior</span>
+                        <span class="nav-title">Pomodoro Timer</span>
+                    </div>
+                </a>
+                
+                <a href="todos-proyectos.html" class="nav-all">
+                    <i class="fas fa-th"></i>
+                    <span>Ver todos</span>
+                </a>
+                
+                <a href="weather.html" class="nav-project next">
+                    <div>
+                        <span class="nav-label">Siguiente Proyecto</span>
+                        <span class="nav-title">Weather Personalities</span>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-heart"></i> 
+                © 2024 Gabriela Ojeda Semidey. Hecho con código y dedicación.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="" alt="" id="lightboxImage">
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../main.js"></script>
+</body>
+</html>
