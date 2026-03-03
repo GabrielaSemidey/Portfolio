@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TALI - Agencia de Viajes Corporativa | Gabriela Ojeda Semidey">
+    <title>TALI - Agencia de Viajes Corporativa | Gabriela Ojeda Semidey</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/sections.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+<body data-category="service-design">
+    
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <span>Gabriela OS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+                <li><a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="../index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+                <li><a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+                <li><a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+                
+                <!-- 🔥 LANGUAGE TOGGLE -->
+                <li>
+                    <div class="language-toggle">
+                        <button class="language-toggle__btn" 
+                                type="button" 
+                                aria-label="Cambiar idioma"
+                                title="Switch language"
+                                data-lang="es">
+                            <span class="language-toggle__flag">🇪🇸</span>
+                            <span class="language-toggle__text">ES</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="reading-progress__bar"></div>
+        </div>
+
+    </header>
+
+    <!-- Hero Visual -->
+    <section class="project-hero" data-category="service-design" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/tali/banner.jpg');"></div>
+    <div class="container">
+            <a href="../todos-proyectos.html" class="back-link back-link--light">
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="project.back-projects">Volver a proyectos</span>
+            </a>
+            
+            <div class="project-hero__content-wrapper">
+                <div class="project-hero__badges">
+                    <span class="badge badge--secondary">
+                        <i class="fas fa-plane"></i> Viajes Corporativos
+                    </span>
+                    <span class="badge badge--secondary">
+                        <i class="fas fa-calendar"></i> 2018
+                    </span>
+                    <span class="badge badge--warning">
+                        <i class="fas fa-pause-circle"></i> <span data-i18n="badge.not-implemented">No Implementado</span>
+                    </span>
+                </div>
+                
+                <h1 class="project-hero__title" data-i18n="project.tali.hero-title">
+                    TALI — Agencia de Viajes Corporativa
+                </h1>
+                
+                <p class="project-hero__description" data-i18n="project.tali.hero-subtitle">
+                    Proyecto freelance para crear una agencia de viajes completamente digital orientada a corporaciones. Investigación, diseño de experiencia para 4 perfiles de usuario y creación completa de marca desde cero.
+                </p>
+                
+                <a href="#contenido" class="btn btn--hero">
+                    <i class="fas fa-book-open"></i>
+                    <span data-i18n="project-detail.view-case">Ver caso completo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="project-quick-info">
+        <div class="container">
+            <div class="quick-info__grid">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.year">Año</span>
+                        <span class="info-item__value">2018</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.duration">Duración</span>
+                        <span class="info-item__value">2 <span data-i18n="time.months">meses</span></span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.location">País</span>
+                        <span class="info-item__value">Perú</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.role">Rol</span>
+                        <span class="info-item__value">Researcher/Service Designer</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="info-item__label">Perfiles</span>
+                        <span class="info-item__value">4 tipos de usuario</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section id="contenido" class="project-content section">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Main Content -->
+                <div class="main-content">
+                    
+                    <!-- Contexto -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary" style="background-color: var(--service-accent)">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h2 data-i18n="project.bid.context-title">Contexto</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.tali.context-text-1">
+                                Este proyecto nació como una iniciativa privada para crear una agencia de viajes completamente digital orientada a empleados de grandes corporaciones. Se trató de diseñar un servicio que permitiera planificar, visualizar y gestionar viajes corporativos desde diferentes dispositivos y roles, sin fricción.
+                            </p>
+                            <p data-i18n="project.tali.context-text-2">
+                                Trabajamos como equipo freelance de 3 personas durante 2 meses, desarrollando todo desde cero: investigación de mercado, definición de usuarios, diseño de experiencia, creación de marca, naming y propuesta de valor completa.
+                            </p>
+                            <p data-i18n="project.tali.context-text-3">
+                                Aunque el proyecto no se implementó por temas de financiamiento, realizamos una entrega completa que incluyó investigación cualitativa, clusterización de insights, diseño de flujos diferenciados por usuario, identidad de marca (incluyendo el nombre TALI) y landing page funcional. Fue una experiencia valiosa por la complejidad de usuarios, casuísticas y flujos involucrados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Desafío -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary" style="background-color: var(--service-accent)">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.challenge">El Desafío</h2>
+                        </div>
+                        <div class="block-content block-content--quote">
+                            <p data-i18n="project.tali.challenge-text">
+                                <i class="fas fa-quote-left" style="color: var(--service-accent)"></i>
+                                Diseñar desde cero una plataforma digital que permitiera a múltiples perfiles de usuario (viajeros, supervisores, RRHH, soporte) gestionar viajes corporativos de forma fluida, considerando las complejidades de autorizaciones, rendiciones, trazabilidad y soporte en cada etapa del viaje.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mi Rol -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary" style="background-color: var(--service-accent)">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.my-role">Mi Rol en el Proyecto</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.tali.role-text">
+                                Me desempeñé como <strong>Researcher / Service Designer</strong>, trabajando en equipo freelance con otras 2 diseñadoras. Acompañé el proyecto desde su fase cero hasta la entrega de la propuesta completa.
+                            </p>
+                            <p>
+                                <strong data-i18n="project-detail.team-composition">Composición del equipo:</strong>
+                            </p>
+                            <ul class="content-list">
+                                <li data-i18n="project.tali.team-1">Yo (Researcher / Service Designer)</li>
+                                <li data-i18n="project.tali.team-2">1 Service Designer</li>
+                                <li data-i18n="project.tali.team-3">1 Diseñadora de Marca</li>
+                            </ul>
+                            <p>
+                                <strong data-i18n="project-detail.responsibilities">Mis tareas incluyeron:</strong>
+                            </p>
+                            <ul class="content-list">
+                                <li data-i18n="project.tali.resp-1">Investigación contextual sobre hábitos de viaje y gestión corporativa</li>
+                                <li data-i18n="project.tali.resp-2">Realización de entrevistas cualitativas con potenciales usuarios</li>
+                                <li data-i18n="project.tali.resp-3">Clusterización de insights y síntesis de hallazgos</li>
+                                <li data-i18n="project.tali.resp-4">Definición de 4 perfiles de usuario (personas): viajero, responsable de RRHH, supervisor, soporte</li>
+                                <li data-i18n="project.tali.resp-5">Mapeo de flujos de interacción diferenciados según tipo de usuario</li>
+                                <li data-i18n="project.tali.resp-6">Co-diseño de marca, estrategia y pilares de servicio</li>
+                                <li data-i18n="project.tali.resp-7">Participación en el proceso de naming (resultado: TALI)</li>
+                                <li data-i18n="project.tali.resp-8">Diseño de pantallas referenciales para visualizar el flujo general</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Proceso -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary" style="background-color: var(--service-accent)">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.tali.process-intro">
+                                Trabajamos con un enfoque de diseño centrado en el usuario, combinando investigación cualitativa con diseño estratégico y construcción de marca.
+                            </p>
+
+                            <div class="timeline">
+                                <div class="timeline__item">
+                                    <div class="timeline__marker" style="background-color: var(--service-accent)">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.tali.process-1-title">1. Entendimiento del Reto y Oportunidad</h4>
+                                        <p data-i18n="project.tali.process-1-text">Exploración del mercado y contexto:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.tali.process-1-item-1">Reuniones con stakeholders y futuros clientes potenciales</li>
+                                            <li data-i18n="project.tali.process-1-item-2">Análisis de plataformas similares y sus limitaciones</li>
+                                            <li data-i18n="project.tali.process-1-item-3">Detección de fricciones comunes en la gestión de viajes corporativos: visibilidad, trazabilidad, autorizaciones, rendiciones, soporte</li>
+                                            <li data-i18n="project.tali.process-1-item-4">Identificación de oportunidades en el mercado peruano</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker" style="background-color: var(--service-accent)">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.tali.process-2-title">2. Investigación Cualitativa</h4>
+                                        <p data-i18n="project.tali.process-2-text">Entrevistas y síntesis de insights:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.tali.process-2-item-1">Entrevistas cualitativas con empleados corporativos, responsables de RRHH y personal de soporte</li>
+                                            <li data-i18n="project.tali.process-2-item-2">Clusterización de hallazgos en herramientas colaborativas</li>
+                                            <li data-i18n="project.tali.process-2-item-3">Identificación de pain points por cada rol</li>
+                                            <li data-i18n="project.tali.process-2-item-4">Mapeo de necesidades diferenciadas antes, durante y después del viaje</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker" style="background-color: var(--service-accent)">
+                                        <i class="fas fa-id-card"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.tali.process-3-title">3. Definición de Usuarios y Experiencia</h4>
+                                        <p data-i18n="project.tali.process-3-text">Construcción de perfiles y flujos:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.tali.process-3-item-1">Creación de 4 personas clave: viajero, responsable de RRHH, supervisor, soporte</li>
+                                            <li data-i18n="project.tali.process-3-item-2">Mapeo de flujos específicos para cada perfil, adaptados a múltiples dispositivos</li>
+                                            <li data-i18n="project.tali.process-3-item-3">Identificación de puntos de cruce, validaciones y pain points específicos por rol</li>
+                                            <li data-i18n="project.tali.process-3-item-4">Diseño de journey considerando antes, durante y después del viaje</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker" style="background-color: var(--service-accent)">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.tali.process-4-title">4. Construcción de Marca</h4>
+                                        <p data-i18n="project.tali.process-4-text">Identidad, naming y propuesta de valor:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.tali.process-4-item-1">Co-diseño de la propuesta de valor y mantras de servicio</li>
+                                            <li data-i18n="project.tali.process-4-item-2">Dinámicas de co-creación para definir el nombre: <strong>TALI</strong></li>
+                                            <li data-i18n="project.tali.process-4-item-3">Diseño de identidad visual y primer set de lineamientos</li>
+                                            <li data-i18n="project.tali.process-4-item-4">Ajustes visuales y técnicos para asegurar legibilidad en formatos físicos y digitales</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker" style="background-color: var(--service-accent)">
+                                        <i class="fas fa-laptop"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.tali.process-5-title">5. Entrega Final</h4>
+                                        <p data-i18n="project.tali.process-5-text">Documentación y entregables:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.tali.process-5-item-1">Documento de síntesis estratégica y propuesta de servicio</li>
+                                            <li data-i18n="project.tali.process-5-item-2">4 perfiles de usuario documentados con pain points y necesidades</li>
+                                            <li data-i18n="project.tali.process-5-item-3">Flujos diferenciados por usuario</li>
+                                            <li data-i18n="project.tali.process-5-item-4">Pantallas clave para visualizar la navegación y lógica del portal</li>
+                                            <li data-i18n="project.tali.process-5-item-5">Guía base de identidad de marca</li>
+                                            <li data-i18n="project.tali.process-5-item-6">Landing page funcional</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hallazgos Clave -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h2 data-i18n="project.bid.findings-title">Hallazgos Clave</h2>
+                        </div>
+                        <div class="block-content">
+                            <h4 data-i18n="project.tali.finding-1-title">El mismo viaje tiene múltiples puntos de vista</h4>
+                            <p data-i18n="project.tali.finding-1-text">
+                                Un solo viaje corporativo es percibido y gestionado de forma completamente diferente por el viajero, el planificador, el aprobador y el equipo de seguimiento. Cada rol tiene necesidades, fricciones y expectativas distintas que deben ser atendidas sin crear complejidad innecesaria.
+                            </p>
+
+                            <h4 data-i18n="project.tali.finding-2-title">Es fácil caer en flujos infinitos</h4>
+                            <p data-i18n="project.tali.finding-2-text">
+                                Si no se definen límites claros por usuario y contexto, los flujos pueden volverse infinitamente complejos. Fue crucial establecer qué acciones correspondían a cada rol y en qué momento del journey.
+                            </p>
+
+                            <h4 data-i18n="project.tali.finding-3-title">Las necesidades cambian en cada momento del viaje</h4>
+                            <p data-i18n="project.tali.finding-3-text">
+                                Antes del viaje: planificación y aprobaciones. Durante el viaje: soporte y modificaciones. Después del viaje: rendiciones y cierres. La plataforma debe anticiparse a estos momentos cambiantes.
+                            </p>
+
+                            <h4 data-i18n="project.tali.finding-4-title">La coherencia digital-física es fundamental</h4>
+                            <p data-i18n="project.tali.finding-4-text">
+                                En entornos corporativos, la coherencia entre lo digital (plataforma) y lo impreso (vouchers, reportes) es crucial para la percepción de profesionalismo y confiabilidad del servicio.
+                            </p>
+
+                            <h4 data-i18n="project.tali.finding-5-title">La visibilidad genera confianza</h4>
+                            <p data-i18n="project.tali.finding-5-text">
+                                Tanto viajeros como supervisores necesitan visibilidad completa del estado del viaje en tiempo real. La trazabilidad no es un "nice to have", es un requisito fundamental.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Resultados -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h2>Entregables y Estado del Proyecto</h2>
+                        </div>
+                        <div class="block-content">
+                            
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card__value">4</div>
+                                    <div class="metric-card__label" data-i18n="project.tali.result-1-value">Perfiles de usuario definidos</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">100%</div>
+                                    <div class="metric-card__label" data-i18n="project.tali.result-2-value">Entrega completa</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">1</div>
+                                    <div class="metric-card__label" data-i18n="project.tali.result-3-value">Marca creada desde cero</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">2</div>
+                                    <div class="metric-card__label" data-i18n="project.tali.result-4-value">Meses de trabajo</div>
+                                </div>
+                            </div>
+
+                            <h4>Entregables finales:</h4>
+                            <ul class="checklist">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-1">Entrega completa de investigación y diseño de la experiencia de servicio</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-2">Propuesta de marca validada con el cliente (nombre TALI + identidad visual)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-3">4 perfiles de usuario documentados con pain points y necesidades específicas</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-4">Mapeo detallado de flujos, usuarios y puntos de fricción clave</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-5">Landing page funcional</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.tali.impact-6">Clusterización de insights de investigación</span>
+                                </li>
+                            </ul>
+
+                            <h4>Estado del proyecto:</h4>
+                            <p>
+                                El proyecto fue pausado por temas de financiamiento, pero todos los entregables quedaron listos para futura activación o inversión. La propuesta completa demostró viabilidad conceptual y estratégica, validando el valor de un servicio de este tipo en el mercado corporativo peruano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reflexiones -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
+                        </div>
+                        <div class="block-content block-content--quote">
+                            <p data-i18n="project.tali.reflection-quote">
+                                <i class="fas fa-quote-left"></i>
+                                Diseñar para muchos perfiles a la vez exige límites claros, visión estratégica y mucho detalle.
+                            </p>
+                            <p data-i18n="project.tali.reflection-1">
+                                Este proyecto me ayudó a comprender mejor los retos de servicios complejos con múltiples usuarios simultáneos, y la importancia de hacer visual incluso lo que todavía no existe. Trabajar en un equipo pequeño y multidisciplinario fue enriquecedor: cada una aportaba su expertise y juntas construimos algo coherente.
+                            </p>
+                            <p data-i18n="project.tali.reflection-2">
+                                Aunque el proyecto no se implementó, el aprendizaje fue invaluable. Diseñar desde cero te obliga a cuestionar cada decisión: ¿por qué este flujo y no otro? ¿Por qué este nombre? ¿Qué problema real estamos resolviendo? No tener restricciones de sistemas legacy fue liberador, pero también exigió mayor rigor estratégico.
+                            </p>
+                            <p data-i18n="project.tali.reflection-3">
+                                Crear la marca TALI desde cero, incluyendo naming, identidad y propuesta de valor, fue una experiencia completa de diseño estratégico que me mostró cómo el diseño de servicios y el branding deben caminar juntos desde el primer día.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Recursos Visuales -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.visual-resources">Recursos Visuales</h2>
+                        </div>
+                        <div class="block-content">
+                            
+                            <!-- Clusterización de Insights -->
+                            <h4>Clusterización de Investigación</h4>
+                            <p>Síntesis de hallazgos de las entrevistas cualitativas realizadas.</p>
+                            <div class="visual-gallery">
+                            <div class="gallery-item">
+                                <img src="../assets/images/proyectos/tali/clusterizacion-1.png" alt="Clusterización de insights">
+                                <p class="image-caption">Mantras del servicio</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../assets/images/proyectos/tali/clusterizacion-2.png" alt="Clusterización de insights">
+                                <p class="image-caption">Hallazgo sobre las aprobaciones</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../assets/images/proyectos/tali/clusterizacion-3.png" alt="Clusterización de insights">
+                                <p class="image-caption">Hallazgo sobre el tiempo de gestión</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../assets/images/proyectos/tali/clusterizacion-4.png" alt="Clusterización de insights">
+                                <p class="image-caption">Hallazgo sobre aprobaciones</p>
+                            </div>
+                            </div>
+                            <!-- Users -->
+                            <h4>Tipos de Usuarios</h4>
+                            <p>Users creados a raíz de la investigación realizada, los cuales reflejarían los flujos de la plataforma</p>
+                            <div class="visual-gallery">
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/tali/user-alejandra.png" alt="User Alejandra">
+                                    <p class="image-caption">User que gestiona y no viaja</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/tali/user-daniel.png" alt="User Daniel">
+                                    <p class="image-caption">User que gestiona y viaja</p>
+                                </div>
+                                 <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/tali/user-karla.png" alt="User Karla">
+                                    <p class="image-caption">User que solo viaja, lo gestiona alguien más</p>
+                                </div>
+                            </div>
+
+                            <!-- Landing Page -->
+                            <h4>Landing Page TALI</h4>
+                            <p>Diseño de la landing page presentando la propuesta de valor de la plataforma.</p>
+                            <div class="visual-resource">
+                                <img src="../assets/images/proyectos/tali/logo-tali.png" alt="Logo TALI">
+                                <p class="image-caption">logo y propuesta de valor inicial</p>
+                            </div>
+                            <div class="visual-resource">
+                                <img src="../assets/images/proyectos/tali/landing-page.jpg" alt="Landing page TALI">
+                                <p class="image-caption">Landing page con propuesta de valor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar-sticky">
+                    
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-info-circle" style="color: var(--service-accent)"></i> <span data-i18n="sidebar.project-info">Info del Proyecto</span></h3>
+                        <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-calendar"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.year">Año</span>
+                                    <span class="sidebar-card__value">2018</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.duration">Duración</span>
+                                    <span class="sidebar-card__value">2 <span data-i18n="time.months">meses</span></span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.location">Ubicación</span>
+                                    <span class="sidebar-card__value">Perú</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-user"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.role">Rol</span>
+                                    <span class="sidebar-card__value">Researcher/Service Designer</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-handshake"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Tipo</span>
+                                    <span class="sidebar-card__value">Proyecto Freelance</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-user-circle"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.client">Cliente</span>
+                                    <span class="sidebar-card__value">Emprendedor particular</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-users" style="color: var(--service-accent)"></i> <span data-i18n="project-detail.team">Equipo</span></h3>
+                        <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-search"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Researcher/Service Designer</span>
+                                    <span class="sidebar-card__value">1 (<span data-i18n="sidebar.me">yo</span>)</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-sitemap"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Service Designer</span>
+                                    <span class="sidebar-card__value">1</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-palette"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Diseñadora de Marca</span>
+                                    <span class="sidebar-card__value">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-id-badge" style="color: var(--service-accent)"></i> Perfiles de Usuario</h3>
+                        <div class="sidebar-card__tags">
+                            <span class="tag">Viajero</span>
+                            <span class="tag">Responsable RRHH</span>
+                            <span class="tag">Supervisor</span>
+                            <span class="tag">Soporte</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-tools" style="color: var(--service-accent)"></i> <span data-i18n="sidebar.skills-applied">Habilidades Aplicadas</span></h3>
+                        <div class="sidebar-card__tags">
+                            <span class="tag">Service Design</span>
+                            <span class="tag">UX Research</span>
+                            <span class="tag">Entrevistas Cualitativas</span>
+                            <span class="tag">Clusterización</span>
+                            <span class="tag">Personas</span>
+                            <span class="tag">Journey Mapping</span>
+                            <span class="tag">Diseño de Flujos</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Naming</span>
+                            <span class="tag">Co-creación</span>
+                            <span class="tag">Diseño Estratégico</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card sidebar-card--cta">
+                        <h3><i class="fas fa-rocket"></i> <span data-i18n="sidebar.interested-title">¿Te interesó este proyecto?</span></h3>
+                        <p data-i18n="sidebar.interested-text-tali">Si quieres conocer más sobre mi trabajo en diseño de servicios complejos y creación de marca, hablemos.</p>
+                        <a href="../index.html#contacto" class="btn btn--hero btn--block">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="contact.btn-email">Contactar</span>
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="project-nav__grid">
+                <a href="mincetur.html" class="project-nav__item project-nav__item--prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <span class="project-nav__label" data-i18n="nav.previous">Anterior</span>
+                        <span class="project-nav__title">MINCETUR - <span data-i18n="project.mincetur.title">Construcción Futura</span></span>
+                    </div>
+                </a>
+                
+                <a href="../todos-proyectos.html" class="btn btn--primary">
+                    <i class="fas fa-th"></i>
+                    <span data-i18n="nav.view-all">Ver todos</span>
+                </a>
+                
+                <a href="lumi.html" class="project-nav__item project-nav__item--next">
+                    <div>
+                        <span class="project-nav__label" data-i18n="nav.next">Siguiente</span>
+                        <span class="project-nav__title">Lumi-proyecto-educativo</span>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span data-i18n="nav.back-to-top">Volver al inicio</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-heart"></i> 
+                © 2025 Gabriela Ojeda Semidey. <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Cerrar visor">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox__image" src="" alt="" id="lightbox-img">
+            <div class="lightbox__caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

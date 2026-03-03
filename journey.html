@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mi camino profesional como Product Owner y Service Designer - Gabriela Ojeda Semidey" />
+    <title>Journey | Gabriela Ojeda Semidey · Product Owner & Service Designer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/sections.css" />
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+  </head>
+  <body class="journey-page">
+    <!-- Header -->
+    <header id="header">
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <span>Gabriela OS</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+          <li><a href="todos-proyectos.html" class="nav-link" data-i18n="nav.proyectos">Proyectos</a></li>
+          <li><a href="index.html#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="journey.html" class="nav-link active">Journey</a></li>
+          <li><a href="index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+
+          <!-- Language Toggle -->
+          <li>
+            <div class="language-toggle">
+              <button
+                class="language-toggle__btn"
+                type="button"
+                aria-label="Cambiar idioma"
+                title="Switch language"
+                data-lang="es">
+                <span class="language-toggle__flag">🇪🇸</span>
+                <span class="language-toggle__text">ES</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Background Geométrico -->
+    <div class="geometric-background">
+      <div class="geometric-background__canvas">
+        <div class="geo-shape geo-shape--dot" style="top: 8%; left: 8%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 120px; top: 12%; left: 5%"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 120px; top: 12%; left: 5%"></div>
+        <div class="geo-shape geo-shape--square" style="width: 50px; height: 50px; top: 22%; left: 18%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 15%; left: 25%"></div>
+        <div class="geo-shape geo-shape--circle"style="width: 60px; height: 60px; top: 25%; left: 32%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 180px; top: 10%; left: 45%"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 140px; top: 10%; left: 45%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 10%; left: 45%"></div>
+        <div class="geo-shape geo-shape--square" style="width: 45px; height: 45px; top: 28%; left: 52%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 18%; left: 68%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 100px; top: 24%; left: 62%"></div>
+        <div class="geo-shape geo-shape--circle" style="width: 90px; height: 90px; top: 12%; right: 8%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 12%; right: 8%"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 100px; top: 8%; right: 15%"></div>
+        <div class="geo-shape geo-shape--square" style="width: 55px; height: 55px; top: 26%; right: 18%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 42%; left: 6%"></div>
+        <div class="geo-shape geo-shape--square"style="width: 70px; height: 70px; top: 48%; left: 10%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 90px; top: 55%; left: 15%"></div>
+        <div class="geo-shape geo-shape--circle" style="width: 65px; height: 65px; top: 50%; left: 45%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 58%; left: 52%"></div>
+        <div class="geo-shape geo-shape--dot" style="top: 45%; right: 20%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 130px; top: 52%; right: 8%"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 90px; top: 52%; right: 8%"></div>
+        <div class="geo-shape geo-shape--dot" style="bottom: 22%; left: 8%"></div>
+        <div class="geo-shape geo-shape--line-v" style="height: 160px; bottom: 12%; left: 6%"></div>
+        <div class="geo-shape geo-shape--circle" style="width: 75px; height: 75px; bottom: 18%; left: 15%"></div>
+        <div class="geo-shape geo-shape--square"style="width: 60px; height: 60px; bottom: 25%; left: 48%"></div>
+        <div class="geo-shape geo-shape--dot" style="bottom: 15%; left: 42%"></div>
+        <div class="geo-shape geo-shape--dot" style="bottom: 18%; right: 10%"></div>
+        <div class="geo-shape geo-shape--line" style="width: 220px; bottom: 15%; right: 6%"></div>
+        <div class="geo-shape geo-shape--square" style="width: 80px; height: 80px; bottom: 25%; right: 12%"></div>
+        <div class="geo-shape geo-shape--line-v"style="height: 120px; bottom: 28%; right: 18%"></div>
+    </div>
+    </div>  
+
+    <!-- Hero -->
+    <section class="journey-section journey-section--hero">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-route"></i>
+            <span data-i18n="journey.hero.badge">Mi Camino</span>
+          </div>
+          <h1 class="section-title">
+            <span data-i18n="journey.hero.title-1">De diseñar experiencias</span><br />
+            <span data-i18n="journey.hero.title-2">a </span><span style="color: var(--primary)" data-i18n="journey.hero.title-3">liderar su construcción</span>
+          </h1>
+          <p class="section-description" data-i18n="journey.hero.description">
+            5+ años diseñando productos y servicios para Clínica Alemana, BID y Spotify.
+            Hoy lidero equipos desde el discovery hasta el delivery como Product Owner.
+          </p>
+          <p class="section-description" data-i18n="journey.hero.subtitle">
+            Soy Product Owner con raíces profundas en Service Design y UX Research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evolución Profesional -->
+    <section class="journey-section" style="background: var(--bg-secondary)">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-briefcase"></i>
+            <span>Timeline</span>
+          </div>
+          <h2 class="section-title" data-i18n="journey.timeline.title">Mi Evolución Profesional</h2>
+          <p class="section-description" data-i18n="journey.timeline.description">
+            De service design a Product Owner, pasando por UX research, diseño de productos y facilitación estratégica.
+          </p>
+        </div>
+
+        <div class="journey-timeline-expanded scroll-reveal">
+          <!-- 2025 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2025.title">Consultora Independiente</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2025.meta">2025 - Presente • Product Owner & UX Strategy</p>
+              <p data-i18n="journey.timeline.2025.description">
+                Asesoría en estrategia de producto y service design. Definición de roadmaps, 
+                facilitación de workshops y mentoría para equipos multidisciplinarios en LATAM y España.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2023.title">FRUTA - Sustainable Service Designer</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2023.meta">Feb 2023 - Jul 2023 • España</p>
+              <p data-i18n="journey.timeline.2023.description">
+                Consultora de diseño sostenible e innovación para proyecto de responsabilidad social
+                corporativa. Facilitación de talleres de co-diseño con estudiantes y profesores.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2022-2024 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2022.title">Colectivo23 - Practitioner & Content Creator</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2022.meta">Jul 2022 - Dic 2024 • Service Design y UX Estratégico</p>
+              <p data-i18n="journey.timeline.2022.description">
+                Rutas de Service Design y UX Estratégico. Creación de contenido educativo y mentoría
+                para equipos.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2020-2022 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2020.title">Continuum HQ - Service Designer</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2020.meta">Ene 2020 - Feb 2022 • Perú/Chile</p>
+              <p>
+                <span data-i18n="journey.timeline.2020.description-1">Lideré investigaciones de usuarios para optimizar productos digitales.</span>
+                <strong data-i18n="journey.timeline.2020.description-2">Proyectos destacados:</strong> <span data-i18n="journey.timeline.2020.description-3">Clínica Alemana (Teleconsulta + Agenda Web),
+                BID (Rediseño de Secretaría), Spotify (Research Premium), UPC.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 2019-2020 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2019.title">Beta User Testing - Service Designer</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2019.meta">Oct 2019 - Jul 2020 • Perú</p>
+              <p data-i18n="journey.timeline.2019.description">
+                Consultora en testeo y validación de productos digitales. Pruebas de usabilidad,
+                análisis de datos cualitativos y cuantitativos con insights accionables.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2018-2019 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2018.title">Ají limo - UX + Social Media Manager</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2018.meta">Nov 2018 - Nov 2019 • Perú</p>
+              <p data-i18n="journey.timeline.2018.description">
+                Desarrollo de estrategia de marketing digital y UX. Planificación y gestión de
+                contenido para redes sociales. Análisis de KPIs y optimización de campañas.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2017-2018 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2017.title">CreativeLab - Dir. de Desenredos</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2017.meta">Nov 2017 - Oct 2018 • Perú</p>
+              <p data-i18n="journey.timeline.2017.description">
+                Asesoría en diseño estratégico y de servicios. Definición e implementación de
+                proyectos de servicios y gestión de la innovación para empresas privadas y públicas.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2016-2017 -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="timeline__content">
+              <h4 data-i18n="journey.timeline.2016.title">González, Valdez & Asociados - Asistente de Auditoría Financiera</h4>
+              <p class="timeline__meta" data-i18n="journey.timeline.2016.meta">Feb 2016 - Ago 2017 · 11 meses • Caracas, Venezuela</p>
+              <p data-i18n="journey.timeline.2016.description">
+                Verificación y evaluación de principios contables en Estados Financieros corporativos,
+                aplicando Normas Internacionales de Auditoría. Base en rigor analítico, trabajo
+                colaborativo y pensamiento crítico orientado a procesos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- El Punto de Inflexión -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-lightbulb"></i>
+            <span data-i18n="journey.inflexion.badge">Momento Clave</span>
+          </div>
+          <h2 class="section-title" data-i18n="journey.inflexion.title">El Punto de Inflexión</h2>
+        </div>
+
+        <div class="inflexion-box scroll-reveal">
+          <h3>
+            <i class="fas fa-compass" style="color: var(--primary); margin-right: 0.5rem"></i>
+            <span data-i18n="journey.inflexion.subtitle">Por qué me convertí en Product Owner</span>
+          </h3>
+          <p data-i18n="journey.inflexion.p1">
+            Empecé mi carrera auditando estados financieros — aprendí a leer procesos complejos,
+            detectar riesgos y tomar decisiones con criterio bajo presión. Luego descubrí que
+            los mejores procesos no valen nada si las personas que los usan no están en el centro.
+          </p>
+          <p data-i18n="journey.inflexion.p2">
+            Eso me llevó al Service Design y UX Research: 5+ años entendiendo usuarios, mapeando
+            servicios y facilitando equipos. Pero seguía faltando algo — quién toma las decisiones
+            finales, quién conecta todo y lleva el producto adelante.
+          </p>
+          <p>
+            <strong data-i18n="journey.inflexion.p3-bold">Ahí nació mi perfil de Product Owner.</strong>
+            <span data-i18n="journey.inflexion.p3-text"> Criterio financiero para priorizar con impacto real,
+            visión de servicio para no perder al usuario, y lenguaje técnico para alinear al equipo de desarrollo.
+            Tres mundos, una sola visión.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos que me Formaron -->
+    <section class="section" style="background: var(--bg-secondary)">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-rocket"></i>
+            <span data-i18n="projects.badge">Proyectos</span>
+          </div>
+          <h2 class="section-title" data-i18n="journey.projects.title">Proyectos que me Formaron</h2>
+          <p class="section-description" data-i18n="journey.projects.description">
+            Proyectos clave que moldearon mi forma de entender producto, usuarios y estrategia.
+          </p>
+        </div>
+
+        <div class="journey-projects-mini scroll-reveal">
+          <div class="journey-project-mini">
+            <div class="journey-project-mini__icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h4 data-i18n="journey.projects.lumi.title">Lumi - Proyecto con IA</h4>
+            <p data-i18n="journey.projects.lumi.description">
+              Proyecto de producto con IA: desde la conceptualización estratégica hasta la implementación. Coordinación de equipo, roadmap y entrega.
+            </p>
+            <span class="journey-project-mini__tag">Product Strategy + AI</span>
+            <div style="margin-top: 1rem">
+              <a href="./proyectos/lumi.html" class="project-link">
+                <span data-i18n="journey.projects.link">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Clínica Alemana -->
+          <div class="journey-project-mini">
+            <div class="journey-project-mini__icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h4 data-i18n="journey.projects.clinica.title">Clínica Alemana - Teleconsulta</h4>
+            <p data-i18n="journey.projects.clinica.description">
+              Discovery completo, blueprints de servicio y coordinación de múltiples equipos para lanzar telemedicina en plena pandemia.
+            </p>
+            <span class="journey-project-mini__tag">Service Design + Healthcare</span>
+            <div style="margin-top: 1rem">
+              <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
+                <span data-i18n="journey.projects.link">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- BID -->
+          <div class="journey-project-mini">
+            <div class="journey-project-mini__icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <h4 data-i18n="journey.projects.bid.title">BID - Rediseño de Servicios</h4>
+            <p data-i18n="journey.projects.bid.description">
+              80+ entrevistas, 50 sistemas analizados. Aprendí a mapear complejidad organizacional y
+              proponer soluciones sistémicas.
+            </p>
+            <span class="journey-project-mini__tag">Service Design</span>
+            <div style="margin-top: 1rem">
+              <a href="./proyectos/bid-secretaria.html" class="project-link">
+                <span data-i18n="journey.projects.link">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Spotify -->
+          <div class="journey-project-mini">
+            <div class="journey-project-mini__icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h4 data-i18n="journey.projects.spotify.title">Spotify - UX Research</h4>
+            <p data-i18n="journey.projects.spotify.description">
+              Investigación que cambió la estrategia de localización. Descubrí que los datos sin
+              contexto pueden llevar a decisiones equivocadas.
+            </p>
+            <span class="journey-project-mini__tag">UX Research</span>
+            <div style="margin-top: 1rem">
+              <a href="./proyectos/spotify.html" class="project-link">
+                <span data-i18n="journey.projects.link">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Ver Todos -->
+        <div style="text-align: center; margin-top: 2rem" class="scroll-reveal">
+          <a href="todos-proyectos.html" class="btn btn--secondary btn--lg">
+            <i class="fas fa-th"></i>
+            <span data-i18n="journey.projects.btn-all">Ver todos mis proyectos</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Evolution -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-layer-group"></i>
+            <span data-i18n="skills.badge">Expertise</span>
+          </div>
+          <h2 class="section-title" data-i18n="journey.skills.title">Evolución de Skills</h2>
+          <p class="section-description" data-i18n="journey.skills.description">
+            De service design a Product Owner, construyendo cada capa sobre la anterior.
+          </p>
+        </div>
+
+        <div class="skills-evolution scroll-reveal">
+          <!-- Service Design -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h4>Service Design</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              " data-i18n="journey.skills.service-design">
+              Mapeo de experiencias complejas, customer journeys, blueprints, facilitación de
+              talleres y co-creación con stakeholders.
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">Blueprints</span>
+              <span class="tag">Workshops</span>
+              <span class="tag">Strategy</span>
+            </div>
+          </div>
+
+          <!-- UX Research -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h4>UX Research</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              " data-i18n="journey.skills.ux-research">
+              Entrevistas en profundidad, pruebas de usabilidad, análisis cualitativo y
+              cuantitativo, síntesis de insights accionables.
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">User Testing</span>
+              <span class="tag">Interviews</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+
+          <!-- UX/UI Design -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h4>UX/UI Design</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              " data-i18n="journey.skills.ux-ui">
+              Wireframing, prototipado, diseño de interfaces, design systems, handoff a desarrollo,
+              iteración basada en feedback.
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Design Systems</span>
+            </div>
+          </div>
+
+          <!-- Product Ownership -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h4>Product Ownership</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              " data-i18n="journey.skills.frontend">
+              Backlog management, roadmaps, criterios de aceptación, coordinación con desarrollo,
+              priorización con frameworks (RICE, MoSCoW) y métricas de producto.
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">Roadmap</span>
+              <span class="tag">Backlog</span>
+              <span class="tag">Jira / Notion</span>
+            </div>
+          </div>
+
+          <!-- IA como herramienta -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4 data-i18n="journey.skills.ai-title">IA como Herramienta</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              ">
+              <strong data-i18n="journey.skills.ai-bold">Desde 2025</strong> <span data-i18n="journey.skills.ai-text">uso IA como herramienta de trabajo diaria. No para
+              reemplazar el pensamiento crítico, sino para acelerar tareas repetitivas y explorar
+              soluciones más rápido.</span>
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">Claude</span>
+              <span class="tag">ChatGPT</span>
+              <span class="tag">Productivity</span>
+            </div>
+          </div>
+
+          <!-- Project Management -->
+          <div class="skill-evolution-card">
+            <div class="skill-evolution-card__header">
+              <div class="skill-evolution-card__icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h4>Project Management</h4>
+            </div>
+            <p
+              style="
+                color: var(--slate-500);
+                font-size: 0.9375rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+              " data-i18n="journey.skills.pm">
+              Metodologías ágiles, gestión de stakeholders, coordinación de equipos
+              multidisciplinarios, roadmaps y priorización.
+            </p>
+            <div class="skill-evolution-card__tags">
+              <span class="tag">Agile</span>
+              <span class="tag">Scrum</span>
+              <span class="tag">Stakeholder Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section
+      class="journey-section journey-section--compact"
+      style="background: var(--bg-secondary)">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-graduation-cap"></i>
+            <span data-i18n="journey.learning.badge">Formación</span>
+          </div>
+          <h2 class="section-title">Learning Path</h2>
+          <p class="section-description" data-i18n="journey.learning.description">
+            Certificaciones y formación continua en diseño, desarrollo y gestión de proyectos.
+          </p>
+        </div>
+
+        <!-- En Progreso -->
+        <div style="margin-bottom: 3rem" class="scroll-reveal">
+          <h3 class="section-subtitle">
+            <i class="fas fa-spinner"></i>
+            <span data-i18n="journey.learning.in-progress">En Progreso</span>
+          </h3>
+
+          <div class="learning-grid">
+            <div class="learning-card--compact">
+              <div class="learning-card__icon">
+                <i class="fab fa-google"></i>
+              </div>
+              <h4 class="learning-card__title">Google PM Certificate</h4>
+              <p class="learning-card__subtitle" data-i18n="journey.learning.google.subtitle">Coursera • 6 cursos</p>
+
+              <div class="learning-card__progress">
+                <div class="learning-card__progress-label">
+                  <span class="learning-card__progress-label-left" data-i18n="journey.learning.progress">Progreso</span>
+                  <span class="learning-card__progress-label-right">3/6</span>
+                </div>
+                <div class="learning-card__progress-bar">
+                  <div class="learning-card__progress-fill" style="width: 50%"></div>
+                </div>
+              </div>
+
+              <div class="learning-card__tags">
+                <span class="tag">PM</span>
+                <span class="tag">Agile</span>
+              </div>
+            </div>
+
+            <!-- Udemy Bootcamp -->
+            <div class="learning-card--compact">
+              <div class="learning-card__icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h4 class="learning-card__title">Web Developer Bootcamp 2025</h4>
+              <p class="learning-card__subtitle">Udemy • Colt Steele</p>
+
+              <div class="learning-card__progress">
+                <div class="learning-card__progress-label">
+                  <span class="learning-card__progress-label-left" data-i18n="journey.learning.progress">Progreso</span>
+                  <span class="learning-card__progress-label-right">70%</span>
+                </div>
+                <div class="learning-card__progress-bar">
+                  <div class="learning-card__progress-fill" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="learning-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+
+            <!-- Mouredev -->
+            <div class="learning-card--compact">
+              <div class="learning-card__icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h4 class="learning-card__title" data-i18n="journey.learning.mouredev.title">JavaScript desde cero</h4>
+              <p class="learning-card__subtitle">Mouredev Pro</p>
+
+              <div class="learning-card__progress">
+                <div class="learning-card__progress-label">
+                  <span class="learning-card__progress-label-left" data-i18n="journey.learning.started">Iniciado</span>
+                  <span class="learning-card__progress-label-right">15%</span>
+                </div>
+                <div class="learning-card__progress-bar">
+                  <div class="learning-card__progress-fill" style="width: 15%"></div>
+                </div>
+              </div>
+
+              <div class="learning-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">ES6+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completadas -->
+        <div class="scroll-reveal">
+          <h3 class="section-subtitle section-subtitle--success">
+            <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+            <span data-i18n="journey.learning.completed">Certificaciones Completadas</span>
+          </h3>
+
+          <div class="learning-grid">
+            <!-- 1. AI Tools -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4 class="learning-card__title">AI Tools & Tech Mindset</h4>
+              <p class="learning-card__subtitle">Colectivo23 • 2025</p>
+              <div class="learning-card__tags">
+                <span class="tag">AI Tools</span>
+                <span class="tag">Tech Mindset</span>
+              </div>
+            </div>
+
+            <!-- 2. SQL -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4 class="learning-card__title">SQL for Data Science</h4>
+              <p class="learning-card__subtitle">Coursera • 2025</p>
+              <div class="learning-card__tags">
+                <span class="tag">SQL</span>
+                <span class="tag">Data Science</span>
+              </div>
+            </div>
+
+            <!-- 3. Product Designer -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4 class="learning-card__title" data-i18n="journey.learning.product-designer">Cómo ser Product Designer</h4>
+              <p class="learning-card__subtitle">Platzi • 2022</p>
+              <div class="learning-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">Figma</span>
+              </div>
+            </div>
+
+            <!-- 4. Psicología Cognitiva -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h4 class="learning-card__title" data-i18n="journey.learning.psicologia">Psicología Cognitiva y UX</h4>
+              <p class="learning-card__subtitle">Colectivo23 • 2021</p>
+              <div class="learning-card__tags">
+                <span class="tag">UX</span>
+                <span class="tag">Psychology</span>
+              </div>
+            </div>
+
+            <!-- 5. Service Design -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h4 class="learning-card__title">Service Design: Integrated Experience</h4>
+              <p class="learning-card__subtitle">IxDF • 2020</p>
+              <div class="learning-card__tags">
+                <span class="tag">Service Design</span>
+                <span class="tag">Blueprints</span>
+              </div>
+            </div>
+
+            <!-- 6. UX Designer -->
+            <div class="learning-card--certification">
+              <div class="learning-card__icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h4 class="learning-card__title">UX Designer from Scratch</h4>
+              <p class="learning-card__subtitle">IxDF • 2020</p>
+              <div class="learning-card__tags">
+                <span class="tag">UX Research</span>
+                <span class="tag">Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filosofía -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <div class="badge badge--primary">
+            <i class="fas fa-heart"></i>
+            <span data-i18n="about.badge">Sobre mí</span>
+          </div>
+          <h2 class="section-title" data-i18n="journey.filosofia.title">Cómo Trabajo</h2>
+          <p class="section-description" data-i18n="journey.filosofia.description">
+            Valores y principios que guían mi forma de diseñar y desarrollar.
+          </p>
+        </div>
+
+        <div class="filosofia-grid scroll-reveal">
+          <!-- Filosofía 1 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>User-Centered</h4>
+            <p data-i18n="journey.filosofia.user-centered">
+              Cada decisión técnica está guiada por la experiencia del usuario. No pierdo de vista a
+              las personas detrás de la interfaz.
+            </p>
+          </div>
+
+          <!-- Filosofía 2 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Data-Driven</h4>
+            <p data-i18n="journey.filosofia.clean-code">
+              Las decisiones de producto se toman con datos. Analytics, NPS, A/B testing
+              y métricas de negocio son parte de mi proceso diario.
+            </p>
+          </div>
+
+          <!-- Filosofía 3 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4 data-i18n="journey.filosofia.curiosidad-title">Curiosidad Constante</h4>
+            <p data-i18n="journey.filosofia.curiosidad-text">
+              El desarrollo web evoluciona rápido. Me mantengo actualizada con nuevas tecnologías y
+              mejores prácticas.
+            </p>
+          </div>
+
+          <!-- Filosofía 4 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h4 data-i18n="journey.filosofia.sistemico-title">Pensamiento Sistémico</h4>
+            <p data-i18n="journey.filosofia.sistemico-text">
+              Entiendo cómo cada pieza se conecta con el todo. Diseño soluciones que funcionan en
+              contexto real.
+            </p>
+          </div>
+
+          <!-- Filosofía 5 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h4 data-i18n="journey.filosofia.colaboracion-title">Colaboración</h4>
+            <p data-i18n="journey.filosofia.colaboracion-text">
+              Experiencia trabajando con equipos multidisciplinarios: developers, designers, product
+              managers.
+            </p>
+          </div>
+
+          <!-- Filosofía 6 -->
+          <div class="filosofia-item">
+            <div class="filosofia-item__icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h4 data-i18n="journey.filosofia.impacto-title">Foco en Impacto</h4>
+            <p data-i18n="journey.filosofia.impacto-text">
+              No diseño por diseñar ni codifico por codificar. Busco crear soluciones que aporten
+              valor real.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buscando Oportunidades -->
+    <section class="job-search-section-journey">
+      <div class="container">
+          <div class="badge badge--primary">
+            <i class="fas fa-envelope"></i>
+            <span data-i18n="contact.badge">Contacto</span>
+          </div>
+          <h2><i class="fas fa-briefcase" style="color:var(--primary);"></i><span data-i18n="contact.cta-title">Buscando nuevas oportunidades</span></h2>
+          <p data-i18n="contact.cta-text">
+            Abierta a posiciones de Product Owner, Service Design o Product Strategy. Remoto o presencial en Madrid. Inglés C1.
+          </p>
+
+          <div class="job-tags-journey">
+            <span class="job-tag-journey">Product Owner</span>
+            <span class="job-tag-journey">Service Designer</span>
+            <span class="job-tag-journey">Product Strategy</span>
+            <span class="job-tag-journey">Remote OK</span>
+            <span class="job-tag-journey">Madrid</span>
+            <span class="job-tag-journey">English C1</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn--primary">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="contact.btn-email">Enviar mensaje</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <i class="fas fa-heart"></i>
+          © 2025 Gabriela Ojeda Semidey · Product Owner & Service Designer · Madrid, España
+          <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

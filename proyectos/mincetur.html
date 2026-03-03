@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MINCETUR - Construcción Futura | Gabriela Ojeda Semidey"
+    />
+    <title>MINCETUR - Construcción Futura | Gabriela Ojeda Semidey</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/sections.css" />
+    <link rel="stylesheet" href="../styles/project-detail.css" />
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+  </head>
+  <body data-category="service-design">
+    <!-- Header -->
+    <header id="header">
+      <nav class="container">
+        <a href="../index.html" class="logo">
+          <span>Gabriela OS</span>
+        </a>
+        <ul class="nav-links">
+          <ul class="nav-links">
+          <li> <a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+          <li> <a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+          <li> <a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+          <li> <a href="../index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+          <li> <a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+          <li> <a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+
+
+          <!-- 🔥 LANGUAGE TOGGLE -->
+          <li>
+            <div class="language-toggle">
+              <button
+                class="language-toggle__btn"
+                type="button"
+                aria-label="Cambiar idioma"
+                title="Switch language"
+                data-lang="es"
+              >
+                <span class="language-toggle__flag">🇪🇸</span>
+                <span class="language-toggle__text">ES</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div
+        class="reading-progress"
+        role="progressbar"
+        aria-label="Progreso de lectura"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="reading-progress__bar"></div>
+      </div>
+    </header>
+
+    <!-- Hero Visual -->
+    <section class="project-hero" data-category="service-design" id="hero">
+      <div
+        class="project-hero__banner"
+        style="
+          background-image: url('../assets/images/proyectos/mincetur/banner.png');
+        "
+      ></div>
+      <div class="container">
+        <a href="../todos-proyectos.html" class="back-link back-link--light">
+          <i class="fas fa-arrow-left"></i>
+          <span data-i18n="project.back-projects">Volver a proyectos</span>
+        </a>
+
+        <div class="project-hero__content-wrapper">
+          <div class="project-hero__badges">
+            <span class="badge badge--secondary">
+              <i class="fas fa-hands-helping"></i>
+              <span data-i18n="badge.public-sector">Sector Público</span>
+            </span>
+            <span class="badge badge--secondary">
+              <i class="fas fa-calendar"></i> 2019
+            </span>
+            <span class="badge badge--success">
+              <i class="fas fa-check-circle"></i>
+              <span data-i18n="badge.implemented">Implementado</span> + 2
+              <span data-i18n="time.years">años</span>
+            </span>
+          </div>
+
+          <h1
+            class="project-hero__title"
+            data-i18n="project.mincetur.hero-title"
+          >
+            MINCETUR — Construcción Futura
+          </h1>
+
+          <p
+            class="project-hero__description"
+            data-i18n="project.mincetur.hero-subtitle"
+          >
+            Taller intensivo de 3 días con líderes de CITE de todo Perú para
+            co-crear un modelo de gestión replicable. Herramientas diseñadas
+            seguían en uso 2 años después.
+          </p>
+
+          <a href="#contenido" class="btn btn--hero">
+            <i class="fas fa-book-open"></i>
+            <span data-i18n="project-detail.view-case">Ver caso completo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="project-quick-info">
+      <div class="container">
+        <div class="quick-info__grid">
+          <div class="info-item">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.year"
+                >Año</span
+              >
+              <span class="info-item__value">2019</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.duration"
+                >Duración</span
+              >
+              <span class="info-item__value"
+                >2 sem prep + 3
+                <span data-i18n="time.days">días</span> taller</span
+              >
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.location"
+                >País</span
+              >
+              <span class="info-item__value">Perú</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-briefcase"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.role"
+                >Rol</span
+              >
+              <span class="info-item__value">Service Designer (Junior)</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-users"></i>
+            <div>
+              <span class="info-item__label">Participantes</span>
+              <span class="info-item__value">~20 líderes CITE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section id="contenido" class="project-content section">
+      <div class="container">
+        <div class="content-layout">
+          <!-- Main Content -->
+          <div class="main-content">
+            <!-- Contexto -->
+            <div class="content-block">
+              <div class="block-header">
+                <div
+                  class="block-header__icon block-header__icon--primary"
+                  style="background-color: var(--service-accent)"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <h2 data-i18n="project.bid.context-title">Contexto</h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.mincetur.context-text-1">
+                  Este proyecto fue un taller intensivo de 3 días solicitado por
+                  el
+                  <strong
+                    >Ministerio de Comercio Exterior y Turismo
+                    (MINCETUR)</strong
+                  >
+                  de Perú, con el objetivo de acompañar a los líderes de los
+                  <strong
+                    >CITE (Centros de Innovación Productiva y Transferencia
+                    Tecnológica)</strong
+                  >
+                  en la construcción de un modelo de gestión replicable y
+                  alineado con los requerimientos del Estado.
+                </p>
+                <p data-i18n="project.mincetur.context-text-2">
+                  Los CITE son centros estratégicos que impulsan la innovación
+                  en sectores como artesanía y turismo, pero enfrentaban
+                  desafíos para estructurar sus planes de gestión, optimizar el
+                  uso de presupuestos y cumplir con los KPIs exigidos por el
+                  gobierno. El taller buscaba traducir el lenguaje técnico
+                  estatal en un formato accesible y útil para los líderes de
+                  estos centros.
+                </p>
+                <p data-i18n="project.mincetur.context-text-3">
+                  Trabajando desde <strong>Creative Lab</strong>, creamos
+                  herramientas propias, adaptamos otras existentes y facilitamos
+                  todo el proceso de principio a fin. A través de dinámicas
+                  colaborativas, ayudamos a los participantes a interpretar
+                  datos, definir metas y visualizar de forma clara sus hojas de
+                  ruta.
+                </p>
+                <p data-i18n="project.mincetur.context-note">
+                  <strong>Nota personal:</strong> Este fue uno de mis primeros
+                  proyectos como Service Designer, y fue una experiencia
+                  formativa invaluable sobre facilitación intensiva y diseño de
+                  herramientas estratégicas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Desafío -->
+            <div class="content-block">
+              <div class="block-header">
+                <div
+                  class="block-header__icon block-header__icon--primary"
+                  style="background-color: var(--service-accent)"
+                >
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h2 data-i18n="project-detail.challenge">El Desafío</h2>
+              </div>
+              <div class="block-content block-content--quote">
+                <p data-i18n="project.mincetur.challenge-text">
+                  <i
+                    class="fas fa-quote-left"
+                    style="color: var(--service-accent)"
+                  ></i>
+                  Diseñar y facilitar un taller intensivo de 3 días que
+                  permitiera a líderes de CITE de todo Perú co-crear un modelo
+                  de gestión replicable, traduciendo los complejos
+                  requerimientos del Estado en herramientas prácticas y
+                  accesibles que pudieran implementar inmediatamente.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mi Rol -->
+            <div class="content-block">
+              <div class="block-header">
+                <div
+                  class="block-header__icon block-header__icon--primary"
+                  style="background-color: var(--service-accent)"
+                >
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 data-i18n="project-detail.my-role">
+                  Mi Rol en el Proyecto
+                </h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.mincetur.role-text">
+                  Participé como
+                  <strong>Service Designer en Creative Lab</strong>, siendo la
+                  más junior del equipo de 4 personas. Este fue uno de mis
+                  primeros proyectos profesionales, y me permitió aprender sobre
+                  facilitación de talleres intensivos y diseño estratégico en
+                  contextos gubernamentales.
+                </p>
+                <p>
+                  <strong data-i18n="project-detail.responsibilities"
+                    >Mis responsabilidades incluyeron:</strong
+                  >
+                </p>
+                <ul class="content-list">
+                  <li data-i18n="project.mincetur.resp-1">
+                    Co-diseñar la estructura completa del taller durante las 2
+                    semanas de preparación
+                  </li>
+                  <li data-i18n="project.mincetur.resp-2">
+                    Participar en la creación y adaptación de herramientas
+                    metodológicas
+                  </li>
+                  <li data-i18n="project.mincetur.resp-3">
+                    Facilitar dinámicas colaborativas durante los 3 días del
+                    taller
+                  </li>
+                  <li data-i18n="project.mincetur.resp-4">
+                    Ayudar a los líderes de CITE a interpretar datos y
+                    requerimientos estatales
+                  </li>
+                  <li data-i18n="project.mincetur.resp-5">
+                    Apoyar en la construcción de hojas de ruta y planes de
+                    gestión
+                  </li>
+                  <li data-i18n="project.mincetur.resp-6">
+                    Traducir conjuntamente la información técnica en un lenguaje
+                    visual y práctico
+                  </li>
+                  <li data-i18n="project.mincetur.resp-7">
+                    Sistematizar resultados y aprendizajes del taller
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Proceso -->
+            <div class="content-block">
+              <div class="block-header">
+                <div
+                  class="block-header__icon block-header__icon--primary"
+                  style="background-color: var(--service-accent)"
+                >
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.mincetur.process-intro">
+                  El proyecto se estructuró en dos fases: una preparación
+                  intensiva de 2 semanas y un taller presencial de 3 días con
+                  todos los líderes de CITE.
+                </p>
+
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <div
+                      class="timeline__marker"
+                      style="background-color: var(--service-accent)"
+                    >
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.mincetur.process-0-title">
+                        Fase 0: Preparación (2 semanas)
+                      </h4>
+                      <p data-i18n="project.mincetur.process-0-text">
+                        Levantamiento de necesidades y diseño del taller:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.mincetur.process-0-item-1">
+                          Levantamiento de objetivos con MINCETUR
+                        </li>
+                        <li data-i18n="project.mincetur.process-0-item-2">
+                          Análisis de requerimientos de presupuesto y KPIs
+                          estatales
+                        </li>
+                        <li data-i18n="project.mincetur.process-0-item-3">
+                          Definición del reto: construir un modelo de gestión
+                          aplicable en diferentes realidades
+                        </li>
+                        <li data-i18n="project.mincetur.process-0-item-4">
+                          Adaptación metodológica del doble diamante para
+                          sesiones intensivas
+                        </li>
+                        <li data-i18n="project.mincetur.process-0-item-5">
+                          Creación de herramientas propias: templates, canvas,
+                          frameworks
+                        </li>
+                        <li data-i18n="project.mincetur.process-0-item-6">
+                          Diseño de dinámicas colaborativas y materiales de
+                          trabajo
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div
+                      class="timeline__marker"
+                      style="background-color: var(--service-accent)"
+                    >
+                      <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.mincetur.process-1-title">
+                        Día 1: Entendimiento Compartido
+                      </h4>
+                      <p data-i18n="project.mincetur.process-1-text">
+                        Alineación y sistematización de contextos:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.mincetur.process-1-item-1">
+                          Presentación de cada CITE y sus realidades específicas
+                        </li>
+                        <li data-i18n="project.mincetur.process-1-item-2">
+                          Entendimiento compartido del problema
+                        </li>
+                        <li data-i18n="project.mincetur.process-1-item-3">
+                          Sistematización de data institucional de cada centro
+                        </li>
+                        <li data-i18n="project.mincetur.process-1-item-4">
+                          Mapeo de desafíos comunes y particulares
+                        </li>
+                        <li data-i18n="project.mincetur.process-1-item-5">
+                          Introducción a las herramientas de trabajo
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div
+                      class="timeline__marker"
+                      style="background-color: var(--service-accent)"
+                    >
+                      <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.mincetur.process-2-title">
+                        Día 2: Co-creación de Herramientas Clave
+                      </h4>
+                      <p data-i18n="project.mincetur.process-2-text">
+                        Construcción colaborativa del modelo:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.mincetur.process-2-item-1">
+                          Co-creación de herramientas clave con los equipos de
+                          los CITE
+                        </li>
+                        <li data-i18n="project.mincetur.process-2-item-2">
+                          Definición de promesas institucionales
+                        </li>
+                        <li data-i18n="project.mincetur.process-2-item-3">
+                          Establecimiento de metas concretas y alcanzables
+                        </li>
+                        <li data-i18n="project.mincetur.process-2-item-4">
+                          Identificación y asignación de KPIs
+                        </li>
+                        <li data-i18n="project.mincetur.process-2-item-5">
+                          Clarificación de responsabilidades por área
+                        </li>
+                        <li data-i18n="project.mincetur.process-2-item-6">
+                          Traducción de lenguaje técnico del Estado a formato
+                          accesible
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div
+                      class="timeline__marker"
+                      style="background-color: var(--service-accent)"
+                    >
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.mincetur.process-3-title">
+                        Día 3: Iteración y Validación
+                      </h4>
+                      <p data-i18n="project.mincetur.process-3-text">
+                        Refinamiento contextualizado por CITE:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.mincetur.process-3-item-1">
+                          Iteración individual por cada CITE
+                        </li>
+                        <li data-i18n="project.mincetur.process-3-item-2">
+                          Validación del modelo propuesto por cada equipo
+                        </li>
+                        <li data-i18n="project.mincetur.process-3-item-3">
+                          Ajustes según realidades y capacidades específicas
+                        </li>
+                        <li data-i18n="project.mincetur.process-3-item-4">
+                          Presentación de hojas de ruta finales
+                        </li>
+                        <li data-i18n="project.mincetur.process-3-item-5">
+                          Definición de próximos pasos y compromisos
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hallazgos Clave -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2 data-i18n="project.bid.findings-title">Hallazgos Clave</h2>
+              </div>
+              <div class="block-content">
+                <h4 data-i18n="project.mincetur.finding-1-title">
+                  Cada CITE opera bajo realidades muy distintas
+                </h4>
+                <p data-i18n="project.mincetur.finding-1-text">
+                  Aunque todos son parte del mismo sistema MINCETUR, cada CITE
+                  enfrentaba desafíos únicos según su región, recursos y
+                  contexto local. La flexibilidad metodológica fue crucial para
+                  que las herramientas fueran útiles para todos.
+                </p>
+
+                <h4 data-i18n="project.mincetur.finding-2-title">
+                  Traducir el lenguaje del Estado es fundamental
+                </h4>
+                <p data-i18n="project.mincetur.finding-2-text">
+                  Los requerimientos técnicos del gobierno estaban expresados en
+                  un lenguaje burocrático complejo. Traducir esto a formatos
+                  entendibles y visuales mejoró dramáticamente la apropiación de
+                  los líderes locales.
+                </p>
+
+                <h4 data-i18n="project.mincetur.finding-3-title">
+                  La co-creación desde el día 1 genera compromiso real
+                </h4>
+                <p data-i18n="project.mincetur.finding-3-text">
+                  No impusimos un modelo pre-diseñado: facilitamos que ellos
+                  mismos lo construyeran. Esta participación activa (no solo
+                  consultiva) generó apropiación genuina del proceso y las
+                  herramientas.
+                </p>
+
+                <h4 data-i18n="project.mincetur.finding-4-title">
+                  La visualización de objetivos fortalece el propósito
+                </h4>
+                <p data-i18n="project.mincetur.finding-4-text">
+                  Ver sus metas, KPIs y responsabilidades plasmadas visualmente
+                  ayudó a los equipos a entender el panorama completo y sentirse
+                  empoderados para ejecutar.
+                </p>
+              </div>
+            </div>
+
+            <!-- Resultados -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 data-i18n="project-detail.results">Resultados</h2>
+              </div>
+              <div class="block-content">
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-card__value">3</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.mincetur.result-1-value"
+                    >
+                      Días de taller intensivo
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">~20</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.mincetur.result-2-value"
+                    >
+                      Líderes de CITE participantes
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">100%</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.mincetur.result-3-value"
+                    >
+                      CITE con modelo implementado
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">
+                      2 <span data-i18n="time.years">años</span>
+                    </div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.mincetur.result-4-value"
+                    >
+                      Herramientas en uso posterior
+                    </div>
+                  </div>
+                </div>
+
+                <h4 data-i18n="project-detail.specific-impacts">
+                  Impactos específicos:
+                </h4>
+                <ul class="checklist">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.mincetur.impact-1"
+                      >Se construyó un modelo de gestión adaptable para cada
+                      CITE</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.mincetur.impact-2"
+                      >Los equipos generaron un plan de acción validado por
+                      ellos mismos para los próximos dos años</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.mincetur.impact-3"
+                      >Las herramientas diseñadas facilitaron la elaboración de
+                      informes exigidos por el Estado</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.mincetur.impact-4"
+                      >Se logró una apropiación real del proceso gracias a la
+                      participación activa, no solo consultiva</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.mincetur.impact-5"
+                      ><strong
+                        >2 años después, los CITE seguían usando las
+                        herramientas creadas en el taller</strong
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Aprendizajes -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2 data-i18n="project-detail.learnings">
+                  Aprendizajes de mi Primer Proyecto
+                </h2>
+              </div>
+              <div class="block-content">
+                <h4 data-i18n="project.mincetur.learning-1-title">
+                  La facilitación es un arte que se aprende haciendo
+                </h4>
+                <p data-i18n="project.mincetur.learning-1-text">
+                  Como la más junior del equipo, este taller me enseñó que
+                  facilitar no es solo guiar dinámicas, sino sostener espacios
+                  seguros donde las personas se sientan capaces de crear. Ver
+                  cómo los líderes de CITE se apropiaban de las herramientas fue
+                  mi primera gran lección sobre el poder del diseño
+                  participativo.
+                </p>
+
+                <h4 data-i18n="project.mincetur.learning-2-title">
+                  Adaptar es más valioso que imponer
+                </h4>
+                <p data-i18n="project.mincetur.learning-2-text">
+                  No existe un "modelo único" que funcione para todos. Aprendí
+                  que las mejores herramientas son aquellas que los usuarios
+                  entienden, adaptan y hacen suyas. En procesos de facilitación
+                  intensiva, adaptar el método al ritmo y lenguaje del usuario
+                  es más importante que seguir la estructura perfecta.
+                </p>
+
+                <h4 data-i18n="project.mincetur.learning-3-title">
+                  El impacto del diseño no se mide solo al final
+                </h4>
+                <p data-i18n="project.mincetur.learning-3-text">
+                  Enterarnos 2 años después de que los CITE seguían usando las
+                  herramientas que creamos fue la confirmación de que diseñamos
+                  algo realmente útil. El verdadero éxito no es solo entregar un
+                  workshop, sino crear valor sostenible.
+                </p>
+
+                <h4 data-i18n="project.mincetur.learning-4-title">
+                  Diseñar para el sector público requiere sensibilidad especial
+                </h4>
+                <p data-i18n="project.mincetur.learning-4-text">
+                  Trabajar con entidades gubernamentales implica navegar
+                  burocracia, lenguaje técnico y múltiples stakeholders. Este
+                  proyecto me enseñó a traducir complejidad en claridad sin
+                  perder rigor.
+                </p>
+              </div>
+            </div>
+
+            <!-- Reflexiones -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
+              </div>
+              <div class="block-content block-content--quote">
+                <p data-i18n="project.mincetur.reflection-quote">
+                  <i class="fas fa-quote-left"></i>
+                  La herramienta más potente es aquella que los usuarios hacen
+                  suya.
+                </p>
+                <p data-i18n="project.mincetur.reflection-1">
+                  Este proyecto me enseñó que en procesos de facilitación
+                  intensiva, la clave está en acompañar con empatía y claridad.
+                  No se trata de llegar con soluciones pre-armadas, sino de
+                  crear el espacio y las herramientas para que las personas
+                  construyan sus propias respuestas.
+                </p>
+                <p data-i18n="project.mincetur.reflection-2">
+                  Siendo uno de mis primeros proyectos profesionales, me marcó
+                  profundamente. Aprendí que el diseño de servicios no es solo
+                  metodología, sino también escucha activa, flexibilidad y
+                  confianza en la capacidad de las personas para resolver sus
+                  propios desafíos cuando se les dan las herramientas adecuadas.
+                </p>
+                <p data-i18n="project.mincetur.reflection-3">
+                  Ver que 2 años después los CITE seguían usando lo que
+                  co-creamos juntos fue la mayor validación: diseñamos algo que
+                  realmente les sirvió. Y eso, para mí, es el verdadero éxito
+                  del diseño estratégico.
+                </p>
+              </div>
+            </div>
+
+            <!-- Recursos Visuales -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-images"></i>
+                </div>
+                <h2 data-i18n="project-detail.visual-resources">
+                  Recursos Visuales
+                </h2>
+              </div>
+              <div class="block-content">
+                <!-- Construcción del Taller -->
+                <h4>Construcción del Taller y Objetivos</h4>
+                <p>
+                  Planificación estratégica del taller y definición de objetivos
+                  con MINCETUR.
+                </p>
+                <div class="visual-resource">
+                  <img
+                    src="../assets/images/proyectos/mincetur/construccion-taller.png"
+                    alt="Construcción del taller"
+                  />
+                  <p class="image-caption">
+                    Planificación y objetivos del taller
+                  </p>
+                </div>
+
+                <!-- Herramientas Creadas -->
+                <h4>Herramientas y Metodología</h4>
+                <p>
+                  Adaptación del doble diamante y herramientas propias diseñadas
+                  para el taller.
+                </p>
+                <div class="visual-gallery">
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/mincetur/herramienta-1.jpg"
+                      alt="Herramienta 1"
+                    />
+                    <p class="image-caption">Canvas de gestión CITE</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/mincetur/herramienta-2.jpg"
+                      alt="Herramienta 2"
+                    />
+                    <p class="image-caption">Framework de Indicadores</p>
+                  </div>
+                </div>
+
+                <!-- Taller en Acción -->
+                <h4>Taller en Acción</h4>
+                <p>
+                  Fotografías de las dinámicas colaborativas con los líderes de
+                  CITE.
+                </p>
+                <div class="visual-gallery">
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/mincetur/taller-dia1.png"
+                      alt="Día 1"
+                    />
+                    <p class="image-caption">
+                      Día 1 - Entendimiento compartido
+                    </p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/mincetur/taller-dia2.png"
+                      alt="Día 2"
+                    />
+                    <p class="image-caption">
+                      Día 2 - Co-creación de herramientas
+                    </p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/mincetur/taller-dia3.png"
+                      alt="Día 3"
+                    />
+                    <p class="image-caption">Día 3 - Iteración y validación</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar-sticky">
+            <div class="sidebar-card">
+              <h3>
+                <i
+                  class="fas fa-info-circle"
+                  style="color: var(--service-accent)"
+                ></i>
+                <span data-i18n="sidebar.project-info">Info del Proyecto</span>
+              </h3>
+              <div class="sidebar-card__list">
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-calendar"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.year"
+                      >Año</span
+                    >
+                    <span class="sidebar-card__value">2019</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-clock"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.duration"
+                      >Duración</span
+                    >
+                    <span class="sidebar-card__value"
+                      >2 sem + 3 <span data-i18n="time.days">días</span></span
+                    >
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.location"
+                      >Ubicación</span
+                    >
+                    <span class="sidebar-card__value">Perú</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.role"
+                      >Rol</span
+                    >
+                    <span class="sidebar-card__value"
+                      >Service Designer (Junior)</span
+                    >
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-building"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="sidebar.company"
+                      >Empresa</span
+                    >
+                    <span class="sidebar-card__value">Creative Lab</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-landmark"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="sidebar.client"
+                      >Cliente</span
+                    >
+                    <span class="sidebar-card__value">MINCETUR</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>
+                <i
+                  class="fas fa-users"
+                  style="color: var(--service-accent)"
+                ></i>
+                Participantes
+              </h3>
+              <div class="sidebar-card__list">
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-users-cog"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">Equipo facilitador</span>
+                    <span class="sidebar-card__value">4 personas</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-user-tie"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">Líderes CITE</span>
+                    <span class="sidebar-card__value">~20 personas</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-industry"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">Sectores</span>
+                    <span class="sidebar-card__value">Artesanía y Turismo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>
+                <i
+                  class="fas fa-tools"
+                  style="color: var(--service-accent)"
+                ></i>
+                <span data-i18n="sidebar.skills-applied"
+                  >Habilidades Aplicadas</span
+                >
+              </h3>
+              <div class="sidebar-card__tags">
+                <span class="tag">Service Design</span>
+                <span class="tag" data-i18n="skills.facilitation"
+                  >Facilitación</span
+                >
+                <span class="tag">Design Thinking</span>
+                <span class="tag">Diseño de Herramientas</span>
+                <span class="tag">Co-creación</span>
+                <span class="tag">Talleres Intensivos</span>
+                <span class="tag">Sector Público</span>
+                <span class="tag">Diseño Estratégico</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card sidebar-card--cta">
+              <h3>
+                <i class="fas fa-rocket"></i>
+                <span data-i18n="sidebar.interested-title"
+                  >¿Te interesó este proyecto?</span
+                >
+              </h3>
+              <p data-i18n="sidebar.interested-text-mincetur">
+                Si quieres conocer más sobre mi trabajo en facilitación y diseño
+                estratégico, hablemos.
+              </p>
+              <a href="../index.html#contacto" class="btn btn--hero btn--block">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="contact.btn-email">Contactar</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+      <div class="container">
+        <div class="project-nav__grid">
+          <a href="upc.html" class="project-nav__item project-nav__item--prev">
+            <i class="fas fa-arrow-left"></i>
+            <div>
+              <span class="project-nav__label" data-i18n="nav.previous"
+                >Anterior</span
+              >
+              <span class="project-nav__title"
+                >UPC -
+                <span data-i18n="project.upc.title"
+                  >Rediseño de Admisión</span
+                ></span
+              >
+            </div>
+          </a>
+
+          <a href="../todos-proyectos.html" class="btn btn--primary">
+            <i class="fas fa-th"></i>
+            <span data-i18n="nav.view-all">Ver todos</span>
+          </a>
+
+          <a href="tali.html" class="project-nav__item project-nav__item--next">
+            <div>
+              <span class="project-nav__label" data-i18n="nav.next"
+                >Siguiente</span
+              >
+              <span class="project-nav__title"
+                >TALI -
+                <span data-i18n="project.tali.title"
+                  >Agencia de Viajes</span
+                ></span
+              >
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-to-top-section">
+      <div class="container">
+        <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+          <i class="fas fa-arrow-up"></i>
+          <span data-i18n="nav.back-to-top">Volver al inicio</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <i class="fas fa-heart"></i>
+          © 2025 Gabriela Ojeda Semidey.
+          <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visor de imagen"
+    >
+      <div class="lightbox__content">
+        <button class="lightbox__close" aria-label="Cerrar visor">
+          <i class="fas fa-times"></i>
+        </button>
+        <img class="lightbox__image" src="" alt="" id="lightbox-img" />
+        <div class="lightbox__caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

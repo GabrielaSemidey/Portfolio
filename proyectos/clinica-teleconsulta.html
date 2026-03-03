@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica Alemana - Plataforma de Teleconsulta | Gabriela Ojeda Semidey"
+    />
+    <title>
+      Clínica Alemana - Plataforma de Teleconsulta | Gabriela Ojeda Semidey
+    </title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/sections.css" />
+    <link rel="stylesheet" href="../styles/project-detail.css" />
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+  </head>
+  <body data-category="ux-ui">
+    <!-- Header -->
+    <header id="header">
+      <nav class="container">
+        <a href="../index.html" class="logo">
+          <span>Gabriela OS</span>
+        </a>
+        <ul class="nav-links">
+          <ul class="nav-links">
+          <li> <a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+          <li> <a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+          <li> <a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+          <li> <a href="../index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+          <li> <a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+          <li> <a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+
+
+          <!-- 🔥 LANGUAGE TOGGLE -->
+          <li>
+            <div class="language-toggle">
+              <button
+                class="language-toggle__btn"
+                type="button"
+                aria-label="Cambiar idioma"
+                title="Switch language"
+                data-lang="es"
+              >
+                <span class="language-toggle__flag">🇪🇸</span>
+                <span class="language-toggle__text">ES</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div
+        class="reading-progress"
+        role="progressbar"
+        aria-label="Progreso de lectura"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="reading-progress__bar"></div>
+      </div>
+    </header>
+
+    <!-- Hero Visual -->
+    <section class="project-hero" data-category="ux-ui" id="hero">
+      <div
+        class="project-hero__banner"
+        style="
+          background-image: url('../assets/images/proyectos/teleconsulta/banner.jpg');
+        "
+      ></div>
+      <div class="container">
+        <a href="../todos-proyectos.html" class="back-link back-link--light">
+          <i class="fas fa-arrow-left"></i>
+          <span data-i18n="project.back-projects">Volver a proyectos</span>
+        </a>
+
+        <div class="project-hero__content-wrapper">
+          <div class="project-hero__badges">
+            <span class="badge badge--secondary">
+              <i class="fas fa-video"></i> Telemedicina
+            </span>
+            <span class="badge badge--secondary">
+              <i class="fas fa-calendar"></i> 2020
+            </span>
+            <span class="badge badge--success">
+              <i class="fas fa-check-circle"></i>
+              <span data-i18n="badge.implemented">Implementado</span>
+            </span>
+          </div>
+
+          <h1
+            class="project-hero__title"
+            data-i18n="project.teleconsulta.hero-title"
+          >
+            Clínica Alemana de Santiago – Plataforma de Teleconsulta
+          </h1>
+
+          <p
+            class="project-hero__description"
+            data-i18n="project.teleconsulta.hero-subtitle"
+          >
+            Diseño desde cero de una plataforma de videollamadas médicas
+            integrada con el sistema de agenda web. Automatización de cobros,
+            entrega de recetas y gestión de documentos clínicos con 40% de
+            reducción en quejas.
+          </p>
+
+          <a href="#contenido" class="btn btn--hero">
+            <i class="fas fa-book-open"></i>
+            <span data-i18n="project-detail.view-case">Ver caso completo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="project-quick-info">
+      <div class="container">
+        <div class="quick-info__grid">
+          <div class="info-item">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.year"
+                >Año</span
+              >
+              <span class="info-item__value">2020</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.duration"
+                >Duración</span
+              >
+              <span class="info-item__value"
+                >14 <span data-i18n="time.months">meses</span></span
+              >
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="info-item__label">País</span>
+              <span class="info-item__value">Chile</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-briefcase"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.role"
+                >Rol</span
+              >
+              <span class="info-item__value">Research/Service Design/UX</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-chart-line"></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.impact"
+                >Impacto</span
+              >
+              <span class="info-item__value">-40% quejas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section id="contenido" class="project-content section">
+      <div class="container">
+        <div class="content-layout">
+          <!-- Main Content -->
+          <div class="main-content">
+            <!-- Contexto -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--primary">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <h2 data-i18n="project.bid.context-title">Contexto</h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.teleconsulta.context-text-1">
+                  Durante el 2020, en plena pandemia, acompañamos a la Clínica
+                  Alemana de Santiago en el diseño de su propia plataforma de
+                  teleconsulta. Aunque el desarrollo se realizó en paralelo al
+                  rediseño de su Agenda Web, ambos equipos trabajamos de forma
+                  coordinada para asegurar una experiencia fluida y continua
+                  para pacientes y médicos.
+                </p>
+                <p data-i18n="project.teleconsulta.context-text-2">
+                  Esta nueva solución debía responder a desafíos específicos del
+                  contexto sanitario, facilitar la experiencia digital de
+                  públicos aún no acostumbrados a este tipo de plataformas y, al
+                  mismo tiempo, liberar la carga operativa que enfrentaba el
+                  equipo médico.
+                </p>
+                <p data-i18n="project.teleconsulta.context-text-3">
+                  El proyecto se desarrolló en un ecosistema complejo,
+                  coordinando con múltiples equipos y consultoras:
+                </p>
+                <ul class="content-list">
+                  <li>
+                    <strong>Continuum</strong> (mi equipo): Diseño de la
+                    plataforma de teleconsulta
+                  </li>
+                  <li>
+                    <strong>Equipo paralelo de Continuum:</strong> Diseño de
+                    agenda web
+                  </li>
+                  <li>
+                    <strong>Globant:</strong> Desarrollo de la app Alemana Go
+                  </li>
+                  <li>
+                    <strong>2Brains:</strong> Otra plataforma complementaria
+                  </li>
+                  <li>
+                    <strong>Clínica Alemana:</strong> Equipo de diseño interno
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Desafío -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--primary">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h2 data-i18n="project-detail.challenge">El Desafío</h2>
+              </div>
+              <div class="block-content block-content--quote">
+                <p data-i18n="project.teleconsulta.challenge-text">
+                  <i class="fas fa-quote-left"></i>
+                  ¿Cómo diseñar una plataforma de teleconsulta médica desde
+                  cero, en plena emergencia sanitaria, que permitiera atención
+                  remota segura y eficiente, sin aumentar la carga operativa del
+                  personal médico?
+                </p>
+              </div>
+            </div>
+
+            <!-- Mi Rol -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--primary">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h2 data-i18n="project-detail.my-role">
+                  Mi Rol en el Proyecto
+                </h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.teleconsulta.role-text">
+                  Participé como <strong>diseñadora de servicios</strong>,
+                  velando por que la experiencia de atención fuera consistente y
+                  clara a lo largo de todos los puntos de contacto. Acompañé el
+                  proceso durante 14 meses (el equipo continuó después de mi
+                  salida), aplicando un enfoque de diseño incremental que nos
+                  permitió lanzar una versión inicial en 6 meses y seguir
+                  iterando con mejoras de valor para usuarios y equipos.
+                </p>
+                <p>
+                  <strong data-i18n="project-detail.team-composition"
+                    >Composición del equipo:</strong
+                  >
+                </p>
+                <ul class="content-list">
+                  <li data-i18n="project.agenda.team-1">
+                    Yo (UX/Service Designer + Researcher)
+                  </li>
+                  <li data-i18n="project.agenda.team-2">1 UX/UI Designer</li>
+                  <li data-i18n="project.agenda.team-3">7 Developers</li>
+                  <li data-i18n="project.agenda.team-4">1 Project Manager</li>
+                </ul>
+                <p>
+                  <strong data-i18n="project-detail.responsibilities"
+                    >Mis responsabilidades incluyeron:</strong
+                  >
+                </p>
+                <ul class="content-list">
+                  <li data-i18n="project.teleconsulta.resp-1">
+                    Liderar la investigación con usuarios (médicos y pacientes)
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-2">
+                    Mapear sistemas y procesos internos complejos
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-3">
+                    Identificar pain points críticos en la experiencia de
+                    teleconsulta
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-4">
+                    Diseñar flujos de videollamadas, automatización de
+                    documentos y pagos
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-5">
+                    Facilitar la conexión entre ambos proyectos (Agenda Web y
+                    Teleconsulta)
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-6">
+                    Trabajar en la integración entre plataformas desde la
+                    perspectiva de servicio
+                  </li>
+                  <li data-i18n="project.teleconsulta.resp-7">
+                    Comunicar hallazgos mediante storytelling visual
+                    (presentaciones narrativas)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Proceso -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--primary">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
+              </div>
+              <div class="block-content">
+                <p data-i18n="project.teleconsulta.process-intro">
+                  El proyecto se llevó a cabo en un contexto de alta
+                  incertidumbre, con un deadline muy ajustado y grandes desafíos
+                  para hacer investigación o testeo en terreno. Aun así,
+                  diseñamos un proceso enfocado en comprender profundamente los
+                  problemas de pacientes, médicos y equipos administrativos.
+                </p>
+
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <div class="timeline__marker">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.teleconsulta.process-1-title">
+                        1. Levantamiento de Hallazgos
+                      </h4>
+                      <p data-i18n="project.teleconsulta.process-1-text">
+                        Investigación profunda en contexto de emergencia:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.teleconsulta.process-1-item-1">
+                          Entrevistas remotas a usuarios (médicos y pacientes)
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-1-item-2">
+                          Creación de personas: Mariana y Fernando como
+                          arquetipos
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-1-item-3">
+                          Mapeo de sistemas y procesos internos complejos
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-1-item-4">
+                          Identificación de tareas duplicadas, fricciones y
+                          puntos de ruptura
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-1-item-5">
+                          Análisis de la plataforma existente (Teladoc) y sus
+                          limitaciones
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-1-item-6">
+                          Service Blueprint completo del journey de teleconsulta
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__marker">
+                      <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.teleconsulta.process-2-title">
+                        2. Diseño de Flujos y Mejoras Clave
+                      </h4>
+                      <p data-i18n="project.teleconsulta.process-2-text">
+                        Co-creación de soluciones con equipos
+                        multidisciplinarios:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.teleconsulta.process-2-item-1">
+                          Plataforma de videollamadas propia con métricas
+                          clínicas
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-2-item-2">
+                          Automatización de la entrega de documentos (recetas,
+                          boletas, certificados)
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-2-item-3">
+                          Pago automático al finalizar la consulta, validado por
+                          el médico
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-2-item-4">
+                          Rediseño de flujos internos para eliminar duplicidad
+                          de registros
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-2-item-5">
+                          Creación de sala de espera virtual para disminuir
+                          incertidumbre
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-2-item-6">
+                          Integración fluida con el sistema de Agenda Web
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__marker">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.teleconsulta.process-3-title">
+                        3. Comunicación de Hallazgos
+                      </h4>
+                      <p data-i18n="project.teleconsulta.process-3-text">
+                        Storytelling como herramienta estratégica:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.teleconsulta.process-3-item-1">
+                          Presentación narrativa estructurada como "película"
+                          con actos
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-3-item-2">
+                          Uso de personas para generar empatía con stakeholders
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-3-item-3">
+                          Service Blueprint para visualizar el ecosistema
+                          completo
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-3-item-4">
+                          Workshops colaborativos para priorizar mejoras
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__marker">
+                      <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline__content">
+                      <h4 data-i18n="project.teleconsulta.process-4-title">
+                        4. Lanzamiento e Iteración
+                      </h4>
+                      <p data-i18n="project.teleconsulta.process-4-text">
+                        Implementación progresiva con aprendizaje continuo:
+                      </p>
+                      <ul class="content-list">
+                        <li data-i18n="project.teleconsulta.process-4-item-1">
+                          <strong>4 meses:</strong> Desarrollo inicial y pruebas
+                          internas (friends & family)
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-4-item-2">
+                          <strong>6 meses:</strong> Despliegue completo al
+                          público
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-4-item-3">
+                          <strong>+8 meses:</strong> Mejoras progresivas basadas
+                          en feedback
+                        </li>
+                        <li data-i18n="project.teleconsulta.process-4-item-4">
+                          Coordinación constante entre equipos de Agenda Web y
+                          Teleconsulta
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resultados -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 data-i18n="project-detail.results">Resultados</h2>
+              </div>
+              <div class="block-content">
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-card__value">-40%</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.teleconsulta.result-1-value"
+                    >
+                      Reducción en quejas de facturación y documentos
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">7,000+</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.teleconsulta.result-2-value"
+                    >
+                      Sesiones de telerehabilitación
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">70,000+</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.teleconsulta.result-3-value"
+                    >
+                      Teleconsultas totales (ecosistema completo)
+                    </div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-card__value">100%</div>
+                    <div
+                      class="metric-card__label"
+                      data-i18n="project.teleconsulta.result-4-value"
+                    >
+                      Alineación con necesidades clínicas
+                    </div>
+                  </div>
+                </div>
+
+                <h4 data-i18n="project-detail.specific-impacts">
+                  Impactos específicos:
+                </h4>
+                <ul class="checklist">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-1"
+                      >Reducción del 40% en quejas relacionadas con facturación
+                      y entrega de documentos</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-2"
+                      >Se liberó tiempo operativo médico al reducir tareas
+                      repetitivas y duplicadas</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-3"
+                      >Pacientes ganaron claridad sobre su atención y accedieron
+                      más fácilmente a sus documentos</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-4"
+                      >Plataforma 100% alineada con las necesidades clínicas y
+                      de gestión interna</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-5"
+                      >Integración fluida con Agenda Web, sin saltos ni
+                      fricciones en la experiencia</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-6"
+                      >Automatización de procesos administrativos que antes se
+                      hacían manualmente</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-7"
+                      >Sala de espera virtual que redujo la ansiedad de
+                      pacientes y médicos</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="project.teleconsulta.impact-8"
+                      >Sistema de entrega automática de recetas, boletas y
+                      certificados médicos</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reflexiones -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
+              </div>
+              <div class="block-content block-content--quote">
+                <p data-i18n="project.teleconsulta.reflection-quote">
+                  <i class="fas fa-quote-left"></i>
+                  El storytelling como puente entre la investigación y la
+                  acción.
+                </p>
+                <p data-i18n="project.teleconsulta.reflection-1">
+                  Este proyecto fue un desafío tanto técnico como emocional.
+                  Trabajamos con urgencia, pero sin perder el foco humano. La
+                  decisión de comunicar los hallazgos mediante una narrativa
+                  cinematográfica (los "actos" de Mariana y Fernando) no fue
+                  solo una elección creativa, sino estratégica: necesitábamos
+                  que stakeholders, desarrolladores y equipos médicos
+                  entendieran visceralmente los pain points de los usuarios.
+                </p>
+                <p data-i18n="project.teleconsulta.reflection-2">
+                  Ver cómo la historia resonaba en las presentaciones, cómo los
+                  equipos comenzaban a referirse a "el Acto 4" o "el problema
+                  del Mago de Oz", me enseñó que el diseño de servicios no es
+                  solo mapear flujos, sino crear lenguajes compartidos que
+                  faciliten la toma de decisiones.
+                </p>
+                <p data-i18n="project.teleconsulta.reflection-3">
+                  La profundidad de la investigación, el cuidado en los detalles
+                  y la coordinación entre múltiples equipos hicieron posible
+                  algo que parecía inviable en medio de la incertidumbre.
+                  Acompañar esta transformación desde el diseño de servicios fue
+                  una lección de empatía, estrategia y compromiso con el valor
+                  real.
+                </p>
+                <p data-i18n="project.teleconsulta.reflection-4">
+                  Este proyecto reafirmó mi convicción: las mejores soluciones
+                  nacen cuando combinamos rigor metodológico con profunda
+                  empatía humana, y cuando sabemos comunicar nuestros hallazgos
+                  de forma que inspiren acción.
+                </p>
+              </div>
+            </div>
+
+            <!-- Recursos Visuales -->
+            <div class="content-block">
+              <div class="block-header">
+                <div class="block-header__icon block-header__icon--secondary">
+                  <i class="fas fa-images"></i>
+                </div>
+                <h2 data-i18n="project-detail.visual-resources">
+                  Recursos Visuales
+                </h2>
+              </div>
+              <div class="block-content">
+                <!-- Service Blueprint -->
+                <h4>Service Blueprint</h4>
+                <p data-i18n="project.teleconsulta.visual-blueprint-desc">
+                  Mapa completo del servicio mostrando todos los touchpoints,
+                  actores y sistemas involucrados en la experiencia de
+                  teleconsulta.
+                </p>
+                <div class="visual-resource">
+                  <img
+                    src="../assets/images/proyectos/teleconsulta/service-blueprint.jpg"
+                    alt="Service Blueprint - Teleconsulta Clínica Alemana"
+                  />
+                  <p
+                    class="image-caption"
+                    data-i18n="project.teleconsulta.visual-blueprint-caption"
+                  >
+                    Service Blueprint completo del journey de teleconsulta
+                  </p>
+                </div>
+
+                <!-- Presentación de Hallazgos -->
+                <h4 data-i18n="project.teleconsulta.visual-storytelling-title">
+                  Presentación de Hallazgos e Insights
+                </h4>
+                <p data-i18n="project.teleconsulta.visual-storytelling-desc">
+                  Storytelling visual con la narrativa de Mariana y Fernando,
+                  estructurada como una película con actos que representan los
+                  pain points del servicio.
+                </p>
+                <div class="visual-resource">
+                  <img
+                    src="../assets/images/proyectos/teleconsulta/hallazgos-storytelling.jpg"
+                    alt="Presentación de Hallazgos - Storytelling"
+                  />
+                  <p
+                    class="image-caption"
+                    data-i18n="project.teleconsulta.visual-storytelling-caption"
+                  >
+                    Hallazgos comunicados mediante storytelling cinematográfico
+                  </p>
+                </div>
+
+                <!-- Personas -->
+                <h4 data-i18n="project.teleconsulta.visual-personas-title">
+                  Construction of Personas
+                </h4>
+                <p data-i18n="project.teleconsulta.visual-personas-desc">
+                  Perfiles de usuario creados a partir de la investigación, con
+                  sus pain points principales y contexto de uso.
+                </p>
+                <div class="visual-gallery">
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/teleconsulta/persona-fernando.jpg"
+                      alt="Persona - Fernando"
+                    />
+                    <p
+                      class="image-caption"
+                      data-i18n="project.teleconsulta.visual-persona-1"
+                    >
+                      Fernando - Usuario de teleconsulta
+                    </p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/teleconsulta/persona-camila.jpg"
+                      alt="Persona - Camila"
+                    />
+                    <p
+                      class="image-caption"
+                      data-i18n="project.teleconsulta.visual-persona-2"
+                    >
+                      Camila - Doctora que atiende a pacientes en teleconsulta
+                    </p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/teleconsulta/persona-sergio.jpg"
+                      alt="Persona - Sergio"
+                    />
+                    <p
+                      class="image-caption"
+                      data-i18n="project.teleconsulta.visual-persona-3"
+                    >
+                      Sergio, Asistente de backoffice
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Prototipos -->
+                <h4 data-i18n="project.teleconsulta.visual-prototypes-title">
+                  Prototipos - Primera Iteración
+                </h4>
+                <p data-i18n="project.teleconsulta.visual-prototypes-desc">
+                  Wireframes y prototipos de las vistas principales tanto para
+                  médicos como para pacientes.
+                </p>
+                <div class="visual-gallery">
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/teleconsulta/prototipo-medico-1.gif"
+                      alt="Prototipo vista médico"
+                    />
+                    <p
+                      class="image-caption"
+                      data-i18n="project.teleconsulta.visual-prototype-1"
+                    >
+                      Vista médico - Panel de consulta
+                    </p>
+                  </div>
+                  <div class="gallery-item">
+                    <img
+                      src="../assets/images/proyectos/teleconsulta/prototipo-videollamada.png"
+                      alt="Prototipo videollamada"
+                    />
+                    <p
+                      class="image-caption"
+                      data-i18n="project.teleconsulta.visual-prototype-2"
+                    >
+                      Interface de videollamada paciente
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar-sticky">
+            <div class="sidebar-card">
+              <h3>
+                <i class="fas fa-info-circle"></i>
+                <span data-i18n="sidebar.project-info">Info del Proyecto</span>
+              </h3>
+              <div class="sidebar-card__list">
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-calendar"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.year"
+                      >Año</span
+                    >
+                    <span class="sidebar-card__value">2020-2021</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-clock"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.duration"
+                      >Duración</span
+                    >
+                    <span class="sidebar-card__value"
+                      >14 <span data-i18n="time.months">meses</span></span
+                    >
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.location"
+                      >Ubicación</span
+                    >
+                    <span class="sidebar-card__value">Chile</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="project-detail.role"
+                      >Rol</span
+                    >
+                    <span class="sidebar-card__value">UX/Service Designer</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-building"></i
+                  ></span>
+                  <div>
+                    <span
+                      class="sidebar-card__label"
+                      data-i18n="sidebar.company"
+                      >Empresa</span
+                    >
+                    <span class="sidebar-card__value">Continuum</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-hospital"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="sidebar.client"
+                      >Cliente</span
+                    >
+                    <span class="sidebar-card__value">Clínica Alemana</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>
+                <i class="fas fa-users"></i>
+                <span data-i18n="sidebar.collaborating-teams"
+                  >Equipos Colaboradores</span
+                >
+              </h3>
+              <div class="sidebar-card__list">
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-calendar-check"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label"
+                      >Continuum (paralelo)</span
+                    >
+                    <span class="sidebar-card__value">Agenda Web</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-mobile-alt"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">Globant</span>
+                    <span
+                      class="sidebar-card__value"
+                      data-i18n="sidebar.team-globant"
+                      >App Alemana Go</span
+                    >
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-laptop-code"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">2Brains</span>
+                    <span
+                      class="sidebar-card__value"
+                      data-i18n="sidebar.team-2brains"
+                      >Plataforma paralela</span
+                    >
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"
+                    ><i class="fas fa-hospital-user"></i
+                  ></span>
+                  <div>
+                    <span class="sidebar-card__label">Clínica Alemana</span>
+                    <span
+                      class="sidebar-card__value"
+                      data-i18n="sidebar.team-clinic-internal"
+                      >Equipo interno</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>
+                <i class="fas fa-tools"></i>
+                <span data-i18n="sidebar.skills-applied"
+                  >Habilidades Aplicadas</span
+                >
+              </h3>
+              <div class="sidebar-card__tags">
+                <span class="tag">UX Research</span>
+                <span class="tag">Service Design</span>
+                <span class="tag">Service Blueprints</span>
+                <span class="tag">User Personas</span>
+                <span class="tag">Storytelling</span>
+                <span class="tag" data-i18n="skills.facilitation"
+                  >Facilitación</span
+                >
+                <span class="tag">Journey Mapping</span>
+                <span class="tag">Diseño de Flujos</span>
+                <span class="tag">Coordinación Multi-equipo</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>
+                <i class="fas fa-image"></i>
+                <span data-i18n="sidebar.visual-resources"
+                  >Recursos Visuales</span
+                >
+              </h3>
+              <ul class="content-list" style="margin: 0; padding-left: 1.5rem">
+                <li>Presentación de Hallazgos e Insights (Storytelling)</li>
+                <li>Service Blueprint completo</li>
+                <li>Construction of Persona (Mariana y Fernando)</li>
+                <li>Prototype 1st iteration (Vista médico y paciente)</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card sidebar-card--cta">
+              <h3>
+                <i class="fas fa-rocket"></i>
+                <span data-i18n="sidebar.interested-title"
+                  >¿Te interesó este proyecto?</span
+                >
+              </h3>
+              <p data-i18n="sidebar.interested-text-teleconsulta">
+                Si quieres conocer más sobre mi trabajo en telemedicina y
+                storytelling, hablemos.
+              </p>
+              <a href="../index.html#contacto" class="btn btn--hero btn--block">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="contact.btn-email">Contactar</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+      <div class="container">
+        <div class="project-nav__grid">
+          <a href="lumi.html" class="project-nav__item project-nav__item--prev">
+            <i class="fas fa-arrow-left"></i>
+            <div>
+              <span class="project-nav__label" data-i18n="nav.previous"
+                >Anterior</span
+              >
+              <span class="project-nav__title">Lumi-proyecto-educativo</span>
+            </div>
+          </a>
+
+          <a href="../todos-proyectos.html" class="btn btn--primary">
+            <i class="fas fa-th"></i>
+            <span data-i18n="nav.view-all">Ver todos</span>
+          </a>
+
+          <a
+            href="clinica-agenda-web.html"
+            class="project-nav__item project-nav__item--next"
+          >
+            <div>
+              <span class="project-nav__label" data-i18n="nav.next"
+                >Siguiente</span
+              >
+              <span class="project-nav__title"
+                >Clínica Alemana - Agenda Web</span
+              >
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-to-top-section">
+      <div class="container">
+        <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+          <i class="fas fa-arrow-up"></i>
+          <span data-i18n="nav.back-to-top">Volver al inicio</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <i class="fas fa-heart"></i>
+          © 2025 Gabriela Ojeda Semidey.
+          <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visor de imagen"
+    >
+      <div class="lightbox__content">
+        <button class="lightbox__close" aria-label="Cerrar visor">
+          <i class="fas fa-times"></i>
+        </button>
+        <img class="lightbox__image" src="" alt="" id="lightbox-img" />
+        <div class="lightbox__caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

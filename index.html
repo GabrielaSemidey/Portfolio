@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gabriela Ojeda Semidey - Product Owner | Service Design & Product Strategy | From Discovery to Delivery">
+    <title>Gabriela Ojeda Semidey - Product Owner & Service Designer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/project-detail.css">
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+<body>
+<!-- HEADER -->
+    <header id="header">
+        <nav class="container">
+            <!-- Logo sin los <> de developer -->
+            <a href="#inicio" class="logo">
+                <span>Gabriela OS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+
+                <!-- LANGUAGE TOGGLE -->
+                <li>
+                    <div class="language-toggle">
+                        <button class="language-toggle__btn" 
+                                type="button" 
+                                aria-label="Cambiar idioma"
+                                title="Switch language"
+                                data-lang="es">
+                            <span class="language-toggle__flag">🇪🇸</span>
+                            <span class="language-toggle__text">ES</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container">
+
+            <div class="hero__grid-top">
+                
+                <!-- Contenido izquierdo -->
+                <div class="hero__left">
+<!-- Badge de disponibilidad -->
+                    <div class="hero__badge animate-fadeInUp">
+                        <i class="fas fa-circle" style="color: #10b981; font-size: 8px;"></i>
+                        <span data-i18n="hero.badge">Open to Product Owner & Strategy roles · Remote / Madrid</span>
+                    </div>
+                    
+                    <!-- Headline principal -->
+                    <h1 class="hero__title animate-fadeInUp delay-1">
+                        <span class="hero__title--gradient" data-i18n="hero.title">From Discovery</span><br>
+                        <span data-i18n="hero.title-2">to Delivery.</span>
+                    </h1>
+                    
+                    <!-- Subtítulo -->
+                    <p class="hero__subtitle animate-fadeInUp delay-2" data-i18n="hero.subtitle">
+                        Product Owner especializada en transformar problemas complejos en productos claros y de alto impacto.
+                        Trabajo en la intersección de negocio, usuarios y tecnología — priorizando lo que genera valor real.
+                    </p>
+                </div>
+
+                <!-- Foto -->
+                <div class="hero__photo animate-fadeInUp delay-1">
+                    <div class="hero__photo-wrapper">
+                        <img src="assets/images/perfil.png" alt="Gabriela Ojeda Semidey">
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Contenido inferior -->
+            <div class="hero__bottom">
+                
+                <!-- Métricas de experiencia -->
+                <div class="hero__experience animate-fadeInUp delay-3">
+                    <div class="experience__item">
+                        <strong class="experience__value" data-i18n="hero.exp-1-value">5+ años</strong>
+                        <span class="experience__label" data-i18n="hero.exp-1-label">Product & Service Design</span>
+                    </div>
+                    <div class="experience__divider"></div>
+                    <div class="experience__item">
+                        <strong class="experience__value" data-i18n="hero.exp-2-value">3 sectores</strong>
+                        <span class="experience__label" data-i18n="hero.exp-2-label">Salud · Fintech · Educación</span>
+                    </div>
+                    <div class="experience__divider"></div>
+                    <div class="experience__item">
+                        <strong class="experience__value" data-i18n="hero.exp-3-value">End-to-end</strong>
+                        <span class="experience__label" data-i18n="hero.exp-3-label">Discovery → Delivery</span>
+                    </div>
+                </div>
+                
+                <!-- Botones -->
+                <div class="hero__actions animate-fadeInUp delay-4">
+                    <a href="#proyectos" class="btn btn--primary">
+                        <i class="fas fa-briefcase"></i>
+                        <span data-i18n="hero.btn-projects">Ver case studies</span>
+                    </a>
+                    <a href="./assets/Gabriela Ojeda Semidey - En.pdf" download class="btn btn--secondary btn--download">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="hero.btn-cv">Descargar CV</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielaojedasemidey/" target="_blank" class="btn btn--secondary">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                
+                <!-- Stack de herramientas de producto -->
+                <div class="hero__stack">
+                    <div class="stack-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+                    <div class="stack-item"><i class="fas fa-chalkboard-teacher"></i><span>Miro</span></div>
+                    <div class="stack-item"><i class="fas fa-tasks"></i><span>Jira / Notion</span></div>
+                    <div class="stack-item"><i class="fas fa-search"></i><span>User Research</span></div>
+                    <div class="stack-item"><i class="fas fa-route"></i><span>Service Design</span></div>
+                    <div class="stack-item"><i class="fas fa-project-diagram"></i><span>Agile / Scrum</span></div>
+                    <div class="stack-item"><i class="fas fa-list-ol"></i><span>Backlog & Roadmap</span></div>
+                    <div class="stack-item"><i class="fas fa-chart-line"></i><span>Data-driven</span></div>
+                    <div class="stack-item"><i class="fas fa-sitemap"></i><span>Double Diamond</span></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / SOBRE MÍ -->
+    <section id="sobre-mi" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="badge badge--primary">
+                    <i class="fas fa-user"></i>
+                    <span data-i18n="about.badge">Sobre mí</span>
+                </div>
+                <h2 class="section-title" data-i18n="about.title">Una perspectiva única</h2>
+                <p class="section-description" data-i18n="about.description">
+                    Vengo del mundo del diseño estratégico y me muevo con fluidez entre usuarios, negocio y tecnología.
+                    Eso me hace una Product Owner diferente.
+                </p>
+            </div>
+            
+            <div class="about__grid">
+                <div class="about__content scroll-reveal">
+                    <h3>
+                        <i class="fas fa-compass" style="color: var(--primary);"></i>
+                        <span data-i18n="about.subtitle">Mi enfoque</span>
+                    </h3>
+                    <p data-i18n="about.text-1">
+                        Antes de definir cualquier feature, me pregunto: ¿esto resuelve un problema real del usuario y genera valor al negocio?
+                        Mi background en Service Design y UX Research me permite ir más allá del backlog — identifico las causas raíz,
+                        mapeo los sistemas detrás de los problemas y tomo decisiones informadas con datos y contexto.
+                    </p>
+                    <p data-i18n="about.text-2">
+                        Entiendo el lenguaje de los developers porque sé lo que es construir. Entiendo a los usuarios porque he hecho
+                        research durante años. Y entiendo al negocio porque siempre he trabajado alineando ambos.
+                        Ese triángulo es donde vivo.
+                    </p>
+
+                    <!-- Timeline -->
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="timeline__marker">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="timeline__content">
+                                <h4 data-i18n="timeline.1.title">Consultora independiente – Product & UX Strategy</h4>
+                                <p><strong data-i18n="timeline.1.period">2025 - Presente · Remoto (LATAM y España)</strong><br>
+                                    <span data-i18n="timeline.1.text">Asesoría en estrategia de producto, facilitación de workshops y mentoría en UX y
+                                        Service Design para equipos multidisciplinarios.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__marker">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="timeline__content">
+                                <h4 data-i18n="timeline.2.title">Fruta Global – Service & UX Designer</h4>
+                                <p><strong data-i18n="timeline.2.period">Mar 2023 – Jul 2023 · España</strong><br>
+                                    <span data-i18n="timeline.2.text">Diseño de blueprints de servicio, talleres de co-creación con comunidades e
+                                        indicadores de sostenibilidad alineados a objetivos corporativos.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__marker">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="timeline__content">
+                                <h4 data-i18n="timeline.3.title">Continuum HQ – UX & Service Designer</h4>
+                                <p><strong data-i18n="timeline.3.period">Ene 2020 – Feb 2022 · Lima, Perú</strong><br>
+                                    <span data-i18n="timeline.3.text">Research, Customer Journey Maps y Service Blueprints en proyectos de fintech,
+                                        salud y educación bajo metodologías ágiles.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Highlight cards -->
+                <div class="about__highlights scroll-reveal">
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="highlight-card__content">
+                            <h4 data-i18n="highlight.1.title">Visión de Producto</h4>
+                            <p data-i18n="highlight.1.text">Defino roadmaps y priorizo backlogs con criterios claros: valor para el usuario,
+                                viabilidad técnica e impacto en negocio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="highlight-card__content">
+                            <h4 data-i18n="highlight.2.title">Research & Discovery</h4>
+                            <p data-i18n="highlight.2.text">80+ entrevistas de usuarios, pruebas de usabilidad, análisis de datos. Tomo decisiones
+                                basadas en evidencia, no en suposiciones.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="highlight-card__content">
+                            <h4 data-i18n="highlight.3.title">Puente entre mundos</h4>
+                            <p data-i18n="highlight.3.text">Hablo el idioma de los developers. Sé lo que es posible técnicamente y escribo criterios
+                                de aceptación que los equipos entienden de verdad.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="highlight-card__content">
+                            <h4 data-i18n="highlight.4.title">Facilitación & Alineación</h4>
+                            <p data-i18n="highlight.4.text">Facilito workshops y design sprints para alinear stakeholders, equipos de diseño,
+                                desarrollo y negocio en torno a objetivos comunes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- CTA Journey -->
+            <div class="projects__cta scroll-reveal">
+                <a href="journey.html" class="btn btn--secondary btn--lg">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span data-i18n="journey.btn">Conoce mi recorrido profesional completo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="projects__cta-text" data-i18n="journey.text-1">
+                    Mi evolución desde Service Designer hasta Product Owner, certificaciones y proyectos clave.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / CASE STUDIES -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="badge badge--primary">
+                    <i class="fas fa-briefcase"></i>
+                    <span data-i18n="projects.badge">Portafolio</span>
+                </div>
+                <h2 class="section-title" data-i18n="projects.title">Case Studies</h2>
+                <p class="section-description" data-i18n="projects.description">
+                    Proyectos que demuestran mi capacidad para ir del problema al producto — con research, estrategia y entrega real.
+                </p>
+            </div>
+            
+            <div class="projects__grid">
+                
+                <!-- Lumi -->
+                <article class="project-card card scroll-reveal" data-category="frontend">
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--info">
+                                <i class="fas fa-book-open"></i>
+                                <span data-i18n="badge.case-study">Case Study</span>
+                                </span>
+                                </div>
+                                <div class="project-card__meta">
+                            <span><i class="fas fa-robot"></i> AI Product</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            </div>
+                            <h3 class="project-card__title">Lumi - AI Integration Project</h3>
+                            <p class="project-card__description" data-i18n="project.lumi.desc">
+                            Conceptualización y diseño de una plataforma educativa con IA. Desde la definición del producto hasta la implementación.
+                            (WIP)
+                            </p>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <strong class="metric__value">AI</strong>
+                                    <span class="metric__label">Integration</span>
+                                </div>
+                                <div class="metric">
+                                <strong class="metric__value">Full</strong>
+                                <span class="metric__label">Discovery→Dev</span>
+                                </div>
+                                <div class="metric">
+                                <strong class="metric__value">WIP</strong>
+                                <span class="metric__label">En progreso</span>
+                                </div>
+                                </div>
+                                <div class="project-card__tags">
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Service Design</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-i18n="project.link-code">Código</span>
+                                </a>
+                                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project.link-demo">Demo</span>
+                                </a>
+                                <a href="./proyectos/lumi.html" class="project-link">
+                                    <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </div>
+                                </div>
+                                </article>
+
+                <!-- Clínica Alemana - Teleconsulta -->
+                <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
+                    <article class="project-card card scroll-reveal" data-category="ux-ui">
+                        <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg')">
+                        </div>
+                        <div class="project-card__content">
+                            <div style="margin-bottom: 12px;">
+                                <span class="badge badge--success">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="badge.implemented">Implemented</span>
+                                    </span>
+                                    </div>
+                                    <div class="project-card__meta">
+                                <span><i class="fas fa-hospital"></i> Healthcare · Chile</span>
+                                <span><i class="fas fa-calendar"></i> 2020</span>
+                                </div>
+                                <h3 class="project-card__title" data-i18n="project.teleconsulta.hero-title">Clínica Alemana - Teleconsulta</h3>
+                                <p class="project-card__description" data-i18n="project.teleconsulta.desc">
+                                Diseño end-to-end de una plataforma de videollamadas médicas: research, blueprints de servicio, prototipado e
+                                integración con sistemas existentes.
+                                </p>
+                                <div class="project-card__metrics">
+                                    <div class="metric">
+                                        <strong class="metric__value">20%</strong>
+                                    <span class="metric__label">↑ Teleconsultas</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">-40%</strong>
+                                        <span class="metric__label" data-i18n="project.teleconsulta.metric2">Reclamos</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">+1.500</strong>
+                                        <span class="metric__label" data-i18n="project.teleconsulta.metric3">Telerehabilitación</span>
+                                    </div>
+                                    </div>
+                                    <div class="project-card__tags">
+                                <span class="tag">Service Design</span>
+                                <span class="tag">Healthcare</span>
+                                <span class="tag">UX Research</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
+                                    <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            </div>
+                            </article>
+                            </a>
+
+                <!-- BID -->
+                <a href="./proyectos/bid-secretaria.html" class="project-card-link">
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                        <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
+                        </div>
+                        <div class="project-card__content">
+                            <div style="margin-bottom: 12px;">
+                                <span class="badge badge--success">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="badge.implemented">Implemented</span>
+                                    </span>
+                                    </div>
+                                    <div class="project-card__meta">
+                                <span><i class="fas fa-globe"></i> Chile / USA</span>
+                                <span><i class="fas fa-calendar"></i> 2021</span>
+                                </div>
+                                <h3 class="project-card__title">BID - <span data-i18n="project.bid.title">Rediseño de Servicios</span></h3>
+                                <p class="project-card__description" data-i18n="project.bid.desc">
+                                Rediseño estratégico de servicios internos en la Secretaría del BID. +80 entrevistas, diagnóstico de +50 sistemas y
+                                rediseño de procesos críticos para la organización.
+                                </p>
+                                <div class="project-card__metrics">
+                                    <div class="metric">
+                                        <strong class="metric__value">80+</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric1">Entrevistas</span>
+                                    </div>
+                                    <div class="metric">
+                                    <strong class="metric__value">50+</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric2">Sistemas</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">6 mo</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric3">Duración</span>
+                                    </div>
+                                    </div>
+                                    <div class="project-card__tags">
+                                        <span class="tag">Service Design</span>
+                                        <span class="tag">Strategy</span>
+                                        <span class="tag">Research</span>
+                                    </div>
+                                    <div class="project-card__actions">
+                                        <a href="./proyectos/bid-secretaria.html" class="project-link">
+                                            <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    </article>
+                                    </a>
+                
+            </div>
+            
+            <!-- CTA Ver todos -->
+            <div class="projects__cta scroll-reveal">
+                <a href="todos-proyectos.html" class="btn btn--primary btn--lg">
+                    <i class="fas fa-th"></i>
+                    <span data-i18n="projects.btn-all">Ver todos los proyectos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="projects__cta-text" data-i18n="projects.btn-all-text">
+                    Portafolio completo de producto, service design y UX
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS — id cambia a #skills, nav apunta ahí -->
+    <section id="skills" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="badge badge--primary">
+                    <i class="fas fa-layer-group"></i>
+                    <span data-i18n="skills.badge">Expertise</span>
+                </div>
+                <h2 class="section-title" data-i18n="skills.title">Skills & Herramientas</h2>
+                <p class="section-description" data-i18n="skills.description">
+                    Mi stack de producto: desde el discovery hasta la entrega, pasando por la estrategia y la alineación de equipos.
+                </p>
+            </div>
+
+            <div class="skills__grid scroll-reveal">
+<!-- Producto & Estrategia -->
+                <div class="skill-category card">
+                    <div class="skill-category__header">
+                        <i class="fas fa-bullseye"></i>
+                        <h3 data-i18n="skills.cat-1">Producto & Estrategia</h3>
+                    </div>
+                    <div class="skill-category__pills">
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-chess"></i>
+                            <span>Product Strategy</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-list-ol"></i>
+                            <span>Backlog & Roadmap</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-route"></i>
+                            <span>Service Design</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-search"></i>
+                            <span>User Research</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-map"></i>
+                            <span>Customer Journey Maps</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Service Blueprints</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-filter"></i>
+                            <span>Priorización (RICE, MoSCoW)</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Procesos -->
+                <div class="skill-category card">
+                    <div class="skill-category__header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3 data-i18n="skills.cat-2">Frameworks & Procesos</h3>
+                    </div>
+                    <div class="skill-category__pills">
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Agile / Scrum / Kanban</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-gem"></i>
+                            <span>Design Thinking</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-adjust"></i>
+                            <span>Double Diamond</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-bolt"></i>
+                            <span>Design Sprints</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-th-large"></i>
+                            <span>Business Model Canvas</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Value Proposition Canvas</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Jobs To Be Done (JTBD)</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas & Tech -->
+                <div class="skill-category card">
+                    <div class="skill-category__header">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-i18n="skills.cat-3">Herramientas & Tech</h3>
+                    </div>
+                    <div class="skill-category__pills">
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-chalkboard"></i>
+                            <span>Miro / Mural</span>
+                            <span class="skill-pill__dot"></span>
+                            </div>
+                            <div class="skill-pill skill-pill--advanced">
+                            <i class="fas fa-sticky-note"></i>
+                            <span>Notion</span>
+                            <span class="skill-pill__dot"></span>
+                            </div>
+                            <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Google Analytics / NPS / SUS</span>
+                            <span class="skill-pill__dot"></span>
+                            </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-vial"></i>
+                            <span>A/B Testing</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML / CSS (básico)</span>
+                            <span class="skill-pill__dot"></span>
+                            </div>
+                        <div class="skill-pill skill-pill--intermediate">
+                            <i class="fas fa-tasks"></i>
+                            <span>Jira / Linear</span>
+                            <span class="skill-pill__dot"></span>
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+
+            <!-- Leyenda -->
+            <div class="skills__legend scroll-reveal">
+                <span class="legend__item">
+                    <span class="legend__dot legend__dot--advanced"></span>
+                    <span data-i18n="skills.legend-advanced">Advanced</span>
+                </span>
+                <span class="legend__item">
+                    <span class="legend__dot legend__dot--intermediate"></span>
+                    <span data-i18n="skills.legend-intermediate">Intermediate</span>
+                </span>
+                <span class="legend__item">
+                    <span class="legend__dot legend__dot--learning"></span>
+                    <span data-i18n="skills.legend-learning">Learning</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="contact section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="badge badge--secondary">
+                    <i class="fas fa-envelope"></i>
+                    <span data-i18n="contact.badge">Contacto</span>
+                </div>
+                <h2 class="section-title" data-i18n="contact.title">¿Trabajamos juntos?</h2>
+                <p class="section-description" data-i18n="contact.description">
+                    Disponible para posiciones de Product Owner, Service Design y Product Strategy — remoto o presencial en Madrid.
+                </p>
+            </div>
+            
+            <div class="contact__grid">
+                <!-- Info izquierda -->
+                <div class="contact__info scroll-reveal">
+                    <h3>
+                        <i class="fas fa-sparkles"></i>
+                        <span data-i18n="contact.why-title">¿Por qué trabajar conmigo?</span>
+                    </h3>
+                    <p data-i18n="contact.why-text">
+                        No solo gestiono un backlog. Entiendo el problema de raíz, alinear equipos,
+                        tomar decisiones con datos y llevar un producto desde la idea hasta la entrega.
+                        Mi background en diseño y tecnología es una ventaja real para tu equipo.
+                    </p>
+                    
+                    <div class="contact__methods">
+                        <a href="mailto:gabrielaojedasemidey@gmail.com" class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method__text">
+                                <strong>Email</strong>
+                                <span>gabrielaojedasemidey@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/gabrielaojedasemidey/" target="_blank" class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-method__text">
+                                <strong>LinkedIn</strong>
+                                <span data-i18n="contact.linkedin-text">Conectemos profesionalmente</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/GabrielaSemidey" target="_blank" class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-method__text">
+                                <strong>GitHub</strong>
+                                <span data-i18n="contact.github-text">Proyectos y código</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- CTA derecha -->
+                <div class="contact__cta scroll-reveal">
+                    <h3>
+                        <i class="fas fa-briefcase"></i> 
+                        <span data-i18n="contact.cta-title">Buscando nuevas oportunidades</span>
+                    </h3>
+                    <p data-i18n="contact.cta-text">
+                        Abierta a posiciones de Product Owner, Service Design o Product Strategy.
+                        Remoto o presencial en Madrid. Inglés C1.
+                    </p>
+
+                    <!-- Tags actualizados -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; justify-content: center;">
+                        <span class="tag">Product Owner</span>
+                        <span class="tag">Service Designer</span>
+                        <span class="tag">Product Strategy</span>
+                        <span class="tag">Remote OK</span>
+                        <span class="tag">Madrid</span>
+                        <span class="tag">English C1</span>
+                    </div>
+
+                    <a href="mailto:gabrielaojedasemidey@gmail.com" class="btn btn--secondary btn--block" style="margin-top: 12px;">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact.btn-email">Enviar mensaje</span>
+                    </a>
+
+                    <a href="./assets/Gabriela Ojeda Semidey - En.pdf" download class="btn btn--secondary btn--block btn--download" style="margin-top: 12px;">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="contact.btn-cv">Descargar CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-heart"></i> 
+                © 2025 Gabriela Ojeda Semidey · Product Owner & Service Designer · Madrid, España
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts — misma ruta que tenías en el original -->
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

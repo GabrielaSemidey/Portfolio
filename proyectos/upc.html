@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UPC - Rediseño de Admisión | Gabriela Ojeda Semidey">
+    <title>UPC - Rediseño de Admisión | Gabriela Ojeda Semidey</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/sections.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+<body data-category="service-design">
+    
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <span>Gabriela OS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+                <li><a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="../index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+                <li><a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+                li><a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+                
+                <!-- 🔥 LANGUAGE TOGGLE -->
+                <li>
+                    <div class="language-toggle">
+                        <button class="language-toggle__btn" 
+                                type="button" 
+                                aria-label="Cambiar idioma"
+                                title="Switch language"
+                                data-lang="es">
+                            <span class="language-toggle__flag">🇪🇸</span>
+                            <span class="language-toggle__text">ES</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="reading-progress__bar"></div>
+        </div>
+        
+    </header>
+
+    <!-- Hero Visual -->
+    <section class="project-hero" data-category="service-design" id="hero">
+    <div class="project-hero__banner" style="background-image: url('../assets/images/proyectos/upc/banner.jpeg');"></div>
+    <div class="container">
+            <a href="../todos-proyectos.html" class="back-link back-link--light">
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="project.back-projects">Volver a proyectos</span>
+            </a>
+            
+            <div class="project-hero__content-wrapper">
+                <div class="project-hero__badges">
+                    <span class="badge badge--secondary">
+                        <i class="fas fa-graduation-cap"></i> <span data-i18n="badge.education">Educación</span>
+                    </span>
+                    <span class="badge badge--secondary">
+                        <i class="fas fa-calendar"></i> 2019
+                    </span>
+                    <span class="badge badge--success">
+                        <i class="fas fa-check-circle"></i> <span data-i18n="badge.partial">Implementado Parcialmente</span>
+                    </span>
+                </div>
+                
+                <h1 class="project-hero__title" data-i18n="project.upc.hero-title">
+                    UPC – Rediseño del Área de Admisión
+                </h1>
+                
+                <p class="project-hero__description" data-i18n="project.upc.hero-subtitle">
+                    Rediseño omnicanal de la experiencia de admisión en UPC, integrando espacios físicos y plataforma digital para postulantes y padres. Proyecto con testeos reales en sedes con ~30 usuarios en contexto de alta afluencia.
+                </p>
+                
+                <a href="#contenido" class="btn btn--hero">
+                    <i class="fas fa-book-open"></i>
+                    <span data-i18n="project-detail.view-case">Ver caso completo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="project-quick-info">
+        <div class="container">
+            <div class="quick-info__grid">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.year">Año</span>
+                        <span class="info-item__value">2019</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.duration">Duración</span>
+                        <span class="info-item__value">4 <span data-i18n="time.months">meses</span></span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.location">Ubicación</span>
+                        <span class="info-item__value">Lima, Perú</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <span class="info-item__label" data-i18n="project-detail.role">Rol</span>
+                        <span class="info-item__value">Service Designer</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="info-item__label">Testeos</span>
+                        <span class="info-item__value">~30 usuarios reales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section id="contenido" class="project-content section">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Main Content -->
+                <div class="main-content">
+                    
+                    <!-- Contexto -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h2 data-i18n="project.bid.context-title">Contexto</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.upc.context-text-1">
+                                La Universidad Peruana de Ciencias Aplicadas (UPC) buscaba rediseñar su experiencia de atención para postulantes y padres de familia en sus sedes físicas. Nuestro objetivo desde <strong>Continuum</strong> fue mejorar tanto el proceso como el espacio físico, proponiendo soluciones omnicanal que alinearan la experiencia digital y presencial durante el proceso de admisión.
+                            </p>
+                            <p data-i18n="project.upc.context-text-2">
+                                <strong>El contexto organizacional era complejo:</strong> Al momento del kick-off, descubrimos que existían 3 proyectos similares corriendo en paralelo dentro de la universidad, cada uno trabajando de forma aislada (en silos) sobre la digitalización de inscripción. Nuestro equipo logró desarrollar hallazgos valiosos y propuestas concretas que se diferenciaban por un enfoque integral: no solo diseñamos la experiencia digital, sino también el rediseño completo del espacio físico de admisiones.
+                            </p>
+                            <p data-i18n="project.upc.context-text-3">
+                                Parte de nuestras soluciones se implementaron directamente en las sedes físicas, mientras que otros insumos fueron absorbidos por un proyecto distinto que tenía mayor peso político dentro de la institución. Aun así, el impacto de nuestra propuesta fue significativo y validado con testeos reales en condiciones de alta afluencia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Desafío -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.challenge">El Desafío</h2>
+                        </div>
+                        <div class="block-content block-content--quote">
+                            <p data-i18n="project.upc.challenge-text">
+                                <i class="fas fa-quote-left"></i>
+                                Asegurar que postulantes y padres de familia tengan una buena experiencia en el proceso de admisión, que los conduzca a escoger y permanecer en la UPC. Enfocarnos en un solo canal haría que pensemos en una solución en silo. Es necesario ver el servicio como una sola gran experiencia omnicanal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mi Rol -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.my-role">Mi Rol en el Proyecto</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.upc.role-text">
+                                Como <strong>Service Designer en Continuum</strong>, participé en todas las etapas del proyecto: desde la investigación inicial, ideación, prototipado y testeo de soluciones, hasta la entrega final.
+                            </p>
+                            <p>
+                                <strong data-i18n="project-detail.team-composition">Composición del equipo:</strong>
+                            </p>
+                            <ul class="content-list">
+                                <li data-i18n="project.upc.team-1">Lead UX Designer</li>
+                                <li data-i18n="project.upc.team-2">UX/UI Designer</li>
+                                <li><span data-i18n="project.upc.team-3">Yo (Service Designer)</span></li>
+                                <li data-i18n="project.upc.team-4">1 Arquitecta</li>
+                            </ul>
+                            <p>
+                                <strong data-i18n="project-detail.responsibilities">Mi enfoque estuvo en:</strong>
+                            </p>
+                            <ul class="content-list">
+                                <li data-i18n="project.upc.resp-1">Identificar fricciones clave en la experiencia actual de admisión</li>
+                                <li data-i18n="project.upc.resp-2">Diseñar una solución integral que integrara canales digitales, espacios físicos y equipos de atención</li>
+                                <li data-i18n="project.upc.resp-3">Facilitar sesiones de co-creación con el equipo de UPC</li>
+                                <li data-i18n="project.upc.resp-4">Coordinar y participar en pruebas reales en 2 sedes con ~30 usuarios</li>
+                                <li data-i18n="project.upc.resp-5">Acompañar la traducción de insights en entregables prácticos para implementación</li>
+                                <li data-i18n="project.upc.resp-6">Mapear el journey completo del postulante desde el primer contacto hasta la matrícula</li>
+                                <li data-i18n="project.upc.resp-7">Diseñar el rol del "Genius" como orquestador de la experiencia</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Proceso -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--primary">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.process">Enfoque y Proceso</h2>
+                        </div>
+                        <div class="block-content">
+                            <p data-i18n="project.upc.process-intro">
+                                Implementamos un proceso de diseño centrado en el usuario con foco en la omnicanalidad, asegurando que cada punto de contacto estuviera integrado y respaldado por una misma base de información.
+                            </p>
+
+                            <div class="timeline">
+                                <div class="timeline__item">
+                                    <div class="timeline__marker">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.upc.process-1-title">1. Discovery & Mapeo de Experiencia Actual</h4>
+                                        <p data-i18n="project.upc.process-1-text">Investigación profunda del contexto actual:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.upc.process-1-item-1">Investigación en terreno: observación directa y entrevistas a postulantes, padres y personal de admisión</li>
+                                            <li data-i18n="project.upc.process-1-item-2">Mapeo del journey actual del postulante, desde su primer contacto hasta el cierre del proceso</li>
+                                            <li data-i18n="project.upc.process-1-item-3">Identificación de fricciones: duplicidad de información, baja visibilidad de la oferta académica, entornos físicos poco cómodos o poco intuitivos</li>
+                                            <li data-i18n="project.upc.process-1-item-4">Descubrimiento de 3 proyectos paralelos trabajando en silos dentro de la universidad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.upc.process-2-title">2. Ideación y Conceptualización</h4>
+                                        <p data-i18n="project.upc.process-2-text">Co-creación de la visión omnicanal:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.upc.process-2-item-1">Facilitación de workshops con el equipo UPC para imaginar una experiencia ideal</li>
+                                            <li data-i18n="project.upc.process-2-item-2">Generación de conceptos de mejora: Portal del postulante (plataforma digital centralizada), Rediseño físico de sedes (zonas de bienvenida, visualización de carreras, espacios sin barreras), Rol "Genius" (orquestador de toda la experiencia), Sistema de turnos (ticketera en iPad), Simulador de costos (herramienta digital interactiva)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker">
+                                        <i class="fas fa-hammer"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.upc.process-3-title">3. Prototipado y Testeo Real</h4>
+                                        <p data-i18n="project.upc.process-3-text">Validación con usuarios reales en contexto real:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.upc.process-3-item-1"><strong>Testeo físico en 2 sedes</strong> (Monterrico + otra)</li>
+                                            <li data-i18n="project.upc.process-3-item-2"><strong>~30 usuarios totales</strong> (padres y postulantes)</li>
+                                            <li data-i18n="project.upc.process-3-item-3"><strong>4 horas por sede</strong> en día de alta afluencia</li>
+                                            <li data-i18n="project.upc.process-3-item-4">Evaluación de elementos digitales, mobiliario, flujo de atención y señalización</li>
+                                            <li data-i18n="project.upc.process-3-item-5"><strong>Testeamos un servicio completo con atención real</strong>, no solo prototipos</li>
+                                            <li data-i18n="project.upc.process-3-item-6">Identificación de aspectos que aumentaban percepción de cercanía: Eliminación del counter como barrera, Mobiliario cómodo tipo sala de estar, Uso compartido de pantallas (iPad/laptops) entre asesor y postulante, Información visible y accesible desde la entrada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <div class="timeline__marker">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="timeline__content">
+                                        <h4 data-i18n="project.upc.process-4-title">4. Entregables Finales y Roadmap</h4>
+                                        <p data-i18n="project.upc.process-4-text">Documentación completa para implementación:</p>
+                                        <ul class="content-list">
+                                            <li data-i18n="project.upc.process-4-item-1">Documentación completa del nuevo journey de admisión</li>
+                                            <li data-i18n="project.upc.process-4-item-2">Recomendaciones para rediseño de 4 sedes físicas (Monterrico, San Miguel, San Isidro, Villa)</li>
+                                            <li data-i18n="project.upc.process-4-item-3">Prototipos funcionales: simulador de costos, sistema de turnos</li>
+                                            <li data-i18n="project.upc.process-4-item-4">Guías para implementación por fases</li>
+                                            <li data-i18n="project.upc.process-4-item-5">Planos y layouts de cada sede con especificaciones de mobiliario</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hallazgos Clave del Testeo -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                            <h2 data-i18n="project.upc.findings-title">Hallazgos Clave del Testeo</h2>
+                        </div>
+                        <div class="block-content">
+                            <h4 data-i18n="project.upc.finding-1-title">🔗 La omnicanalidad es clave</h4>
+                            <p data-i18n="project.upc.finding-1-text">
+                                Todos los puntos de contacto deben complementarse y estar soportados por una sola base de información consolidada. Los canales no pueden funcionar de forma aislada: la experiencia digital debe reflejar y potenciar la experiencia física, y viceversa.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-2-title">👨‍👩‍👧 Postulantes vs Padres: necesidades distintas</h4>
+                            <p data-i18n="project.upc.finding-2-text">
+                                Los postulantes captan rápidamente el uso y valor de la plataforma digital. Los padres necesitan complementarlo con contacto humano. Esto confirmó que la solución debía ser híbrida, no solo digital.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-3-title">📅 Momentos clave estandarizados por canal</h4>
+                            <p data-i18n="project.upc.finding-3-text">
+                                Es importante definir qué momentos deben ser presenciales y cuáles digitales: <strong>Presencial:</strong> Tomar visitas guiadas, tomar examen de admisión. <strong>Digital:</strong> Agendar visitas, agendar y pagar examen, ver resultados.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-4-title">🔗 Registro temprano = vínculo sólido</h4>
+                            <p data-i18n="project.upc.finding-4-text">
+                                El registro en la plataforma del postulante debe ser lo más temprano posible pues es una manera de solidificar su vínculo con la universidad hasta que decida incorporarse.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-5-title">🪑 Mesas redondas y mobiliario cómodo generan cercanía</h4>
+                            <p data-i18n="project.upc.finding-5-text">
+                                La atención en mesas redondas y los muebles cómodos, generan cercanía entre el postulante y el asesor. Este ambiente también hace que la espera sea más placentera.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-6-title">💻 iPads y laptops compartidas mejoran transparencia</h4>
+                            <p data-i18n="project.upc.finding-6-text">
+                                Es necesario que los sistemas de atención estén disponibles para laptops y iPads ya que estos mejoran la interacción entre el postulante y el asesor pues ambos ven la misma información y esta se siente más transparente.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-7-title">🎯 El rol del "Genius" como orquestador</h4>
+                            <p data-i18n="project.upc.finding-7-text">
+                                El Genius cumple un rol importante y debe ser quien orqueste toda la escena. Por eso es importante armarlo con las herramientas e información necesarias. Este rol da la bienvenida, guía y resuelve dudas iniciales sin barrera física.
+                            </p>
+
+                            <h4 data-i18n="project.upc.finding-8-title">📚 Visibilidad de la oferta completa desde la entrada</h4>
+                            <p data-i18n="project.upc.finding-8-text">
+                                El mostrar la oferta completa de carreras desde la entrada es importante para quienes van a pedir informes. Los usuarios se sorprendían positivamente al descubrir carreras que no sabían que existían en la universidad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Problemáticas vs Descubrimientos -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h2 data-i18n="project.upc.problems-title">Del Problema a la Solución</h2>
+                        </div>
+                        <div class="block-content">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                                <div>
+                                    <h4 style="color: #dc3545; margin-bottom: 1rem;" data-i18n="project.upc.problems-current-title">❌ Problemáticas del Espacio Actual</h4>
+                                    <ul class="content-list">
+                                        <li data-i18n="project.upc.problems-item-1">No se encuentra rápidamente el área de admisión al ingresar</li>
+                                        <li data-i18n="project.upc.problems-item-2">Ingreso genera sensación de asfixia por disposición de muebles</li>
+                                        <li data-i18n="project.upc.problems-item-3">Módulos inapropiados con espacio de atención muy reducido</li>
+                                        <li data-i18n="project.upc.problems-item-4">Computadora tapa la visibilidad al cliente</li>
+                                        <li data-i18n="project.upc.problems-item-5">Espacios con poca acústica</li>
+                                        <li data-i18n="project.upc.problems-item-6">Tablets de poco uso en implementación actual</li>
+                                        <li data-i18n="project.upc.problems-item-7">Iluminación poco apropiada</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style="color: #28a745; margin-bottom: 1rem;" data-i18n="project.upc.discoveries-title">✅ Descubrimientos en Testeo del Prototipo</h4>
+                                    <ul class="content-list">
+                                        <li data-i18n="project.upc.discoveries-item-1">Pared con folletería de todas las carreras sorprendió positivamente</li>
+                                        <li data-i18n="project.upc.discoveries-item-2">Los clientes se sentían mucho más cómodos en salas pequeñas</li>
+                                        <li data-i18n="project.upc.discoveries-item-3">Trato más amistoso sin barrera del counter</li>
+                                        <li data-i18n="project.upc.discoveries-item-4">Asesor acercándose al cliente generaba mayor comodidad</li>
+                                        <li data-i18n="project.upc.discoveries-item-5">Asesores tenían sensación más positiva al moverse vs estar detrás del counter</li>
+                                        <li data-i18n="project.upc.discoveries-item-6">Mesas pequeñas con altura apropiada creaban continuidad visual</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.results">Resultados</h2>
+                        </div>
+                        <div class="block-content">
+                            
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card__value">~30</div>
+                                    <div class="metric-card__label" data-i18n="project.upc.result-1-value">Usuarios testeados en contexto real</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">2</div>
+                                    <div class="metric-card__label" data-i18n="project.upc.result-2-value">Sedes con testeos físicos</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">4</div>
+                                    <div class="metric-card__label" data-i18n="project.upc.result-3-value">Sedes rediseñadas</div>
+                                </div>
+
+                                <div class="metric-card">
+                                    <div class="metric-card__value">8h</div>
+                                    <div class="metric-card__label" data-i18n="project.upc.result-4-value">Testeos en alta afluencia</div>
+                                </div>
+                            </div>
+
+                            <h4 data-i18n="project-detail.specific-impacts">Impactos específicos:</h4>
+                            <ul class="checklist">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-1"><strong>Digitalización de inscripción implementada</strong> (flujo casi idéntico a nuestra propuesta)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-2">Cambios en espacio físico implementados en sedes basados en nuestro informe</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-3">Herramientas digitales propuestas (simulador de costos, sistema de turnos) validadas con usuarios reales</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-4">Eliminación progresiva de counters como barreras físicas</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-5">Implementación de zonas de visualización de carreras desde la entrada</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-6">Información generada alimentó decisiones estratégicas a pesar de la fragmentación entre proyectos</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="project.upc.impact-7">Se entregó una visión clara y centrada en el usuario para la admisión universitaria, con impacto parcial pero sostenible</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Aprendizajes -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.learnings">Aprendizajes Clave</h2>
+                        </div>
+                        <div class="block-content">
+                            <h4 data-i18n="project.upc.learning-1-title">Diseñar en contextos con estructuras fragmentadas</h4>
+                            <p data-i18n="project.upc.learning-1-text">
+                                Descubrir 3 proyectos paralelos trabajando en silos fue un desafío diplomático además de metodológico. Aprendí que en organizaciones complejas, el diseño de servicios debe ser aún más riguroso, empático y diplomático. No basta con tener la mejor solución: hay que navegar dinámicas políticas y tensiones de poder.
+                            </p>
+
+                            <h4 data-i18n="project.upc.learning-2-title">Testear en contexto real es invaluable</h4>
+                            <p data-i18n="project.upc.learning-2-text">
+                                Probar durante 4 horas en cada sede, en días de alta afluencia, con usuarios reales (no reclutados), nos dio insights que ningún laboratorio de usabilidad podría replicar. Ver cómo los asesores se movían entre las mesas, cómo los padres reaccionaban a la falta de counter, cómo los postulantes descubrían carreras en la pared... eso solo pasa en contexto real.
+                            </p>
+
+                            <h4 data-i18n="project.upc.learning-3-title">La omnicanalidad no es opcional</h4>
+                            <p data-i18n="project.upc.learning-3-text">
+                                Los jóvenes prefieren control digital, los padres valoran contacto humano. La experiencia física debe ser parte del servicio, no solo un soporte. Los espacios deben reflejar confianza, transparencia y orden visual. Ningún canal puede funcionar aislado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reflexiones -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.reflections">Reflexiones</h2>
+                        </div>
+                        <div class="block-content block-content--quote">
+                            <p data-i18n="project.upc.reflection-quote">
+                                <i class="fas fa-quote-left"></i>
+                                Diseñar es también navegar realidades organizacionales complejas.
+                            </p>
+                            <p data-i18n="project.upc.reflection-1">
+                                Este proyecto fue un reto político y operativo, pero también una oportunidad para aprender a sostener la visión del usuario en medio de tensiones de poder y prioridades institucionales. Ver que parte de nuestro diseño físico fue implementado, y que el flujo digital se adoptó casi intacto (aunque con otra visualización), fue la confirmación de que cuando diseñamos con rigor y evidencia real, el valor se impone.
+                            </p>
+                            <p data-i18n="project.upc.reflection-2">
+                                También aprendí que a veces los mejores proyectos no son los que se implementan al 100%, sino los que logran cambiar conversaciones, influir en decisiones y demostrar que otra forma de hacer las cosas es posible. Incluso cuando nuestros entregables fueron "absorbidos" por otros proyectos con más peso político, el hecho de que usaran nuestros insights y flujos es una victoria del diseño centrado en el usuario.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Recursos Visuales -->
+                    <div class="content-block">
+                        <div class="block-header">
+                            <div class="block-header__icon block-header__icon--secondary">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h2 data-i18n="project-detail.visual-resources">Recursos Visuales</h2>
+                        </div>
+                        <div class="block-content">
+                            
+                            <!-- Journey Map -->
+                            <h4 data-i18n="project.upc.visual-journey-title">Service Blueprint del Proceso de Admisión previo al proyecto</h4>
+                            <p data-i18n="project.upc.visual-journey-desc">Mapeo completo de la experiencia, desde el primer contacto hasta la matrícula.</p>
+                            <div class="visual-resource">
+                                <img src="../assets/images/proyectos/upc/journey-postulante.jpg" alt="Journey Map - Postulante UPC">
+                                <p class="image-caption" data-i18n="project.upc.visual-journey-caption">Blueprint completo del proceso de admisión</p>
+                            </div>
+
+                            <!-- Planos de Sedes -->
+                            <h4 data-i18n="project.upc.visual-spaces-title">Rediseño de Espacios Físicos</h4>
+                            <p data-i18n="project.upc.visual-spaces-desc">Propuestas de layout para las sedes principales de UPC.</p>
+                            <div class="visual-gallery">
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/upc/sede-monterrico.jpeg" alt="Sede Monterrico">
+                                    <p class="image-caption" data-i18n="project.upc.visual-space-1">Rediseño Sede Monterrico</p>
+                                </div>
+                            </div>
+
+                            <!-- Portal del Postulante -->
+                            <h4 data-i18n="project.upc.visual-portal-title">Portal del Postulante - Prototipos</h4>
+                            <p data-i18n="project.upc.visual-portal-desc">Plataforma digital donde postulantes y padres tienen control total de su proceso.</p>
+                            <div class="visual-gallery">
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/upc/portal-home.png" alt="Portal - Home">
+                                    <p class="image-caption" data-i18n="project.upc.visual-portal-1">Portal del postulante (no puedo mostrar algo más específico por el NDA)</p>
+                                </div>
+                            </div>
+
+                            <!-- Testeos en Sedes -->
+                            <h4 data-i18n="project.upc.visual-testing-title">Testeos Reales en Sedes</h4>
+                            <p data-i18n="project.upc.visual-testing-desc">Fotografías de los testeos con usuarios reales en contexto de alta afluencia.</p>
+                            <div class="visual-gallery">
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/upc/testeo-sede-1.jpg" alt="Testeo en sede">
+                                    <p class="image-caption" data-i18n="project.upc.visual-test-1">Testeo con postulantes y padres</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/upc/testeo-mobiliario.jpg" alt="Testeo mobiliario">
+                                    <p class="image-caption" data-i18n="project.upc.visual-test-2">Validación de mobiliario y espacios</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/proyectos/upc/testeo-genius.jpg" alt="Rol Genius">
+                                    <p class="image-caption" data-i18n="project.upc.visual-test-3">Testeo del rol "Genius"</p>
+                                </div>
+                            </div>
+
+                            <!-- Enlace Externo -->
+                            <h4 data-i18n="project.upc.visual-external-title">Recursos Externos</h4>
+                            <p data-i18n="project.upc.visual-external-text">Caso publicado por Continuum</p>
+                            <a href="https://www.continuumhq.com/casos/upc-rediseno-de-counters-de-admision" target="_blank" rel="noopener" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="project.upc.visual-external-btn">Ver caso en Continuum</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar-sticky">
+                    
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="sidebar.project-info">Info del Proyecto</span></h3>
+                        <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-calendar"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.year">Año</span>
+                                    <span class="sidebar-card__value">2019</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.duration">Duración</span>
+                                    <span class="sidebar-card__value">4 <span data-i18n="time.months">meses</span></span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.location">Ubicación</span>
+                                    <span class="sidebar-card__value">Lima, Perú</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-user"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="project-detail.role">Rol</span>
+                                    <span class="sidebar-card__value">Service Designer</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-building"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.company">Empresa</span>
+                                    <span class="sidebar-card__value">Continuum</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-university"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label" data-i18n="sidebar.client">Cliente</span>
+                                    <span class="sidebar-card__value">UPC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-users"></i> <span data-i18n="sidebar.project-team">Equipo del Proyecto</span></h3>
+                        <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-star"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Lead UX</span>
+                                    <span class="sidebar-card__value">1</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-palette"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">UX/UI Designer</span>
+                                    <span class="sidebar-card__value">1</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-sitemap"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Service Designer</span>
+                                    <span class="sidebar-card__value">1 (<span data-i18n="sidebar.me">yo</span>)</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-drafting-compass"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Arquitecta</span>
+                                    <span class="sidebar-card__value">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-chart-bar"></i> <span data-i18n="sidebar.project-scope">Alcance</span></h3>
+                        <div class="sidebar-card__list">
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-users"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Usuarios testeados</span>
+                                    <span class="sidebar-card__value">~30</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-building"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Sedes rediseñadas</span>
+                                    <span class="sidebar-card__value">4</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-vial"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Sedes con testeo</span>
+                                    <span class="sidebar-card__value">2</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-card__item">
+                                <span class="sidebar-card__icon"><i class="fas fa-clock"></i></span>
+                                <div>
+                                    <span class="sidebar-card__label">Horas de testeo</span>
+                                    <span class="sidebar-card__value">8h (4h x sede)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="sidebar.skills-applied">Habilidades Aplicadas</span></h3>
+                        <div class="sidebar-card__tags">
+                            <span class="tag">Service Design</span>
+                            <span class="tag">UX Research</span>
+                            <span class="tag">Journey Mapping</span>
+                            <span class="tag">Diseño de Espacios</span>
+                            <span class="tag">Prototipado</span>
+                            <span class="tag">User Testing</span>
+                            <span class="tag">Facilitación</span>
+                            <span class="tag">Co-creación</span>
+                            <span class="tag">Omnicanalidad</span>
+                            <span class="tag">Stakeholder Management</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card sidebar-card--cta">
+                        <h3><i class="fas fa-rocket"></i> <span data-i18n="sidebar.interested-title">¿Te interesó este proyecto?</span></h3>
+                        <p data-i18n="sidebar.interested-text-upc">Si quieres conocer más sobre mi trabajo en diseño omnicanal y testeos reales, hablemos.</p>
+                        <a href="../index.html#contacto" class="btn btn--hero btn--block">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="contact.btn-email">Contactar</span>
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="project-nav__grid">
+                <a href="fruta.html" class="project-nav__item project-nav__item--prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <span class="project-nav__label" data-i18n="nav.previous">Anterior</span>
+                        <span class="project-nav__title">Cubico - Improve Your Energy</span>
+                    </div>
+                </a>
+                
+                <a href="../todos-proyectos.html" class="btn btn--primary">
+                    <i class="fas fa-th"></i>
+                    <span data-i18n="nav.view-all">Ver todos</span>
+                </a>
+                
+                <a href="mincetur.html" class="project-nav__item project-nav__item--next">
+                    <div>
+                        <span class="project-nav__label" data-i18n="nav.next">Siguiente</span>
+                        <span class="project-nav__title">MINCETUR - Construcción Futura</span>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="back-to-top-section">
+        <div class="container">
+            <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+                <i class="fas fa-arrow-up"></i>
+                <span data-i18n="nav.back-to-top">Volver al inicio</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <i class="fas fa-heart"></i> 
+                © 2025 Gabriela Ojeda Semidey. <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Cerrar visor">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox__image" src="" alt="" id="lightbox-img">
+            <div class="lightbox__caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
