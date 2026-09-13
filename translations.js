@@ -233,7 +233,7 @@ const translations = {
     // ============================================
     // DESCRIPCIONES CORTAS DE OTROS PROYECTOS
     // ============================================
-    "project.lumi.desc": "Plataforma web conceptualizada durante curso especializado de IA, contiene landing, dashboard y login. (WIP)",
+    "project.lumi.desc": "Plataforma web conceptualizada y diseñada durante un curso especializado de IA: landing, dashboard y login end-to-end.",
     "project.weather.desc": "App del clima con comentarios de personalidades. Integración con API y diseño creativo.",
     "project.weather.metric1": "Personalidades",
     "project.pomodoro.desc": "Timer de productividad con gestión de estados, notificaciones y persistencia de datos.",
@@ -307,9 +307,9 @@ const translations = {
 
     // 2022
     "journey.timeline.2022.title": "Colectivo23 - Practitioner & Content Creator",
-    "journey.timeline.2022.meta": "Jul 2022 - Dic 2024 • Service Design y UX Estratégico",
+    "journey.timeline.2022.meta": "Jul 2022 - Dic 2024 • Rol paralelo (clases nocturnas) · Service Design y UX Estratégico",
     "journey.timeline.2022.description":
-      "Rutas de Service Design y UX Estratégico. Creación de contenido educativo y mentoría para equipos.",
+      "En paralelo a mis proyectos principales de esos años, impartí clases nocturnas y mentoría en Service Design y UX Estratégico, además de crear contenido educativo para equipos.",
 
     // 2020
     "journey.timeline.2020.title": "Continuum HQ - Service Designer",
@@ -1216,6 +1216,13 @@ const translations = {
     "project.mincetur.reflection-3":
       "Ver que 2 años después los CITE seguían usando lo que co-creamos juntos fue la mayor validación: diseñamos algo que realmente les sirvió. Y eso, para mí, es el verdadero éxito del diseño estratégico.",
 
+    "project.mincetur.visual-taller-caption": "Planificación y objetivos del taller",
+    "project.mincetur.visual-tool-1": "Canvas de gestión CITE",
+    "project.mincetur.visual-tool-2": "Framework de Indicadores",
+    "project.mincetur.visual-day-1": "Día 1 - Entendimiento compartido",
+    "project.mincetur.visual-day-2": "Día 2 - Co-creación de herramientas",
+    "project.mincetur.visual-day-3": "Día 3 - Iteración y validación",
+
     "sidebar.interested-text-mincetur": "Si quieres conocer más sobre mi trabajo en facilitación y diseño estratégico, hablemos.",
 
     // ============================================
@@ -1332,6 +1339,16 @@ const translations = {
       "Aunque el proyecto no se implementó, el aprendizaje fue invaluable. Diseñar desde cero te obliga a cuestionar cada decisión: ¿por qué este flujo y no otro? ¿Por qué este nombre? ¿Qué problema real estamos resolviendo? No tener restricciones de sistemas legacy fue liberador, pero también exigió mayor rigor estratégico.",
     "project.tali.reflection-3":
       "Crear la marca TALI desde cero, incluyendo naming, identidad y propuesta de valor, fue una experiencia completa de diseño estratégico que me mostró cómo el diseño de servicios y el branding deben caminar juntos desde el primer día.",
+
+    "project.tali.visual-cluster-1": "Mantras del servicio",
+    "project.tali.visual-cluster-2": "Hallazgo sobre las aprobaciones",
+    "project.tali.visual-cluster-3": "Hallazgo sobre el tiempo de gestión",
+    "project.tali.visual-cluster-4": "Hallazgo sobre aprobaciones",
+    "project.tali.visual-user-1": "User que gestiona y no viaja",
+    "project.tali.visual-user-2": "User que gestiona y viaja",
+    "project.tali.visual-user-3": "User que solo viaja, lo gestiona alguien más",
+    "project.tali.visual-logo": "logo y propuesta de valor inicial",
+    "project.tali.visual-landing": "Landing page con propuesta de valor",
 
     "sidebar.interested-text-tali":
       "Si quieres conocer más sobre mi trabajo en diseño de servicios complejos y creación de marca, hablemos.",
@@ -1518,6 +1535,13 @@ const translations = {
 
     // Sidebar
     "sidebar.interested-text-lumi": "Si quieres conocer más sobre mi trabajo con IA y diseño estratégico, hablemos.",
+
+    // ============================================
+    // ACCESIBILIDAD / UI MISC
+    // ============================================
+    "a11y.lightbox-view-image": "Ver imagen",
+    "a11y.lightbox-no-description": "Sin descripción",
+    "mobile.swipe-hint": "Desliza para ver más proyectos",
   },
 
   en: {
@@ -1746,7 +1770,7 @@ const translations = {
     // ============================================
     // SHORT DESCRIPTIONS OF OTHER PROJECTS
     // ============================================
-    "project.lumi.desc": "Web platform conceptualized during specialized AI course, contains landing, dashboard and login. (WIP)",
+    "project.lumi.desc": "Web platform conceptualized and designed during a specialized AI course: landing, dashboard and login end-to-end.",
     "project.weather.desc": "Weather app with personality comments. API integration and creative design.",
     "project.weather.metric1": "Personalities",
     "project.pomodoro.desc": "Productivity timer with state management, notifications and data persistence.",
@@ -1820,8 +1844,8 @@ const translations = {
 
     // 2022
     "journey.timeline.2022.title": "Colectivo23 - Practitioner & Content Creator",
-    "journey.timeline.2022.meta": "Jul 2022 - Dec 2024 • Service Design & Strategic UX",
-    "journey.timeline.2022.description": "Service Design and Strategic UX learning paths. Educational content creation and team mentoring.",
+    "journey.timeline.2022.meta": "Jul 2022 - Dec 2024 • Parallel role (evening classes) · Service Design & Strategic UX",
+    "journey.timeline.2022.description": "Alongside my main projects during those years, I taught evening classes and mentored in Service Design and Strategic UX, and created educational content for teams.",
 
     // 2020
     "journey.timeline.2020.title": "Continuum HQ - Service Designer",
@@ -2904,6 +2928,13 @@ const translations = {
     "project.mincetur.reflection-3":
       "Seeing that 2 years later CITEs were still using what we co-created together was the greatest validation: we designed something that truly served them. And that, for me, is the true success of strategic design.",
 
+    "project.mincetur.visual-taller-caption": "Workshop planning and objectives",
+    "project.mincetur.visual-tool-1": "CITE management canvas",
+    "project.mincetur.visual-tool-2": "Indicators framework",
+    "project.mincetur.visual-day-1": "Day 1 - Shared understanding",
+    "project.mincetur.visual-day-2": "Day 2 - Co-creating tools",
+    "project.mincetur.visual-day-3": "Day 3 - Iteration and validation",
+
     "sidebar.interested-text-mincetur": "If you want to know more about my work in facilitation and strategic design, let's talk.",
 
     // ============================================
@@ -3022,7 +3053,24 @@ const translations = {
     "project.tali.reflection-3":
       "Creating the TALI brand from scratch, including naming, identity, and value proposition, was a complete strategic design experience that showed me how service design and branding must walk together from day one.",
 
+    "project.tali.visual-cluster-1": "Service mantras",
+    "project.tali.visual-cluster-2": "Finding about the approvals",
+    "project.tali.visual-cluster-3": "Finding about management time",
+    "project.tali.visual-cluster-4": "Finding about approvals",
+    "project.tali.visual-user-1": "User who manages but doesn't travel",
+    "project.tali.visual-user-2": "User who manages and travels",
+    "project.tali.visual-user-3": "User who only travels, someone else manages it",
+    "project.tali.visual-logo": "Logo and initial value proposition",
+    "project.tali.visual-landing": "Landing page with value proposition",
+
     "sidebar.interested-text-tali": "If you want to know more about my work in complex service design and brand creation, let's talk.",
+
+    // ============================================
+    // ACCESSIBILITY / UI MISC
+    // ============================================
+    "a11y.lightbox-view-image": "View image",
+    "a11y.lightbox-no-description": "No description",
+    "mobile.swipe-hint": "Swipe to see more projects",
   },
 };
 

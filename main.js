@@ -13,6 +13,16 @@ let lastScroll = 0;
 let ticking = false;
 
 // ================================
+// IDIOMA ACTUAL (helper compartido)
+// ================================
+function getPreferredLang() {
+  return (
+    localStorage.getItem("preferred-language") ||
+    (navigator.language.startsWith("es") ? "es" : "en")
+  );
+}
+
+// ================================
 // SCROLL HANDLER CONSOLIDADO
 // ================================
 function handleScroll() {
@@ -67,33 +77,6 @@ window.addEventListener("scroll", () => {
     window.requestAnimationFrame(handleScroll);
     ticking = true;
   }
-});
-
-// ================================
-// SMOOTH SCROLL PARA NAVEGACIÓN
-// ================================
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    const href = this.getAttribute("href");
-
-    if (href === "#") return;
-
-    const target = document.querySelector(href);
-
-    if (target) {
-      e.preventDefault();
-
-      const headerOffset = 100;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  });
 });
 
 // ================================
@@ -226,31 +209,6 @@ forms.forEach((form) => {
 });
 
 // ================================
-// LAZY LOADING IMAGES
-// ================================
-if ("loading" in HTMLImageElement.prototype) {
-  const images = document.querySelectorAll('img[loading="lazy"]');
-  images.forEach((img) => {
-    img.src = img.dataset.src || img.src;
-  });
-} else {
-  const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src || img.src;
-        img.classList.remove("lazy");
-        imageObserver.unobserve(img);
-      }
-    });
-  });
-
-  document.querySelectorAll("img.lazy").forEach((img) => {
-    imageObserver.observe(img);
-  });
-}
-
-// ================================
 // DEBOUNCE HELPER
 // ================================
 function debounce(func, wait) {
@@ -264,11 +222,6 @@ function debounce(func, wait) {
     timeout = setTimeout(later, wait);
   };
 }
-
-const debouncedResize = debounce(() => {
-}, 250);
-
-window.addEventListener("resize", debouncedResize);
 
 // ================================
 // CONSOLE MESSAGE
@@ -313,6 +266,21 @@ window.addEventListener("error", (e) => {
   let currentImages = [];
   let currentIndex = 0;
 
+  function updateLightboxA11yLabels() {
+    const lang = getPreferredLang();
+    const viewText =
+      (translations[lang] && translations[lang]["a11y.lightbox-view-image"]) ||
+      "Ver imagen";
+    const noDescText =
+      (translations[lang] &&
+        translations[lang]["a11y.lightbox-no-description"]) ||
+      "Sin descripción";
+
+    lightboxImages.forEach((img) => {
+      img.setAttribute("aria-label", `${viewText}: ${img.alt || noDescText}`);
+    });
+  }
+
   function openLightbox(imgElement, index) {
     lightboxImg.src = imgElement.src;
     lightboxImg.alt = imgElement.alt;
@@ -353,11 +321,17 @@ window.addEventListener("error", (e) => {
 
     img.setAttribute("tabindex", "0");
     img.setAttribute("role", "button");
-    img.setAttribute(
-      "aria-label",
-      `Ver imagen: ${img.alt || "Sin descripción"}`
-    );
   });
+
+  updateLightboxA11yLabels();
+
+  // Volver a traducir los aria-label cuando se cambia de idioma
+  const langToggleBtn = document.querySelector(".language-toggle__btn");
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener("click", () => {
+      setTimeout(updateLightboxA11yLabels, 50);
+    });
+  }
 
   if (closeBtn) {
     closeBtn.addEventListener("click", closeLightbox);
@@ -574,13 +548,8 @@ window.addEventListener("error", (e) => {
 
   const skillPills = document.querySelectorAll(".skill-pill");
 
-  function getCurrentLanguage() {
-    return localStorage.getItem("preferred-language") || 
-           (navigator.language.startsWith("es") ? "es" : "en");
-  }
-
   function updateTooltips() {
-    const currentLang = getCurrentLanguage();
+    const currentLang = getPreferredLang();
 
     skillPills.forEach((pill) => {
       let levelKey = "intermediate";
@@ -625,12 +594,31 @@ window.addEventListener("error", (e) => {
   const projectsGrid = document.querySelector(".projects__grid");
   if (!projectsGrid) return;
 
+  function getSwipeHintText() {
+    const lang = getPreferredLang();
+    return (
+      (translations[lang] && translations[lang]["mobile.swipe-hint"]) ||
+      "Desliza para ver más proyectos"
+    );
+  }
+
   const indicator = document.createElement("div");
   indicator.className = "swipe-indicator";
-  indicator.innerHTML =
-    '<i class="fas fa-arrow-right"></i> Desliza para ver más proyectos';
+  indicator.innerHTML = `<i class="fas fa-arrow-right"></i> ${getSwipeHintText()}`;
 
   projectsGrid.parentElement.insertBefore(indicator, projectsGrid.nextSibling);
+
+  const langToggleBtn = document.querySelector(".language-toggle__btn");
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        const textNode = indicator.querySelector("i").nextSibling;
+        if (textNode) {
+          textNode.textContent = ` ${getSwipeHintText()}`;
+        }
+      }, 50);
+    });
+  }
 
   let hasScrolled = false;
   projectsGrid.addEventListener(
@@ -649,7 +637,7 @@ window.addEventListener("error", (e) => {
 })();
 
 // ================================
-// SMOOTH SCROLL para anchors
+// SMOOTH SCROLL PARA NAVEGACIÓN (incluye cierre de menú móvil)
 // ================================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -790,3 +778,16 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// ================================
+// AÑO DEL COPYRIGHT (siempre actualizado)
+// ================================
+(function () {
+  "use strict";
+
+  const currentYear = String(new Date().getFullYear());
+
+  document.querySelectorAll("footer p").forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(/\b(19|20)\d{2}\b/, currentYear);
+  });
+})();

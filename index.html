@@ -6,6 +6,16 @@
     <meta name="description"
         content="Gabriela Ojeda Semidey - Product Owner | Service Design & Product Strategy | From Discovery to Delivery">
     <title>Gabriela Ojeda Semidey - Product Owner & Service Designer</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrielasemidey.github.io/Portfolio/">
+    <meta property="og:title" content="Gabriela Ojeda Semidey - Product Owner &amp; Service Designer">
+    <meta property="og:description" content="Gabriela Ojeda Semidey - Product Owner | Service Design &amp; Product Strategy | From Discovery to Delivery">
+    <meta property="og:image" content="https://gabrielasemidey.github.io/Portfolio/assets/images/perfil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gabriela Ojeda Semidey - Product Owner &amp; Service Designer">
+    <meta name="twitter:description" content="Gabriela Ojeda Semidey - Product Owner | Service Design &amp; Product Strategy | From Discovery to Delivery">
+    <meta name="twitter:image" content="https://gabrielasemidey.github.io/Portfolio/assets/images/perfil.jpg">
+
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,7 +25,7 @@
     <link rel="stylesheet" href="./styles/sections.css">
     <link rel="stylesheet" href="./styles/project-detail.css">
 
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 <body>
 <!-- HEADER -->
@@ -83,7 +93,7 @@
                 <!-- Foto -->
                 <div class="hero__photo animate-fadeInUp delay-1">
                     <div class="hero__photo-wrapper">
-                        <img src="assets/images/perfil.png" alt="Gabriela Ojeda Semidey">
+                        <img src="assets/images/perfil.jpg" alt="Gabriela Ojeda Semidey">
                     </div>
                 </div>
                 
@@ -293,59 +303,54 @@
             
             <div class="projects__grid">
                 
-                <!-- Lumi -->
-                <article class="project-card card scroll-reveal" data-category="frontend">
-                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="project-card__content">
-                        <div style="margin-bottom: 12px;">
-                            <span class="badge badge--info">
-                                <i class="fas fa-book-open"></i>
-                                <span data-i18n="badge.case-study">Case Study</span>
-                                </span>
+                <!-- BID -->
+                <a href="./proyectos/bid-secretaria.html" class="project-card-link">
+                    <article class="project-card card scroll-reveal" data-category="service-design">
+                        <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
+                        </div>
+                        <div class="project-card__content">
+                            <div style="margin-bottom: 12px;">
+                                <span class="badge badge--success">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-i18n="badge.implemented">Implemented</span>
+                                    </span>
+                                    </div>
+                                    <div class="project-card__meta">
+                                <span><i class="fas fa-globe"></i> Chile / USA</span>
+                                <span><i class="fas fa-calendar"></i> 2021</span>
                                 </div>
-                                <div class="project-card__meta">
-                            <span><i class="fas fa-robot"></i> AI Product</span>
-                            <span><i class="fas fa-calendar"></i> 2025</span>
-                            </div>
-                            <h3 class="project-card__title">Lumi - AI Integration Project</h3>
-                            <p class="project-card__description" data-i18n="project.lumi.desc">
-                            Conceptualización y diseño de una plataforma educativa con IA. Desde la definición del producto hasta la implementación.
-                            (WIP)
-                            </p>
-                            <div class="project-card__metrics">
-                                <div class="metric">
-                                    <strong class="metric__value">AI</strong>
-                                    <span class="metric__label">Integration</span>
-                                </div>
-                                <div class="metric">
-                                <strong class="metric__value">Full</strong>
-                                <span class="metric__label">Discovery→Dev</span>
-                                </div>
-                                <div class="metric">
-                                <strong class="metric__value">WIP</strong>
-                                <span class="metric__label">En progreso</span>
-                                </div>
-                                </div>
-                                <div class="project-card__tags">
-                            <span class="tag">Product Strategy</span>
-                            <span class="tag">AI</span>
-                            <span class="tag">Service Design</span>
-                            </div>
-                            <div class="project-card__actions">
-                                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> <span data-i18n="project.link-code">Código</span>
-                                </a>
-                                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project.link-demo">Demo</span>
-                                </a>
-                                <a href="./proyectos/lumi.html" class="project-link">
-                                    <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
-                                </a>
-                                </div>
-                                </div>
-                                </article>
+                                <h3 class="project-card__title">BID - <span data-i18n="project.bid.title">Rediseño de Servicios</span></h3>
+                                <p class="project-card__description" data-i18n="project.bid.desc">
+                                Rediseño estratégico de servicios internos en la Secretaría del BID. +80 entrevistas, diagnóstico de +50 sistemas y
+                                rediseño de procesos críticos para la organización.
+                                </p>
+                                <div class="project-card__metrics">
+                                    <div class="metric">
+                                        <strong class="metric__value">80+</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric1">Entrevistas</span>
+                                    </div>
+                                    <div class="metric">
+                                    <strong class="metric__value">50+</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric2">Sistemas</span>
+                                    </div>
+                                    <div class="metric">
+                                        <strong class="metric__value">6 mo</strong>
+                                    <span class="metric__label" data-i18n="project.bid.metric3">Duración</span>
+                                    </div>
+                                    </div>
+                                    <div class="project-card__tags">
+                                        <span class="tag">Service Design</span>
+                                        <span class="tag">Strategy</span>
+                                        <span class="tag">Research</span>
+                                    </div>
+                                    <div class="project-card__actions">
+                                        <a href="./proyectos/bid-secretaria.html" class="project-link">
+                                            <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    </article>
+                                    </a>
 
                 <!-- Clínica Alemana - Teleconsulta -->
                 <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
@@ -396,54 +401,58 @@
                             </article>
                             </a>
 
-                <!-- BID -->
-                <a href="./proyectos/bid-secretaria.html" class="project-card-link">
-                    <article class="project-card card scroll-reveal" data-category="service-design">
-                        <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/bid/banner.png')">
-                        </div>
-                        <div class="project-card__content">
-                            <div style="margin-bottom: 12px;">
-                                <span class="badge badge--success">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span data-i18n="badge.implemented">Implemented</span>
-                                    </span>
-                                    </div>
-                                    <div class="project-card__meta">
-                                <span><i class="fas fa-globe"></i> Chile / USA</span>
-                                <span><i class="fas fa-calendar"></i> 2021</span>
+                <!-- Lumi -->
+                <article class="project-card card scroll-reveal" data-category="frontend">
+                    <div class="project-card__banner" style="background-image: url('./assets/images/proyectos/lumi/banner.png')">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-card__content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge--info">
+                                <i class="fas fa-book-open"></i>
+                                <span data-i18n="badge.case-study">Case Study</span>
+                                </span>
                                 </div>
-                                <h3 class="project-card__title">BID - <span data-i18n="project.bid.title">Rediseño de Servicios</span></h3>
-                                <p class="project-card__description" data-i18n="project.bid.desc">
-                                Rediseño estratégico de servicios internos en la Secretaría del BID. +80 entrevistas, diagnóstico de +50 sistemas y
-                                rediseño de procesos críticos para la organización.
-                                </p>
-                                <div class="project-card__metrics">
-                                    <div class="metric">
-                                        <strong class="metric__value">80+</strong>
-                                    <span class="metric__label" data-i18n="project.bid.metric1">Entrevistas</span>
-                                    </div>
-                                    <div class="metric">
-                                    <strong class="metric__value">50+</strong>
-                                    <span class="metric__label" data-i18n="project.bid.metric2">Sistemas</span>
-                                    </div>
-                                    <div class="metric">
-                                        <strong class="metric__value">6 mo</strong>
-                                    <span class="metric__label" data-i18n="project.bid.metric3">Duración</span>
-                                    </div>
-                                    </div>
-                                    <div class="project-card__tags">
-                                        <span class="tag">Service Design</span>
-                                        <span class="tag">Strategy</span>
-                                        <span class="tag">Research</span>
-                                    </div>
-                                    <div class="project-card__actions">
-                                        <a href="./proyectos/bid-secretaria.html" class="project-link">
-                                            <span data-i18n="projects.btn-full">Ver proyecto completo</span> <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    </div>
-                                    </article>
-                                    </a>
+                                <div class="project-card__meta">
+                            <span><i class="fas fa-robot"></i> AI Product</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            </div>
+                            <h3 class="project-card__title">Lumi - AI Integration Project</h3>
+                            <p class="project-card__description" data-i18n="project.lumi.desc">
+                            Plataforma web conceptualizada y diseñada durante un curso especializado de IA: landing, dashboard y login end-to-end.
+                            </p>
+                            <div class="project-card__metrics">
+                                <div class="metric">
+                                    <strong class="metric__value">AI</strong>
+                                    <span class="metric__label">Integration</span>
+                                </div>
+                                <div class="metric">
+                                <strong class="metric__value">Full</strong>
+                                <span class="metric__label">Discovery→Dev</span>
+                                </div>
+                                <div class="metric">
+                                <strong class="metric__value">5</strong>
+                                <span class="metric__label">Estilos de aprendizaje</span>
+                                </div>
+                                </div>
+                                <div class="project-card__tags">
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Service Design</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="https://github.com/GabrielaSemidey/Lumi--proyecto-educativo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-i18n="project.link-code">Código</span>
+                                </a>
+                                <a href="https://gabrielasemidey.github.io/Lumi--proyecto-educativo/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project.link-demo">Demo</span>
+                                </a>
+                                <a href="./proyectos/lumi.html" class="project-link">
+                                    <span data-i18n="projects.btn-case">Ver caso completo</span> <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </div>
+                                </div>
+                                </article>
                 
             </div>
             

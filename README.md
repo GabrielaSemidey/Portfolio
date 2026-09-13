@@ -2,11 +2,11 @@
 
 > Product Owner | Service Designer · From Discovery to Delivery
 
-[![Live Demo](https://img.shields.io/badge/🌐_Portfolio-Live-success?style=for-the-badge)](https://gabrielasemidey.github.io/Portafolio)
+[![Live Demo](https://img.shields.io/badge/🌐_Portfolio-Live-success?style=for-the-badge)](https://gabrielasemidey.github.io/Portfolio)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-blue?style=for-the-badge)](https://gabrielasemidey.github.io/Portafolio)
+[![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-blue?style=for-the-badge)](https://gabrielasemidey.github.io/Portfolio)
 
 ---
 
@@ -33,7 +33,7 @@ Portfolio profesional construido **desde cero con HTML, CSS y JavaScript vanilla
 ### **Service Design & UX Research**
 - 🏥 **[Clínica Alemana](https://gabrielasemidey.github.io/Portfolio/proyectos/clinica-teleconsulta.html)** - Teleconsulta y agenda web — discovery, blueprints y lanzamiento en pandemia
 - 🌍 **[BID](https://gabrielasemidey.github.io/Portfolio/proyectos/bid-secretaria.html)** - Rediseño de servicios internos (+80 entrevistas, 50 sistemas analizados)
-- ⚡ **[CUBICO](https://gabrielasemidey.github.io/Portfolio/proyectos/cubico.html)** - Programa educativo de sostenibilidad en Sevilla
+- ⚡ **[CUBICO](https://gabrielasemidey.github.io/Portfolio/proyectos/fruta.html)** - Programa educativo de sostenibilidad en Sevilla
 - 🎵 **[Spotify](https://gabrielasemidey.github.io/Portfolio/proyectos/spotify.html)** - UX Research sobre usuarios Premium en Perú
 - 🎓 **[UPC](https://gabrielasemidey.github.io/Portfolio/proyectos/upc.html)** - Rediseño de counters de admisión
 - ✈️ **[TALI](https://gabrielasemidey.github.io/Portfolio/proyectos/tali.html)** - Portal de gestión de viajes corporativos
@@ -90,7 +90,7 @@ Firebase · REST APIs · Google Analytics · SQL
 
 ## 📂 Estructura del Proyecto
 ```
-Portafolio/
+Portfolio/
 ├── index.html                 # Página principal
 ├── journey.html               # Mi camino profesional
 ├── todos-proyectos.html       # Galería completa de proyectos
@@ -110,7 +110,7 @@ Portafolio/
 
 ## 📬 Contacto
 
-🌐 **Portfolio:** [gabrielasemidey.github.io/Portafolio](https://gabrielasemidey.github.io/Portfolio)  
+🌐 **Portfolio:** [gabrielasemidey.github.io/Portfolio](https://gabrielasemidey.github.io/Portfolio)  
 💼 **LinkedIn:** [gabrielaojedasemidey](https://www.linkedin.com/in/gabrielaojedasemidey/)  
 📧 **Email:** gabrielaojedasemidey@gmail.com  
 🐙 **GitHub:** [@GabrielaSemidey](https://github.com/GabrielaSemidey)

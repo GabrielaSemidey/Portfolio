@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Todos los proyectos de Gabriela Ojeda Semidey - Frontend Developer & UX Designer" />
+      content="Todos los proyectos de Gabriela Ojeda Semidey - Product Owner | Service Design & Product Strategy" />
 
     <title>Todos los Proyectos | Gabriela Ojeda Semidey</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrielasemidey.github.io/Portfolio/todos-proyectos.html">
+    <meta property="og:title" content="Todos los Proyectos | Gabriela Ojeda Semidey">
+    <meta property="og:description" content="Todos los proyectos de Gabriela Ojeda Semidey - Product Owner | Service Design &amp; Product Strategy">
+    <meta property="og:image" content="https://gabrielasemidey.github.io/Portfolio/assets/images/perfil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Todos los Proyectos | Gabriela Ojeda Semidey">
+    <meta name="twitter:description" content="Todos los proyectos de Gabriela Ojeda Semidey - Product Owner | Service Design &amp; Product Strategy">
+    <meta name="twitter:image" content="https://gabrielasemidey.github.io/Portfolio/assets/images/perfil.jpg">
+
 
     <!-- Google Fonts -->
     <link
@@ -21,10 +31,9 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/components.css" />
     <link rel="stylesheet" href="./styles/sections.css" />
-    <link rel="stylesheet" href="./styles/journey.css" />
     <link rel="stylesheet" href="./styles/project-detail.css" />
 
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
   </head>
   <body class="proyectos-page">
     <!-- Header -->
@@ -37,7 +46,7 @@
           <li><a href="index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
           <li><a href="index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
           <li><a href="todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
-          <li><a href="index.html#frontend" class="nav-link" data-i18n="nav.frontend">Frontend</a></li>
+          <li><a href="index.html#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
           <li><a href="journey.html" class="nav-link">Journey</a></li>
           <li><a href="index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
 
@@ -154,20 +163,20 @@
             <span data-i18n="all-projects.filter-all">Todos</span>
             <span class="filter-btn__count">11</span>
           </button>
-          <button class="filter-btn" data-filter="frontend">
-            <i class="fas fa-code"></i>
-            <span data-i18n="all-projects.filter-frontend">Frontend</span>
-            <span class="filter-btn__count">3</span>
+          <button class="filter-btn" data-filter="service-design">
+            <i class="fas fa-sitemap"></i>
+            <span data-i18n="all-projects.filter-service">Service Design</span>
+            <span class="filter-btn__count">5</span>
           </button>
           <button class="filter-btn" data-filter="ux-ui">
             <i class="fas fa-palette"></i>
             <span data-i18n="all-projects.filter-ux">UX/UI</span>
             <span class="filter-btn__count">3</span>
           </button>
-          <button class="filter-btn" data-filter="service-design">
-            <i class="fas fa-sitemap"></i>
-            <span data-i18n="all-projects.filter-service">Service Design</span>
-            <span class="filter-btn__count">5</span>
+          <button class="filter-btn" data-filter="frontend">
+            <i class="fas fa-code"></i>
+            <span data-i18n="all-projects.filter-frontend">Frontend</span>
+            <span class="filter-btn__count">3</span>
           </button>
         </div>
       </div>
@@ -176,6 +185,475 @@
     <!-- Projects Grid -->
     <section class="section">
       <div class="container">
+        <!-- SERVICE DESIGN PROJECTS -->
+        <div class="category-group">
+          <h2 class="category-group__title">
+            <i class="fas fa-sitemap"></i>
+            <span data-i18n="all-projects.cat-service">Service Design</span>
+          </h2>
+
+          <div class="projects__grid">
+            <!-- Proyecto 1: BID -->
+            <a href="./proyectos/bid-secretaria.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="service-design">
+                <div
+                  class="project-card__banner"
+                  style="background-image: url('./assets/images/proyectos/bid/banner.png')"></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Implemented
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Chile/USA</span>
+                    <span><i class="fas fa-calendar"></i> 2021</span>
+                  </div>
+                  <h3 class="project-card__title">
+                    <span data-i18n="project.bid.title">BID - Rediseño de Servicios</span>
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.bid.desc">
+                    Rediseño de servicios internos en la Secretaría del BID. +80 entrevistas,
+                    diagnóstico de +50 sistemas y rediseño de procesos invisibles.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">80+</strong>
+                      <span class="metric__label">Interviews</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">50</strong>
+                      <span class="metric__label">Systems</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">6 mo</strong>
+                      <span class="metric__label">Duration</span>
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Service Design</span>
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Research</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/bid-secretaria.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 2: UPC -->
+            <a href="./proyectos/upc.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="service-design">
+                <div
+                  class="project-card__banner"
+                  style="background-image: url('./assets/images/proyectos/upc/banner.jpeg')"></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--warning">
+                      <i class="fas fa-tools"></i>
+                      <span data-i18n="badge.partial">Implementación Parcial</span>
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
+                    <span><i class="fas fa-calendar"></i> 2019</span>
+                  </div>
+                  <h3 class="project-card__title">
+                    UPC -
+                    <span data-i18n="project.upc.title">Rediseño de Admisión</span>
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.upc.desc">
+                    Rediseño de la experiencia en counters de admisión para mejorar la conversión de
+                    visitas de postulantes y padres.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">2</strong>
+                      <span class="metric__label" data-i18n="project.upc.metric1">Sedes</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">50+</strong>
+                      <span class="metric__label">Tests</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Partial</strong>
+                      <span class="metric__label" data-i18n="project.upc.metric3">Estado</span>
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Service Design</span>
+                    <span class="tag">Education</span>
+                    <span class="tag">Research</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/upc.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 3: MINCETUR -->
+            <a href="./proyectos/mincetur.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="service-design">
+                <div
+                  class="project-card__banner"
+                  style="
+                    background-image: url('./assets/images/proyectos/mincetur/banner.png');
+                  "></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Implemented
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
+                    <span><i class="fas fa-calendar"></i> 2019</span>
+                  </div>
+                  <h3 class="project-card__title">
+                    MINCETUR -
+                    <span data-i18n="project.mincetur.title">Construcción Futura</span>
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.mincetur.desc">
+                    Acompañamiento en el desarrollo de un prototipo de Modelo de Gestión para los
+                    CITEs de Artesanía y Turismo.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">3</strong>
+                      <span class="metric__label" data-i18n="project.mincetur.metric1">Días</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">5</strong>
+                      <span class="metric__label">CITEs</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Workshop</strong>
+                      <span class="metric__label">Format</span>
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Service Design</span>
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Workshop</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/mincetur.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 4: CUBICO -->
+            <a href="./proyectos/fruta.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="service-design">
+                <div
+                  class="project-card__banner"
+                  style="
+                    background-image: url('./assets/images/proyectos/cubico/banner.png');
+                  "></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Implemented
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> España</span>
+                    <span><i class="fas fa-calendar"></i> 2023</span>
+                  </div>
+                  <h3 class="project-card__title">CUBICO - Energy Challenge</h3>
+                  <p class="project-card__description" data-i18n="project.cubico.desc">
+                    Programa educativo colaborativo que empoderó a jóvenes en Sevilla para diseñar
+                    soluciones sostenibles en su comunidad.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">12</strong>
+                      <span class="metric__label" data-i18n="project.cubico.metric1">Docentes</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">85</strong>
+                      <span class="metric__label" data-i18n="project.cubico.metric2"
+                        >Estudiantes</span
+                      >
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">12</strong>
+                      <span class="metric__label" data-i18n="project.cubico.metric3"
+                        >Proyectos</span
+                      >
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Service Design</span>
+                    <span class="tag">Education</span>
+                    <span class="tag">Sustainability</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/fruta.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 5: TALI -->
+            <a href="./proyectos/tali.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="service-design">
+                <div
+                  class="project-card__banner"
+                  style="background-image: url('./assets/images/proyectos/tali/banner.jpg')"></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--warning">
+                      <i class="fas fa-pause-circle"></i>
+                      <span data-i18n="badge.not-implemented">No Implementado</span>
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
+                    <span><i class="fas fa-calendar"></i> 2018</span>
+                  </div>
+                  <h3 class="project-card__title">
+                    TALI -
+                    <span data-i18n="project.tali.title">Agencia de Viajes Corporativa</span>
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.tali.desc">
+                    Portal para gestión de viajes corporativos desde cualquier dispositivo. Proyecto
+                    completo de research, diseño y branding.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">4</strong>
+                      <span class="metric__label" data-i18n="project.tali.metric1">Roles</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Full</strong>
+                      <span class="metric__label">Design</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Paused</strong>
+                      <span class="metric__label" data-i18n="project.tali.metric3">Estado</span>
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Service Design</span>
+                    <span class="tag">Research</span>
+                    <span class="tag">Branding</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/tali.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+
+        <!-- UX/UI PROJECTS -->
+        <div class="category-group">
+          <h2 class="category-group__title">
+            <i class="fas fa-palette"></i>
+            <span data-i18n="all-projects.cat-ux">UX/UI Design</span>
+          </h2>
+
+          <div class="projects__grid">
+            <!-- Proyecto 6: Clínica Teleconsulta -->
+            <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="ux-ui">
+                <div
+                  class="project-card__banner"
+                  style="
+                    background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg');
+                  "></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Live
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Chile</span>
+                    <span><i class="fas fa-calendar"></i> 2020</span>
+                  </div>
+                  <h3 class="project-card__title" data-i18n="project.teleconsulta.hero-title">
+                    Clínica Alemana - Teleconsulta
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.teleconsulta.desc">
+                    Diseño de una plataforma de videollamadas médicas desde cero, integrada con el
+                    sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de
+                    documentos clínicos.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">20%</strong>
+                      <span class="metric__label">Teleconsultas</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">-40%</strong>
+                      <span class="metric__label" data-i18n="project.teleconsulta.metric2"
+                        >Reclamos</span
+                      >
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">+1.500</strong>
+                      <span class="metric__label" data-i18n="project.teleconsulta.metric3"
+                        >Telerehabilitación</span
+                      >
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">UX Design</span>
+                    <span class="tag">Healthcare</span>
+                    <span class="tag">Service Design</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 7: Spotify -->
+            <a href="./proyectos/spotify.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="ux-ui">
+                <div
+                  class="project-card__banner"
+                  style="
+                    background-image: url('./assets/images/proyectos/spotify/banner.jpg');
+                  "></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Research Project
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Perú/UK</span>
+                    <span><i class="fas fa-calendar"></i> 2019</span>
+                  </div>
+                  <h3 class="project-card__title">
+                    Spotify -
+                    <span data-i18n="project.spotify.title">Experiencia Premium</span>
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.spotify.desc">
+                    Análisis sobre por qué los usuarios en Perú se suscriben al servicio premium sin
+                    usar el freemium. Research cualitativo que cambió la estrategia de localización.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">40+</strong>
+                      <span class="metric__label" data-i18n="project.spotify.metric1"
+                        >Usuarios</span
+                      >
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">2</strong>
+                      <span class="metric__label" data-i18n="project.spotify.metric2">Países</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Remote</strong>
+                      <span class="metric__label" data-i18n="project.spotify.metric3"
+                        >Modalidad</span
+                      >
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">Research</span>
+                    <span class="tag">Analytics</span>
+                    <span class="tag">Streaming</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/spotify.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <!-- Proyecto 8: Clínica Agenda -->
+            <a href="./proyectos/clinica-agenda-web.html" class="project-card-link">
+              <article class="project-card card scroll-reveal" data-category="ux-ui">
+                <div
+                  class="project-card__banner"
+                  style="
+                    background-image: url('./assets/images/proyectos/agenda-web/banner.jpg');
+                  "></div>
+                <div class="project-card__content">
+                  <div style="margin-bottom: 12px">
+                    <span class="badge badge--success">
+                      <i class="fas fa-check-circle"></i>
+                      Live
+                    </span>
+                  </div>
+                  <div class="project-card__meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Chile</span>
+                    <span><i class="fas fa-calendar"></i> 2020</span>
+                  </div>
+                  <h3 class="project-card__title" data-i18n="project.agenda.hero-title">
+                    Clínica Alemana - Agenda Web
+                  </h3>
+                  <p class="project-card__description" data-i18n="project.agenda.desc">
+                    Rediseño de la agenda web para Clínica Alemana durante la pandemia. Alineación
+                    con la plataforma de teleconsulta y despliegue incremental en fases.
+                  </p>
+                  <div class="project-card__metrics">
+                    <div class="metric">
+                      <strong class="metric__value">6 mo</strong>
+                      <span class="metric__label" data-i18n="project.agenda.metric1">Duración</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">Live</strong>
+                      <span class="metric__label" data-i18n="project.agenda.metric2">Estado</span>
+                    </div>
+                    <div class="metric">
+                      <strong class="metric__value">+30%</strong>
+                      <span class="metric__label" data-i18n="project.agenda.metric3">Adopción</span>
+                    </div>
+                  </div>
+                  <div class="project-card__tags">
+                    <span class="tag">UX Design</span>
+                    <span class="tag">Healthcare</span>
+                    <span class="tag">Service Design</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="./proyectos/clinica-agenda-web.html" class="project-link">
+                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+
         <!-- FRONTEND PROJECTS -->
         <div class="category-group">
           <h2 class="category-group__title">
@@ -184,7 +662,7 @@
           </h2>
 
           <div class="projects__grid">
-            <!-- Proyecto 1: Lumi -->
+            <!-- Proyecto 9: Lumi -->
             <article class="project-card card scroll-reveal" data-category="frontend">
               <div
                 class="project-card__banner"
@@ -204,8 +682,8 @@
                 </div>
                 <h3 class="project-card__title">Lumi - AI Integration Project</h3>
                 <p class="project-card__description" data-i18n="project.lumi.desc">
-                  Plataforma web conceptualizada durante curso especializado de IA, contiene
-                  landing, dashboard y login. (WIP)
+                  Plataforma web conceptualizada y diseñada durante un curso especializado de IA:
+                  landing, dashboard y login end-to-end.
                 </p>
                 <div class="project-card__metrics">
                   <div class="metric">
@@ -249,7 +727,7 @@
               </div>
             </article>
 
-            <!-- Proyecto 2: Weather -->
+            <!-- Proyecto 10: Weather -->
             <article class="project-card card scroll-reveal" data-category="frontend">
               <div
                 class="project-card__banner"
@@ -311,7 +789,7 @@
               </div>
             </article>
 
-            <!-- Proyecto 3: Pomodoro -->
+            <!-- Proyecto 11: Pomodoro -->
             <article class="project-card card scroll-reveal" data-category="frontend">
               <div
                 class="project-card__banner"
@@ -371,475 +849,6 @@
             </article>
           </div>
         </div>
-
-        <!-- UX/UI PROJECTS -->
-        <div class="category-group">
-          <h2 class="category-group__title">
-            <i class="fas fa-palette"></i>
-            <span data-i18n="all-projects.cat-ux">UX/UI Design</span>
-          </h2>
-
-          <div class="projects__grid">
-            <!-- Proyecto 4: Clínica Teleconsulta -->
-            <a href="./proyectos/clinica-teleconsulta.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="ux-ui">
-                <div
-                  class="project-card__banner"
-                  style="
-                    background-image: url('./assets/images/proyectos/teleconsulta/banner.jpg');
-                  "></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Live
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Chile</span>
-                    <span><i class="fas fa-calendar"></i> 2020</span>
-                  </div>
-                  <h3 class="project-card__title" data-i18n="project.teleconsulta.hero-title">
-                    Clínica Alemana - Teleconsulta
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.teleconsulta.desc">
-                    Diseño de una plataforma de videollamadas médicas desde cero, integrada con el
-                    sistema de agenda web. Automatización de cobros, entrega de recetas y gestión de
-                    documentos clínicos.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">20%</strong>
-                      <span class="metric__label">Teleconsultas</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">-40%</strong>
-                      <span class="metric__label" data-i18n="project.teleconsulta.metric2"
-                        >Reclamos</span
-                      >
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">+1.500</strong>
-                      <span class="metric__label" data-i18n="project.teleconsulta.metric3"
-                        >Telerehabilitación</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">UX Design</span>
-                    <span class="tag">Healthcare</span>
-                    <span class="tag">Service Design</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/clinica-teleconsulta.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 5: Clínica Agenda -->
-            <a href="./proyectos/clinica-agenda-web.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="ux-ui">
-                <div
-                  class="project-card__banner"
-                  style="
-                    background-image: url('./assets/images/proyectos/agenda-web/banner.jpg');
-                  "></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Live
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Chile</span>
-                    <span><i class="fas fa-calendar"></i> 2020</span>
-                  </div>
-                  <h3 class="project-card__title" data-i18n="project.agenda.hero-title">
-                    Clínica Alemana - Agenda Web
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.agenda.desc">
-                    Rediseño de la agenda web para Clínica Alemana durante la pandemia. Alineación
-                    con la plataforma de teleconsulta y despliegue incremental en fases.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">6 mo</strong>
-                      <span class="metric__label" data-i18n="project.agenda.metric1">Duración</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Live</strong>
-                      <span class="metric__label" data-i18n="project.agenda.metric2">Estado</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">+30%</strong>
-                      <span class="metric__label" data-i18n="project.agenda.metric3">Adopción</span>
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">UX Design</span>
-                    <span class="tag">Healthcare</span>
-                    <span class="tag">Service Design</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/clinica-agenda-web.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 6: Spotify -->
-            <a href="./proyectos/spotify.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="ux-ui">
-                <div
-                  class="project-card__banner"
-                  style="
-                    background-image: url('./assets/images/proyectos/spotify/banner.jpg');
-                  "></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Research Project
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Perú/UK</span>
-                    <span><i class="fas fa-calendar"></i> 2019</span>
-                  </div>
-                  <h3 class="project-card__title">
-                    Spotify -
-                    <span data-i18n="project.spotify.title">Experiencia Premium</span>
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.spotify.desc">
-                    Análisis sobre por qué los usuarios en Perú se suscriben al servicio premium sin
-                    usar el freemium. Research cualitativo que cambió la estrategia de localización.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">40+</strong>
-                      <span class="metric__label" data-i18n="project.spotify.metric1"
-                        >Usuarios</span
-                      >
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">2</strong>
-                      <span class="metric__label" data-i18n="project.spotify.metric2">Países</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Remote</strong>
-                      <span class="metric__label" data-i18n="project.spotify.metric3"
-                        >Modalidad</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Research</span>
-                    <span class="tag">Analytics</span>
-                    <span class="tag">Streaming</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/spotify.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-          </div>
-        </div>
-
-        <!-- SERVICE DESIGN PROJECTS -->
-        <div class="category-group">
-          <h2 class="category-group__title">
-            <i class="fas fa-sitemap"></i>
-            <span data-i18n="all-projects.cat-service">Service Design</span>
-          </h2>
-
-          <div class="projects__grid">
-            <!-- Proyecto 7: BID -->
-            <a href="./proyectos/bid-secretaria.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="service-design">
-                <div
-                  class="project-card__banner"
-                  style="background-image: url('./assets/images/proyectos/bid/banner.png')"></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Implemented
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Chile/USA</span>
-                    <span><i class="fas fa-calendar"></i> 2021</span>
-                  </div>
-                  <h3 class="project-card__title">
-                    <span data-i18n="project.bid.title">BID - Rediseño de Servicios</span>
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.bid.desc">
-                    Rediseño de servicios internos en la Secretaría del BID. +80 entrevistas,
-                    diagnóstico de +50 sistemas y rediseño de procesos invisibles.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">80+</strong>
-                      <span class="metric__label">Interviews</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">50</strong>
-                      <span class="metric__label">Systems</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">6 mo</strong>
-                      <span class="metric__label">Duration</span>
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Service Design</span>
-                    <span class="tag">Strategy</span>
-                    <span class="tag">Research</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/bid-secretaria.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 8: CUBICO -->
-            <a href="./proyectos/fruta.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="service-design">
-                <div
-                  class="project-card__banner"
-                  style="
-                    background-image: url('./assets/images/proyectos/cubico/banner.png');
-                  "></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Implemented
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> España</span>
-                    <span><i class="fas fa-calendar"></i> 2023</span>
-                  </div>
-                  <h3 class="project-card__title">CUBICO - Energy Challenge</h3>
-                  <p class="project-card__description" data-i18n="project.cubico.desc">
-                    Programa educativo colaborativo que empoderó a jóvenes en Sevilla para diseñar
-                    soluciones sostenibles en su comunidad.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">12</strong>
-                      <span class="metric__label" data-i18n="project.cubico.metric1">Docentes</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">85</strong>
-                      <span class="metric__label" data-i18n="project.cubico.metric2"
-                        >Estudiantes</span
-                      >
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">12</strong>
-                      <span class="metric__label" data-i18n="project.cubico.metric3"
-                        >Proyectos</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Service Design</span>
-                    <span class="tag">Education</span>
-                    <span class="tag">Sustainability</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/fruta.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 9: UPC -->
-            <a href="./proyectos/upc.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="service-design">
-                <div
-                  class="project-card__banner"
-                  style="background-image: url('./assets/images/proyectos/upc/banner.jpeg')"></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--warning">
-                      <i class="fas fa-tools"></i>
-                      <span data-i18n="badge.partial">Implementación Parcial</span>
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
-                    <span><i class="fas fa-calendar"></i> 2019</span>
-                  </div>
-                  <h3 class="project-card__title">
-                    UPC -
-                    <span data-i18n="project.upc.title">Rediseño de Admisión</span>
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.upc.desc">
-                    Rediseño de la experiencia en counters de admisión para mejorar la conversión de
-                    visitas de postulantes y padres.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">2</strong>
-                      <span class="metric__label" data-i18n="project.upc.metric1">Sedes</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">50+</strong>
-                      <span class="metric__label">Tests</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Partial</strong>
-                      <span class="metric__label" data-i18n="project.upc.metric3">Estado</span>
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Service Design</span>
-                    <span class="tag">Education</span>
-                    <span class="tag">Research</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/upc.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 10: MINCETUR -->
-            <a href="./proyectos/mincetur.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="service-design">
-                <div
-                  class="project-card__banner"
-                  style="
-                    background-image: url('./assets/images/proyectos/mincetur/banner.png');
-                  "></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--success">
-                      <i class="fas fa-check-circle"></i>
-                      Implemented
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
-                    <span><i class="fas fa-calendar"></i> 2019</span>
-                  </div>
-                  <h3 class="project-card__title">
-                    MINCETUR -
-                    <span data-i18n="project.mincetur.title">Construcción Futura</span>
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.mincetur.desc">
-                    Acompañamiento en el desarrollo de un prototipo de Modelo de Gestión para los
-                    CITEs de Artesanía y Turismo.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">3</strong>
-                      <span class="metric__label" data-i18n="project.mincetur.metric1">Días</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">5</strong>
-                      <span class="metric__label">CITEs</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Workshop</strong>
-                      <span class="metric__label">Format</span>
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Service Design</span>
-                    <span class="tag">Strategy</span>
-                    <span class="tag">Workshop</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/mincetur.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-
-            <!-- Proyecto 11: TALI -->
-            <a href="./proyectos/tali.html" class="project-card-link">
-              <article class="project-card card scroll-reveal" data-category="service-design">
-                <div
-                  class="project-card__banner"
-                  style="background-image: url('./assets/images/proyectos/tali/banner.jpg')"></div>
-                <div class="project-card__content">
-                  <div style="margin-bottom: 12px">
-                    <span class="badge badge--warning">
-                      <i class="fas fa-pause-circle"></i>
-                      <span data-i18n="badge.not-implemented">No Implementado</span>
-                    </span>
-                  </div>
-                  <div class="project-card__meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Perú</span>
-                    <span><i class="fas fa-calendar"></i> 2018</span>
-                  </div>
-                  <h3 class="project-card__title">
-                    TALI -
-                    <span data-i18n="project.tali.title">Agencia de Viajes Corporativa</span>
-                  </h3>
-                  <p class="project-card__description" data-i18n="project.tali.desc">
-                    Portal para gestión de viajes corporativos desde cualquier dispositivo. Proyecto
-                    completo de research, diseño y branding.
-                  </p>
-                  <div class="project-card__metrics">
-                    <div class="metric">
-                      <strong class="metric__value">4</strong>
-                      <span class="metric__label" data-i18n="project.tali.metric1">Roles</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Full</strong>
-                      <span class="metric__label">Design</span>
-                    </div>
-                    <div class="metric">
-                      <strong class="metric__value">Paused</strong>
-                      <span class="metric__label" data-i18n="project.tali.metric3">Estado</span>
-                    </div>
-                  </div>
-                  <div class="project-card__tags">
-                    <span class="tag">Service Design</span>
-                    <span class="tag">Research</span>
-                    <span class="tag">Branding</span>
-                  </div>
-                  <div class="project-card__actions">
-                    <a href="./proyectos/tali.html" class="project-link">
-                      <span data-i18n="projects.btn-full">Ver proyecto completo</span>
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -848,15 +857,16 @@
       <div class="container">
         <h2>
           <i class="fas fa-briefcase"></i>
-          <span data-i18n="contact.cta-title">Buscando oportunidades</span>
+          <span data-i18n="contact.cta-title">Buscando nuevas oportunidades</span>
         </h2>
         <p data-i18n="contact.cta-text">
-          Actualmente busco posiciones frontend (junior-mid), freelance o full-time. Abierta a
-          remoto o presencial en Madrid.
+          Abierta a posiciones de Product Owner, Service Design o Product Strategy. Remoto o
+          presencial en Madrid. Inglés C1.
         </p>
         <div class="job-tags">
-          <span class="job-tag">Frontend Developer</span>
-          <span class="job-tag">Junior-Mid</span>
+          <span class="job-tag">Product Owner</span>
+          <span class="job-tag">Service Designer</span>
+          <span class="job-tag">Product Strategy</span>
           <span class="job-tag">Remote OK</span>
           <span class="job-tag">Madrid</span>
         </div>
