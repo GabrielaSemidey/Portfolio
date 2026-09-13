@@ -7,6 +7,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-blue?style=for-the-badge)](https://gabrielasemidey.github.io/Portfolio)
+[![AI-Assisted](https://img.shields.io/badge/AI--Assisted-Claude-8A63D2?style=for-the-badge)](https://claude.ai)
 
 ---
 
@@ -22,6 +23,19 @@ Portfolio profesional construido **desde cero con HTML, CSS y JavaScript vanilla
 🖼️ **Image lightbox** para ampliar screenshots de proyectos  
 🎭 **Fondos animados** con figuras geométricas en páginas especiales  
 📱 **Mobile-first** responsive design para todos los dispositivos  
+
+---
+
+## 🤖 Construido y Auditado con IA
+
+Este repo también es evidencia de cómo trabajo con herramientas de IA en un flujo real, no solo de lo que dicen mis case studies. Uso **Claude (Anthropic)**, vía Cowork/Claude Code, como parte activa del mantenimiento de este portfolio:
+
+- **Auditoría de contenido** — detección de inconsistencias entre CV, LinkedIn y case studies (fechas, métricas, textos duplicados por copiar de plantillas)
+- **QA del sistema de traducción** — verificación automatizada de que cada key ES/EN existe y no hay duplicados silenciosos que rompan el toggle de idioma
+- **Reestructuración de arquitectura de información** — reorganización de categorías y navegación sin reescribir el sitio desde cero
+- **Control de cambios** — cada edición se verifica byte a byte antes de darla por hecha
+
+Como alguien en transición a roles de Producto, creo que **dirigir, verificar y sacarle partido a herramientas de IA** —no solo pedirles texto— ya es un requisito para trabajar en tecnología, no un extra. Este repo documenta ese proceso, no solo el resultado final.
 
 ---
 
@@ -59,6 +73,12 @@ UX Research · User Testing · Figma · Miro
 ```
 HTML5 · CSS3 · JavaScript ES6+ · Git · GitHub
 Firebase · REST APIs · Google Analytics · SQL
+```
+
+**AI & Productividad**
+```
+Claude (Anthropic) · Content Audit con IA · Prompt Engineering
+QA automatizado de i18n · AI-assisted development workflow
 ```
 
 ---

@@ -438,6 +438,21 @@ window.addEventListener("error", (e) => {
     element.textContent = translations[currentLang][key];
   }
 
+  function updateCvDownloadLinks() {
+    const cvFile =
+      currentLang === "en"
+        ? "./assets/CV_Portfolio_PO-PM_EN.pdf"
+        : "./assets/CV_Portfolio_PO-PM_ES.pdf";
+    const cvDownloadName =
+      currentLang === "en"
+        ? "Gabriela_Ojeda_Semidey_CV_EN.pdf"
+        : "Gabriela_Ojeda_Semidey_CV_ES.pdf";
+    document.querySelectorAll(".cv-download-link").forEach((link) => {
+      link.setAttribute("href", cvFile);
+      link.setAttribute("download", cvDownloadName);
+    });
+  }
+
   function applyTranslations() {
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
@@ -457,6 +472,7 @@ window.addEventListener("error", (e) => {
     }
 
     document.documentElement.setAttribute("lang", currentLang);
+    updateCvDownloadLinks();
   }
 
   function switchLanguage() {

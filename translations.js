@@ -29,6 +29,8 @@ const translations = {
     "badge.not-implemented": "No Implementado",
     "badge.research": "Research Project",
     "badge.internal-services": "Servicios Internos",
+    "badge.education": "Educación",
+    "badge.public-sector": "Sector Público",
 
     // ============================================
     // LINKS Y BOTONES COMUNES
@@ -221,14 +223,16 @@ const translations = {
     "all-projects.back": "Volver al inicio",
     "all-projects.title": "Todos los Proyectos",
     "all-projects.description":
-      "Una colección completa de mis trabajos en frontend development, UX/UI design y service design. Cada proyecto representa aprendizaje, desafíos superados y soluciones creativas.",
+      "Una colección completa de mis trabajos en producto y gestión, UX/UI design y proyectos de sector público. Cada proyecto representa aprendizaje, desafíos superados y soluciones creativas.",
     "all-projects.filter-all": "Todos",
-    "all-projects.filter-frontend": "Frontend",
-    "all-projects.filter-ux": "UX/UI",
-    "all-projects.filter-service": "Service Design",
-    "all-projects.cat-frontend": "Frontend Development",
+    "all-projects.filter-product": "Producto y Gestión",
+    "all-projects.filter-ux": "UX/UI Design",
+    "all-projects.filter-public": "Sector Público",
+    "all-projects.cat-product": "Producto y Gestión",
     "all-projects.cat-ux": "UX/UI Design",
-    "all-projects.cat-service": "Service Design",
+    "all-projects.cat-public": "Sector Público",
+    "all-projects.cat-experiments": "Experimentos de Código",
+    "all-projects.experiments-note": "Proyectos personales para aprender a construir y hablar el idioma de mi equipo de desarrollo.",
 
     // ============================================
     // DESCRIPCIONES CORTAS DE OTROS PROYECTOS
@@ -289,15 +293,12 @@ const translations = {
     "journey.hero.subtitle": "Soy Product Owner con raíces profundas en Service Design y UX Research.",
 
     // === TIMELINE ===
+    "journey.timeline.title": "Mi Evolución Profesional",
     "journey.timeline.description": "De service design a Product Owner, pasando por UX research, diseño de productos y facilitación estratégica.",
-    "journey.timeline.2025.meta": "2025 - Presente • Product Owner & UX Strategy",
-    "journey.timeline.2025.description": "Asesoría en estrategia de producto y service design. Definición de roadmaps, facilitación de workshops y mentoría para equipos multidisciplinarios en LATAM y España.",
-
     // 2025
     "journey.timeline.2025.title": "Consultora Independiente",
-    "journey.timeline.2025.meta": "2025 - Presente • UX & Frontend Development",
-    "journey.timeline.2025.description":
-      "Ayudo a profesionales y equipos a diseñar y desarrollar experiencias digitales centradas en el usuario. Combino UX con desarrollo frontend usando HTML, CSS, JavaScript y React.",
+    "journey.timeline.2025.meta": "2025 - Presente • Product Owner & UX Strategy",
+    "journey.timeline.2025.description": "Asesoría en estrategia de producto y service design. Definición de roadmaps, facilitación de workshops y mentoría para equipos multidisciplinarios en LATAM y España.",
 
     // 2023
     "journey.timeline.2023.title": "FRUTA - Sustainable Service Designer",
@@ -339,7 +340,7 @@ const translations = {
 
     //2016
     "journey.timeline.2016.title": "González, Valdez & Asociados - Asistente de Auditoría Financiera",
-    "journey.timeline.2016.meta": "Feb 2016 - Ago 2017 · 11 meses • Caracas, Venezuela",
+    "journey.timeline.2016.meta": "Oct 2016 - Ago 2017 · 11 meses • Caracas, Venezuela",
     "journey.timeline.2016.description": "Verificación y evaluación de principios contables en Estados Financieros corporativos, aplicando Normas Internacionales de Auditoría. Base en rigor analítico, trabajo colaborativo y pensamiento crítico orientado a procesos.",
 
 
@@ -354,6 +355,7 @@ const translations = {
     // === PROJECTS ===
     "journey.projects.title": "Proyectos que me Formaron",
     "journey.projects.description": "Proyectos clave que moldearon mi forma de entender producto, usuarios y estrategia.",
+    "journey.projects.lumi.title": "Lumi - Proyecto con IA",
     "journey.projects.lumi.description":
       "Proyecto de producto con IA: desde la conceptualización estratégica hasta la implementación. Coordinación de equipo, roadmap y entrega.",
     "journey.projects.clinica.title": "Clínica Alemana - Teleconsulta",
@@ -949,6 +951,191 @@ const translations = {
     "sidebar.interested-text-cubico": "Si quieres conocer más sobre mi trabajo en educación y sostenibilidad, hablemos.",
 
     // ============================================
+    // PROYECTO: UPC - REDISEÑO DE ADMISIÓN
+    // ============================================
+
+    "project.upc.hero-title": "UPC — Rediseño del Área de Admisión",
+    "project.upc.hero-subtitle":
+      "Rediseño omnicanal de la experiencia de admisión en UPC, integrando espacios físicos y plataforma digital para postulantes y padres. Proyecto con testeos reales en sedes con ~30 usuarios en contexto de alta afluencia.",
+
+    // Contexto
+    "project.upc.context-text-1":
+      "La Universidad Peruana de Ciencias Aplicadas (UPC) buscaba rediseñar su experiencia de atención para postulantes y padres de familia en sus sedes físicas. Nuestro objetivo desde Continuum fue mejorar tanto el proceso como el espacio físico, proponiendo soluciones omnicanal que alinearan la experiencia digital y presencial durante el proceso de admisión.",
+    "project.upc.context-text-2":
+      "El contexto organizacional era complejo: Al momento del kick-off, descubrimos que existían 3 proyectos similares corriendo en paralelo dentro de la universidad, cada uno trabajando de forma aislada (en silos) sobre la digitalización de inscripción. Nuestro equipo logró desarrollar hallazgos valiosos y propuestas concretas que se diferenciaban por un enfoque integral: no solo diseñamos la experiencia digital, sino también el rediseño completo del espacio físico de admisiones.",
+    "project.upc.context-text-3":
+      "Parte de nuestras soluciones se implementaron directamente en las sedes físicas, mientras que otros insumos fueron absorbidos por un proyecto distinto que tenía mayor peso político dentro de la institución. Aun así, el impacto de nuestra propuesta fue significativo y validado con testeos reales en condiciones de alta afluencia.",
+
+    // Desafío
+    "project.upc.challenge-text":
+      "Asegurar que postulantes y padres de familia tengan una buena experiencia en el proceso de admisión, que los conduzca a escoger y permanecer en la UPC. Enfocarnos en un solo canal haría que pensemos en una solución en silo. Es necesario ver el servicio como una sola gran experiencia omnicanal.",
+
+    // Rol
+    "project.upc.role-text":
+      "Como Service Designer en Continuum, participé en todas las etapas del proyecto: desde la investigación inicial, ideación, prototipado y testeo de soluciones, hasta la entrega final.",
+    "project.upc.team-1": "Lead UX Designer",
+    "project.upc.team-2": "UX/UI Designer",
+    "project.upc.team-3": "Yo (Service Designer)",
+    "project.upc.team-4": "1 Arquitecta",
+
+    "project.upc.resp-1": "Identificar fricciones clave en la experiencia actual de admisión",
+    "project.upc.resp-2": "Diseñar una solución integral que integrara canales digitales, espacios físicos y equipos de atención",
+    "project.upc.resp-3": "Facilitar sesiones de co-creación con el equipo de UPC",
+    "project.upc.resp-4": "Coordinar y participar en pruebas reales en 2 sedes con ~30 usuarios",
+    "project.upc.resp-5": "Acompañar la traducción de insights en entregables prácticos para implementación",
+    "project.upc.resp-6": "Mapear el journey completo del postulante desde el primer contacto hasta la matrícula",
+    "project.upc.resp-7": 'Diseñar el rol del "Genius" como orquestador de la experiencia',
+
+    // Proceso
+    "project.upc.process-intro":
+      "Implementamos un proceso de diseño centrado en el usuario con foco en la omnicanalidad, asegurando que cada punto de contacto estuviera integrado y respaldado por una misma base de información.",
+
+    "project.upc.process-1-title": "1. Discovery & Mapeo de Experiencia Actual",
+    "project.upc.process-1-text": "Investigación profunda del contexto actual:",
+    "project.upc.process-1-item-1":
+      "Investigación en terreno: observación directa y entrevistas a postulantes, padres y personal de admisión",
+    "project.upc.process-1-item-2": "Mapeo del journey actual del postulante, desde su primer contacto hasta el cierre del proceso",
+    "project.upc.process-1-item-3":
+      "Identificación de fricciones: duplicidad de información, baja visibilidad de la oferta académica, entornos físicos poco cómodos o poco intuitivos",
+    "project.upc.process-1-item-4": "Descubrimiento de 3 proyectos paralelos trabajando en silos dentro de la universidad",
+
+    "project.upc.process-2-title": "2. Ideación y Conceptualización",
+    "project.upc.process-2-text": "Co-creación de la visión omnicanal:",
+    "project.upc.process-2-item-1": "Facilitación de workshops con el equipo UPC para imaginar una experiencia ideal",
+    "project.upc.process-2-item-2":
+      'Generación de conceptos de mejora: Portal del postulante (plataforma digital centralizada), Rediseño físico de sedes (zonas de bienvenida, visualización de carreras, espacios sin barreras), Rol "Genius" (orquestador de toda la experiencia), Sistema de turnos (ticketera en iPad), Simulador de costos (herramienta digital interactiva)',
+
+    "project.upc.process-3-title": "3. Prototipado y Testeo Real",
+    "project.upc.process-3-text": "Validación con usuarios reales en contexto real:",
+    "project.upc.process-3-item-1": "Testeo físico en 2 sedes (Monterrico + otra)",
+    "project.upc.process-3-item-2": "~30 usuarios totales (padres y postulantes)",
+    "project.upc.process-3-item-3": "4 horas por sede en día de alta afluencia",
+    "project.upc.process-3-item-4": "Evaluación de elementos digitales, mobiliario, flujo de atención y señalización",
+    "project.upc.process-3-item-5": "Testeamos un servicio completo con atención real, no solo prototipos",
+    "project.upc.process-3-item-6":
+      "Identificación de aspectos que aumentaban percepción de cercanía: Eliminación del counter como barrera, Mobiliario cómodo tipo sala de estar, Uso compartido de pantallas (iPad/laptops) entre asesor y postulante, Información visible y accesible desde la entrada",
+
+    "project.upc.process-4-title": "4. Entregables Finales y Roadmap",
+    "project.upc.process-4-text": "Documentación completa para implementación:",
+    "project.upc.process-4-item-1": "Documentación completa del nuevo journey de admisión",
+    "project.upc.process-4-item-2": "Recomendaciones para rediseño de 4 sedes físicas (Monterrico, San Miguel, San Isidro, Villa)",
+    "project.upc.process-4-item-3": "Prototipos funcionales: simulador de costos, sistema de turnos",
+    "project.upc.process-4-item-4": "Guías para implementación por fases",
+    "project.upc.process-4-item-5": "Planos y layouts de cada sede con especificaciones de mobiliario",
+
+    // Hallazgos Clave
+    "project.upc.findings-title": "Hallazgos Clave del Testeo",
+    "project.upc.finding-1-title": "🔗 La omnicanalidad es clave",
+    "project.upc.finding-1-text":
+      "Todos los puntos de contacto deben complementarse y estar soportados por una sola base de información consolidada. Los canales no pueden funcionar de forma aislada: la experiencia digital debe reflejar y potenciar la experiencia física, y viceversa.",
+
+    "project.upc.finding-2-title": "👨‍👩‍👧 Postulantes vs Padres: necesidades distintas",
+    "project.upc.finding-2-text":
+      "Los postulantes captan rápidamente el uso y valor de la plataforma digital. Los padres necesitan complementarlo con contacto humano. Esto confirmó que la solución debía ser híbrida, no solo digital.",
+
+    "project.upc.finding-3-title": "📅 Momentos clave estandarizados por canal",
+    "project.upc.finding-3-text":
+      "Es importante definir qué momentos deben ser presenciales y cuáles digitales: Presencial: Tomar visitas guiadas, tomar examen de admisión. Digital: Agendar visitas, agendar y pagar examen, ver resultados.",
+
+    "project.upc.finding-4-title": "🔗 Registro temprano = vínculo sólido",
+    "project.upc.finding-4-text":
+      "El registro en la plataforma del postulante debe ser lo más temprano posible pues es una manera de solidificar su vínculo con la universidad hasta que decida incorporarse.",
+
+    "project.upc.finding-5-title": "🪑 Mesas redondas y mobiliario cómodo generan cercanía",
+    "project.upc.finding-5-text":
+      "La atención en mesas redondas y los muebles cómodos, generan cercanía entre el postulante y el asesor. Este ambiente también hace que la espera sea más placentera.",
+
+    "project.upc.finding-6-title": "💻 iPads y laptops compartidas mejoran transparencia",
+    "project.upc.finding-6-text":
+      "Es necesario que los sistemas de atención estén disponibles para laptops y iPads ya que estos mejoran la interacción entre el postulante y el asesor pues ambos ven la misma información y esta se siente más transparente.",
+
+    "project.upc.finding-7-title": '🎯 El rol del "Genius" como orquestador',
+    "project.upc.finding-7-text":
+      "El Genius cumple un rol importante y debe ser quien orqueste toda la escena. Por eso es importante armarlo con las herramientas e información necesarias. Este rol da la bienvenida, guía y resuelve dudas iniciales sin barrera física.",
+
+    "project.upc.finding-8-title": "📚 Visibilidad de la oferta completa desde la entrada",
+    "project.upc.finding-8-text":
+      "El mostrar la oferta completa de carreras desde la entrada es importante para quienes van a pedir informes. Los usuarios se sorprendían positivamente al descubrir carreras que no sabían que existían en la universidad.",
+
+    // Problemas vs Descubrimientos
+    "project.upc.problems-title": "Del Problema a la Solución",
+    "project.upc.problems-current-title": "❌ Problemáticas del Espacio Actual",
+    "project.upc.problems-item-1": "No se encuentra rápidamente el área de admisión al ingresar",
+    "project.upc.problems-item-2": "Ingreso genera sensación de asfixia por disposición de muebles",
+    "project.upc.problems-item-3": "Módulos inapropiados con espacio de atención muy reducido",
+    "project.upc.problems-item-4": "Computadora tapa la visibilidad al cliente",
+    "project.upc.problems-item-5": "Espacios con poca acústica",
+    "project.upc.problems-item-6": "Tablets de poco uso en implementación actual",
+    "project.upc.problems-item-7": "Iluminación poco apropiada",
+
+    "project.upc.discoveries-title": "✅ Descubrimientos en Testeo del Prototipo",
+    "project.upc.discoveries-item-1": "Pared con folletería de todas las carreras sorprendió positivamente",
+    "project.upc.discoveries-item-2": "Los clientes se sentían mucho más cómodos en salas pequeñas",
+    "project.upc.discoveries-item-3": "Trato más amistoso sin barrera del counter",
+    "project.upc.discoveries-item-4": "Asesor acercándose al cliente generaba mayor comodidad",
+    "project.upc.discoveries-item-5": "Asesores tenían sensación más positiva al moverse vs estar detrás del counter",
+    "project.upc.discoveries-item-6": "Mesas pequeñas con altura apropiada creaban continuidad visual",
+
+    // Resultados
+    "project.upc.result-1-value": "Usuarios testeados en contexto real",
+    "project.upc.result-2-value": "Sedes con testeos físicos",
+    "project.upc.result-3-value": "Sedes rediseñadas",
+    "project.upc.result-4-value": "Testeos en alta afluencia",
+
+    "project.upc.impact-1": "Digitalización de inscripción implementada (flujo casi idéntico a nuestra propuesta)",
+    "project.upc.impact-2": "Cambios en espacio físico implementados en sedes basados en nuestro informe",
+    "project.upc.impact-3": "Herramientas digitales propuestas (simulador de costos, sistema de turnos) validadas con usuarios reales",
+    "project.upc.impact-4": "Eliminación progresiva de counters como barreras físicas",
+    "project.upc.impact-5": "Implementación de zonas de visualización de carreras desde la entrada",
+    "project.upc.impact-6": "Información generada alimentó decisiones estratégicas a pesar de la fragmentación entre proyectos",
+    "project.upc.impact-7": "Se entregó una visión clara y centrada en el usuario para la admisión universitaria, con impacto parcial pero sostenible",
+
+    // Aprendizajes
+    "project.upc.learning-1-title": "Diseñar en contextos con estructuras fragmentadas",
+    "project.upc.learning-1-text":
+      "Descubrir 3 proyectos paralelos trabajando en silos fue un desafío diplomático además de metodológico. Aprendí que en organizaciones complejas, el diseño de servicios debe ser aún más riguroso, empático y diplomático. No basta con tener la mejor solución: hay que navegar dinámicas políticas y tensiones de poder.",
+
+    "project.upc.learning-2-title": "Testear en contexto real es invaluable",
+    "project.upc.learning-2-text":
+      "Probar durante 4 horas en cada sede, en días de alta afluencia, con usuarios reales (no reclutados), nos dio insights que ningún laboratorio de usabilidad podría replicar. Ver cómo los asesores se movían entre las mesas, cómo los padres reaccionaban a la falta de counter, cómo los postulantes descubrían carreras en la pared... eso solo pasa en contexto real.",
+
+    "project.upc.learning-3-title": "La omnicanalidad no es opcional",
+    "project.upc.learning-3-text":
+      "Los jóvenes prefieren control digital, los padres valoran contacto humano. La experiencia física debe ser parte del servicio, no solo un soporte. Los espacios deben reflejar confianza, transparencia y orden visual. Ningún canal puede funcionar aislado.",
+
+    // Reflexiones
+    "project.upc.reflection-quote": "Diseñar es también navegar realidades organizacionales complejas.",
+    "project.upc.reflection-1":
+      "Este proyecto fue un reto político y operativo, pero también una oportunidad para aprender a sostener la visión del usuario en medio de tensiones de poder y prioridades institucionales. Ver que parte de nuestro diseño físico fue implementado, y que el flujo digital se adoptó casi intacto (aunque con otra visualización), fue la confirmación de que cuando diseñamos con rigor y evidencia real, el valor se impone.",
+    "project.upc.reflection-2":
+      'También aprendí que a veces los mejores proyectos no son los que se implementan al 100%, sino los que logran cambiar conversaciones, influir en decisiones y demostrar que otra forma de hacer las cosas es posible. Incluso cuando nuestros entregables fueron "absorbidos" por otros proyectos con más peso político, el hecho de que usaran nuestros insights y flujos es una victoria del diseño centrado en el usuario.',
+
+    // Recursos Visuales
+    "project.upc.visual-journey-title": "Service Blueprint del Proceso de Admisión previo al proyecto",
+    "project.upc.visual-journey-desc": "Mapeo completo de la experiencia, desde el primer contacto hasta la matrícula.",
+    "project.upc.visual-journey-caption": "Blueprint completo del proceso de admisión",
+
+    "project.upc.visual-spaces-title": "Rediseño de Espacios Físicos",
+    "project.upc.visual-spaces-desc": "Propuestas de layout para las sedes principales de UPC.",
+    "project.upc.visual-space-1": "Rediseño Sede Monterrico",
+
+    "project.upc.visual-portal-title": "Portal del Postulante - Prototipos",
+    "project.upc.visual-portal-desc": "Plataforma digital donde postulantes y padres tienen control total de su proceso.",
+    "project.upc.visual-portal-1": "Portal del postulante (no puedo mostrar algo más específico por el NDA)",
+
+    "project.upc.visual-testing-title": "Testeos Reales en Sedes",
+    "project.upc.visual-testing-desc": "Fotografías de los testeos con usuarios reales en contexto de alta afluencia.",
+    "project.upc.visual-test-1": "Testeo con postulantes y padres",
+    "project.upc.visual-test-2": "Validación de mobiliario y espacios",
+    "project.upc.visual-test-3": 'Testeo del rol "Genius"',
+
+    "project.upc.visual-external-title": "Recursos Externos",
+    "project.upc.visual-external-text": "Caso publicado por Continuum",
+    "project.upc.visual-external-btn": "Ver caso en Continuum",
+
+    // Sidebar
+    "sidebar.interested-text-upc": "Si quieres conocer más sobre mi trabajo en diseño omnicanal y testeos reales, hablemos.",
+    // ============================================
     // SPOTIFY PROJECT
     // ============================================
 
@@ -1091,6 +1278,7 @@ const translations = {
     // Sidebar
     "sidebar.partnership": "Partnership",
     "sidebar.screener": "Screener",
+    "sidebar.interviews": "Entrevistas",
     "sidebar.premium-users": "Usuarios Premium",
     "sidebar.non-users": "No usuarios",
     "sidebar.languages": "Idiomas",
@@ -1570,6 +1758,8 @@ const translations = {
     "badge.not-implemented": "Not Implemented",
     "badge.research": "Research Project",
     "badge.internal-services": "Internal Services",
+    "badge.education": "Education",
+    "badge.public-sector": "Public Sector",
 
     // ============================================
     // COMMON LINKS & BUTTONS
@@ -1758,14 +1948,16 @@ const translations = {
     "all-projects.back": "Back to home",
     "all-projects.title": "All Projects",
     "all-projects.description":
-      "A complete collection of my work in frontend development, UX/UI design and service design. Each project represents learning, challenges overcome and creative solutions.",
+      "A complete collection of my work in product & management, UX/UI design, and public sector projects. Each project represents learning, challenges overcome and creative solutions.",
     "all-projects.filter-all": "All",
-    "all-projects.filter-frontend": "Frontend",
-    "all-projects.filter-ux": "UX/UI",
-    "all-projects.filter-service": "Service Design",
-    "all-projects.cat-frontend": "Frontend Development",
+    "all-projects.filter-product": "Product & Management",
+    "all-projects.filter-ux": "UX/UI Design",
+    "all-projects.filter-public": "Public Sector",
+    "all-projects.cat-product": "Product & Management",
     "all-projects.cat-ux": "UX/UI Design",
-    "all-projects.cat-service": "Service Design",
+    "all-projects.cat-public": "Public Sector",
+    "all-projects.cat-experiments": "Code Experiments",
+    "all-projects.experiments-note": "Personal projects to learn how to build and speak my development team's language.",
 
     // ============================================
     // SHORT DESCRIPTIONS OF OTHER PROJECTS
@@ -1826,15 +2018,12 @@ const translations = {
 
     // === TIMELINE ===
     "journey.timeline.description": "From service design to Product Owner, through UX research, product design, and strategic facilitation.",
-    "journey.timeline.2025.meta": "2025 - Present • Product Owner & UX Strategy",
-    "journey.timeline.2025.description": "Advisory on product strategy and service design. Roadmap definition, workshop facilitation, and mentoring for multidisciplinary teams in LATAM and Spain.",
     "journey.timeline.title": "My Professional Evolution",
 
     // 2025
     "journey.timeline.2025.title": "Independent Consultant",
-    "journey.timeline.2025.meta": "2025 - Present • UX & Frontend Development",
-    "journey.timeline.2025.description":
-      "I help professionals and teams design and develop user-centered digital experiences. I combine UX with frontend development using HTML, CSS, JavaScript, and React.",
+    "journey.timeline.2025.meta": "2025 - Present • Product Owner & UX Strategy",
+    "journey.timeline.2025.description": "Advisory on product strategy and service design. Roadmap definition, workshop facilitation, and mentoring for multidisciplinary teams in LATAM and Spain.",
 
     // 2023
     "journey.timeline.2023.title": "FRUTA - Sustainable Service Designer",
@@ -1875,7 +2064,7 @@ const translations = {
 
     // 2016
     "journey.timeline.2016.title": "González, Valdez & Asociados - Financial Audit Assistant",
-    "journey.timeline.2016.meta": "Feb 2016 - Aug 2017 · 11 months • Caracas, Venezuela",
+    "journey.timeline.2016.meta": "Oct 2016 - Aug 2017 · 11 months • Caracas, Venezuela",
     "journey.timeline.2016.description": "Verification and evaluation of accounting principles in corporate Financial Statements, applying International Auditing Standards. Foundation in analytical rigor, collaborative work, and process-oriented critical thinking.",
 
     // === INFLEXIÓN ===
@@ -2805,6 +2994,7 @@ const translations = {
     // Sidebar
     "sidebar.partnership": "Partnership",
     "sidebar.screener": "Screener",
+    "sidebar.interviews": "Interviews",
     "sidebar.premium-users": "Premium Users",
     "sidebar.non-users": "Non-users",
     "sidebar.languages": "Languages",
@@ -3065,6 +3255,188 @@ const translations = {
 
     "sidebar.interested-text-tali": "If you want to know more about my work in complex service design and brand creation, let's talk.",
 
+    // ============================================
+    // LUMI PROJECT
+    // ============================================
+
+    "project.lumi.hero-title": "Lumi - Learning Was Never This Exciting",
+    "project.lumi.hero-subtitle":
+      "A personalized learning platform that transforms education into an exciting, purpose-driven experience, where every student discovers their own path.",
+
+    // Context
+    "project.lumi.context-text-1":
+      "Lumi began as a 4-month academic project where we explored how disruptive technologies — specifically artificial intelligence — could transform the educational experience. Throughout the course, we worked with various AI tools while applying Design Thinking methodologies.",
+    "project.lumi.context-text-2":
+      "The project emerged from real problems shared by two teammates who work in educational innovation at well-known schools in Peru. We identified that current e-learning platforms don't truly personalize the learning experience, instead delivering generic content that doesn't account for each user's cognitive style, life stage, or motivations.",
+    "project.lumi.context-text-3":
+      "Lumi was designed to put the human being at the center of the educational process, creating adaptive, gamified, and emotionally meaningful learning paths.",
+
+    // Challenge
+    "project.lumi.challenge-text":
+      "How do you design a learning platform that truly adapts to each person, motivating constant progress without losing sight of the purpose and emotion of learning?",
+
+    // Role
+    "project.lumi.role-text":
+      "As Service Designer and Project Manager for the 4-person team, I led Lumi's strategic conceptualization, coordinating the use of AI tools and facilitating the collaborative design process.",
+    "project.lumi.resp-1": "Lead Design Thinking sessions (problem identification, ideation, prototyping)",
+    "project.lumi.resp-2": "Conceptualize the reward system with educational tokens (LumiCoins)",
+    "project.lumi.resp-3":
+      "Coordinate the integration of AI tools throughout the process (ChatGPT, Gemini, Claude, Storm, Manus, Lovable, Zapier)",
+    "project.lumi.resp-4": "Develop the visual identity and value proposition based on the 5 learning styles",
+    "project.lumi.resp-5": "Currently: Frontend development of the home, login, and student dashboard",
+
+    // Process
+    "project.lumi.process-intro":
+      "We applied an iterative Design Thinking process, enriched with artificial intelligence tools at every stage. The project evolved over 4 months, adding layers of complexity and functionality as we explored new technologies.",
+
+    "project.lumi.process-1-title": "1. Empathize & Research",
+    "project.lumi.process-1-text":
+      "We worked directly with two educational innovation experts from schools in Peru to identify real problems:",
+    "project.lumi.process-1-item-1": "Student dropout and lack of motivation",
+    "project.lumi.process-1-item-2": "Lack of personalization on LMS platforms",
+    "project.lumi.process-1-item-3": "Need for tangible recognition of effort",
+    "project.lumi.process-1-item-4": "Gap between learning and feeling supported",
+    "project.lumi.process-1-tools":
+      "Tools used: ChatGPT (insight analysis), Excalidraw (collaborative mapping), Miro (visual brainstorming)",
+
+    "project.lumi.process-2-title": "2. Define & Ideate",
+    "project.lumi.process-2-text": "We defined the core problem and generated multiple solution concepts:",
+    "project.lumi.process-2-item-1": "Personalization system based on 5 learning styles",
+    "project.lumi.process-2-item-2": "Gamification with purpose: LumiCoins redeemable for real value",
+    "project.lumi.process-2-item-3": "Personal progress visualization and achievement celebration",
+    "project.lumi.process-2-item-4": "AI integration for real-time adaptation",
+    "project.lumi.process-2-tools":
+      "Tools used: Gemini (idea generation), Claude (conceptual refinement), Storm (market research)",
+
+    "project.lumi.process-3-title": "3. Prototype & Design",
+    "project.lumi.process-3-text": "We created the complete Lumi proposal, including:",
+    "project.lumi.process-3-item-1": "Brand identity (logo, color palette, tone of voice)",
+    "project.lumi.process-3-item-2": "The 5 learning styles: Visionauta, Audioexplorador, Manos a la Obra, LogiMaster, Colab Hero",
+    "project.lumi.process-3-item-3": "LumiCoins reward system with tangible value",
+    "project.lumi.process-3-item-4": "Information architecture and user flows",
+    "project.lumi.process-3-item-5": "Value proposition and business model",
+    "project.lumi.process-3-tools": "Tools used: Manus (documentation), Lovable (prototyping), Excalidraw (diagrams)",
+
+    "project.lumi.process-4-title": "4. Develop & Implement",
+    "project.lumi.process-4-text": "I'm currently bringing Lumi to code, developing:",
+    "project.lumi.process-4-item-1": "Homepage with complete visual identity and the 5 styles",
+    "project.lumi.process-4-item-2": "Personalized login and onboarding system",
+    "project.lumi.process-4-item-3": "Student dashboard with progress and LumiCoins",
+    "project.lumi.process-4-item-4": "Zapier integration for automations",
+    "project.lumi.process-4-tech": "Technologies: HTML, CSS, JavaScript, React (planned)",
+
+    // Value Proposition
+    "project.lumi.value-title": "Lumi transforms learning into an exciting, personal, and accessible experience.",
+    "project.lumi.value-1-title": "Paths Tailored to You",
+    "project.lumi.value-1-text":
+      "No more generic content. Lumi identifies how you learn best and creates personalized paths based on your cognitive style, interests, and pace. Your path is unique.",
+    "project.lumi.value-2-title": "Real Rewards",
+    "project.lumi.value-2-text":
+      "LumiCoins aren't virtual medals: they're redeemable for mentorships with experts, premium resources, verified certificates, and scholarships. Your effort has tangible value.",
+    "project.lumi.value-3-title": "For Every Style",
+    "project.lumi.value-3-text":
+      "From 12-year-old students to young adults 25+. School subjects, life skills (adulting), and academic reinforcement all on one platform.",
+    "project.lumi.value-4-title": "AI in Service of the Learner",
+    "project.lumi.value-4-text":
+      "From personalization to predictive analytics for anticipating dropout, every innovation enhances the human experience without losing the warmth of guidance.",
+
+    // The 5 Styles
+    "project.lumi.styles-title": "The 5 Learning Styles",
+    "project.lumi.styles-intro":
+      "Lumi recognizes that we don't all learn the same way. That's why we created 5 unique profiles that adapt the educational experience to your natural way of processing information:",
+    "project.lumi.style-1-name": "Visionauta",
+    "project.lumi.style-1-desc":
+      "Learns by seeing: Infographics, diagrams, visual videos, mind maps, and graphic content that turns abstract ideas into clear images.",
+    "project.lumi.style-2-name": "Audioexplorador",
+    "project.lumi.style-2-desc":
+      "Learns by listening: Podcasts, narrated explanations, debates, audiobooks, and discussions that turn knowledge into conversation.",
+    "project.lumi.style-3-name": "Manos a la Obra",
+    "project.lumi.style-3-desc":
+      "Learns by doing: Hands-on experiments, real projects, interactive simulations, and workshops where theory comes to life.",
+    "project.lumi.style-4-name": "LogiMaster",
+    "project.lumi.style-4-desc":
+      "Learns by reasoning: Logic problems, structured analysis, critical thinking, and challenges that connect cause and effect.",
+    "project.lumi.style-5-name": "Colab Hero",
+    "project.lumi.style-5-desc":
+      "Learns by collaborating: Teamwork, group discussions, social projects, and collective knowledge building.",
+
+    // LumiCoins
+    "project.lumi.coins-title": "LumiCoins System",
+    "project.lumi.coins-subtitle": "Every achievement in Lumi brings you closer to real rewards.",
+    "project.lumi.coins-intro":
+      "LumiCoins are the platform's educational currency, but unlike other gamification systems, they have tangible value. They're not empty points or decorative medals: they're real recognition of your effort and progress.",
+    "project.lumi.coins-step-1-title": "Earn",
+    "project.lumi.coins-step-1-text":
+      "Complete modules, reach goals, keep your learning streak going, and participate actively on the platform.",
+    "project.lumi.coins-step-2-title": "Accumulate",
+    "project.lumi.coins-step-2-text": "Every completed goal adds LumiCoins to your balance. Track your progress and celebrate every achievement.",
+    "project.lumi.coins-step-3-title": "Redeem",
+    "project.lumi.coins-step-3-text": "Use your coins to access real value:",
+    "project.lumi.coins-item-1": "Mentorships with experts in your area of interest",
+    "project.lumi.coins-item-2": "Premium educational resources (books, courses, tools)",
+    "project.lumi.coins-item-3": "Verified certificates that validate your learning",
+    "project.lumi.coins-item-4": "Discounts on specialized programs",
+    "project.lumi.coins-item-5": "Partial scholarships for external training",
+    "project.lumi.coins-highlight": "Your effort matters. And Lumi rewards it with real growth opportunities.",
+
+    // Differentiators
+    "project.lumi.diff-1":
+      "5 Learning Styles: A unique personalization system that adapts content based on how you process information (visual, auditory, kinesthetic, logical, collaborative)",
+    "project.lumi.diff-2":
+      "LumiCoins with real value: A reward system redeemable for mentorships, premium resources, certificates, and scholarships",
+    "project.lumi.diff-3": "Dynamic paths: Experiences that continuously adapt based on progress, profile, and user feedback",
+    "project.lumi.diff-4":
+      "Adulting + Academics: Combines traditional subjects with real-life skills (taxes, personal finance, professional life)",
+    "project.lumi.diff-5": "Technology + Humanity: Combines advanced AI with close, empathetic human guidance",
+    "project.lumi.diff-6":
+      "Total accessibility: Designed for multiple devices and profiles, from digital natives to people with low tech affinity",
+
+    // Results
+    "project.lumi.result-1-value": "Personalized learning styles",
+    "project.lumi.result-2-value": "Personalized adaptive paths",
+    "project.lumi.result-3-value": "Real reward system (LumiCoins)",
+
+    "project.lumi.impact-1": "Complete strategic document (value proposition, target audience, business model)",
+    "project.lumi.impact-2": "Personalization system based on 5 learning styles",
+    "project.lumi.impact-3": "Complete visual identity (logo, color palette, typography, iconography)",
+    "project.lumi.impact-4": "LumiCoins reward system with a redemption catalog",
+    "project.lumi.impact-5": "Feature architecture and user flows",
+    "project.lumi.impact-6": "Frontend development in progress (home, login, dashboard)",
+    "project.lumi.impact-7": "Conceptual validation with teachers, students, and young adults",
+
+    // AI Tools
+    "project.lumi.ai-intro":
+      "One of the most innovative aspects of this project was the strategic integration of multiple artificial intelligence tools at every stage of the process:",
+    "project.lumi.ai-tool-1": "ChatGPT & Gemini",
+    "project.lumi.ai-tool-1-desc": "Insight analysis, idea generation, concept refinement",
+    "project.lumi.ai-tool-2": "Claude",
+    "project.lumi.ai-tool-2-desc": "Strategic content development and technical documentation",
+    "project.lumi.ai-tool-3": "Storm",
+    "project.lumi.ai-tool-3-desc": "Market research and educational trend analysis",
+    "project.lumi.ai-tool-4": "Manus",
+    "project.lumi.ai-tool-4-desc": "Collaborative documentation and knowledge management",
+    "project.lumi.ai-tool-5": "Lovable",
+    "project.lumi.ai-tool-5-desc": "Rapid prototyping and interface visualization",
+    "project.lumi.ai-tool-6": "Zapier",
+    "project.lumi.ai-tool-6-desc": "Automations and smart workflows",
+    "project.lumi.ai-tool-7": "Excalidraw",
+    "project.lumi.ai-tool-7-desc": "Collaborative diagrams and system mapping",
+
+    // Reflections
+    "project.lumi.reflection-quote": "AI doesn't replace human-centered design, it empowers it.",
+    "project.lumi.reflection-1":
+      "This project taught me that artificial intelligence tools are extraordinary amplifiers of the creative process, but only when guided by strategic intention and deep empathy for end users.",
+    "project.lumi.reflection-2":
+      "Lumi started as an academic exercise, but it turned into a reflection on how we design educational experiences in the 21st century. I learned that real innovation isn't about using the most advanced technology, but about putting it in service of people's real needs.",
+    "project.lumi.reflection-3":
+      "Creating the 5 learning styles and the LumiCoins system taught me that gamification only makes sense when it generates tangible value. It's not about adding points and medals, but about recognizing real effort with real opportunities.",
+    "project.lumi.reflection-4":
+      "Leading this project also strengthened my ability to coordinate multidisciplinary teams, integrate disruptive tools into traditional design processes, and keep the focus on human value without losing sight of technical feasibility.",
+    "project.lumi.reflection-5":
+      "Currently, bringing Lumi to code, I reaffirm my conviction: strategic design and development aren't separate stages, they're ongoing conversations that must stay connected from day one.",
+
+    // Sidebar
+    "sidebar.interested-text-lumi": "If you want to know more about my work with AI and strategic design, let's talk.",
     // ============================================
     // ACCESSIBILITY / UI MISC
     // ============================================

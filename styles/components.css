@@ -507,6 +507,20 @@ nav {
   color: var(--service-accent);
 }
 
+.project-card[data-category="sector-publico"] .project-card__icon,
+.project-card[data-category="sector-publico"] .metric__value {
+  color: var(--sector-publico);
+}
+
+.project-card[data-category="sector-publico"]:hover {
+  border-color: var(--sector-publico-accent);
+}
+
+.project-card[data-category="sector-publico"] .project-card__meta i,
+.project-card[data-category="sector-publico"] .project-link {
+  color: var(--sector-publico-accent);
+}
+
 /* ================================
    NOTIFICATIONS
    ================================ */

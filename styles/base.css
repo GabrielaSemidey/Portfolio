@@ -21,6 +21,8 @@
   --uxui-accent: #06b6d4;
   --service: #6366f1;
   --service-accent: #475569;
+  --sector-publico: #b45309;
+  --sector-publico-accent: #d97706;
 
   /* Colores semánticos */
   --success: #10b981;
@@ -107,6 +109,13 @@ body[data-category="service-design"] {
   --primary-hover: #4f46e5;
   --primary-dark: #4338ca;
   --secondary: #475569;
+}
+
+body[data-category="sector-publico"] {
+  --primary: #b45309;
+  --primary-hover: #92400e;
+  --primary-dark: #78350f;
+  --secondary: #d97706;
 }
 
 /* ================================
