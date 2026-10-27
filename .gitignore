@@ -1,0 +1,13 @@
+# Sistema y editores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# Archivos de trabajo que no forman parte del sitio
+*.ps1
+*.bat
+*.log
+*.tmp

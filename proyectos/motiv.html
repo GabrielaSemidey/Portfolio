@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Motiv — Venture Educación | Gabriela Ojeda Semidey"
+    />
+    <link rel="canonical" href="https://gabrielasemidey.github.io/Portfolio/proyectos/motiv.html" />
+    <title>Motiv — Venture Educación | Gabriela Ojeda Semidey</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrielasemidey.github.io/Portfolio/proyectos/motiv.html">
+    <meta property="og:title" content="Motiv — Venture Educación | Gabriela Ojeda Semidey">
+    <meta property="og:description" content="Motiv — Venture Educación | Gabriela Ojeda Semidey">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Motiv — Venture Educación | Gabriela Ojeda Semidey">
+    <meta name="twitter:description" content="Motiv — Venture Educación | Gabriela Ojeda Semidey">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/sections.css" />
+    <link rel="stylesheet" href="../styles/project-detail.css" />
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+  </head>
+  <body data-category="ux-ui">
+<!-- Iconos de Font Awesome Free 7.3.1, licencia CC BY 4.0 (https://fontawesome.com/license/free). Incrustados como SVG para no depender de un CDN externo ni de una fuente de iconos. -->
+<svg class="sprite-iconos" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="ic-bars" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></symbol>
+  <symbol id="ic-arrow-left" viewBox="0 0 512 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></symbol>
+  <symbol id="ic-lightbulb" viewBox="0 0 384 512"><path fill="currentColor" d="M292.9 384c7.3-22.3 21.9-42.5 38.4-59.9 32.7-34.4 52.7-80.9 52.7-132.1 0-106-86-192-192-192S0 86 0 192c0 51.2 20 97.7 52.7 132.1 16.5 17.4 31.2 37.6 38.4 59.9l201.7 0zM288 432l-192 0 0 16c0 44.2 35.8 80 80 80l32 0c44.2 0 80-35.8 80-80l0-16zM184 112c-39.8 0-72 32.2-72 72 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3 53.7-120 120-120 13.3 0 24 10.7 24 24s-10.7 24-24 24z"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 448 512"><path fill="currentColor" d="M128 0C110.3 0 96 14.3 96 32l0 32-32 0C28.7 64 0 92.7 0 128l0 48 448 0 0-48c0-35.3-28.7-64-64-64l-32 0 0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32-128 0 0-32c0-17.7-14.3-32-32-32zM0 224L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192-448 0z"/></symbol>
+  <symbol id="ic-flask" viewBox="0 0 448 512"><path fill="currentColor" d="M288 0L128 0C110.3 0 96 14.3 96 32s14.3 32 32 32L128 215.5 7.5 426.3C2.6 435 0 444.7 0 454.7 0 486.4 25.6 512 57.3 512l333.4 0c31.6 0 57.3-25.6 57.3-57.3 0-10-2.6-19.8-7.5-28.4L320 215.5 320 64c17.7 0 32-14.3 32-32S337.7 0 320 0L288 0zM192 215.5l0-151.5 64 0 0 151.5c0 11.1 2.9 22.1 8.4 31.8l41.6 72.7-164 0 41.6-72.7c5.5-9.7 8.4-20.6 8.4-31.8z"/></symbol>
+  <symbol id="ic-book-open" viewBox="0 0 512 512"><path fill="currentColor" d="M256 141.3l0 309.3 .5-.2C311.1 427.7 369.7 416 428.8 416l19.2 0 0-320-19.2 0c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7zM230.9 61.5L256 72 281.1 61.5C327.9 42 378.1 32 428.8 32L464 32c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-35.2 0c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480L48 480c-26.5 0-48-21.5-48-48L0 80C0 53.5 21.5 32 48 32l35.2 0c50.7 0 100.9 10 147.7 29.5z"/></symbol>
+  <symbol id="ic-calendar-alt" viewBox="0 0 448 512"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></symbol>
+  <symbol id="ic-map-marker-alt" viewBox="0 0 384 512"><path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></symbol>
+  <symbol id="ic-briefcase" viewBox="0 0 512 512"><path fill="currentColor" d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z"/></symbol>
+  <symbol id="ic-users" viewBox="0 0 640 512"><path fill="currentColor" d="M320 16a104 104 0 1 1 0 208 104 104 0 1 1 0-208zM96 88a72 72 0 1 1 0 144 72 72 0 1 1 0-144zM0 416c0-70.7 57.3-128 128-128 12.8 0 25.2 1.9 36.9 5.4-32.9 36.8-52.9 85.4-52.9 138.6l0 16c0 11.4 2.4 22.2 6.7 32L32 480c-17.7 0-32-14.3-32-32l0-32zm521.3 64c4.3-9.8 6.7-20.6 6.7-32l0-16c0-53.2-20-101.8-52.9-138.6 11.7-3.5 24.1-5.4 36.9-5.4 70.7 0 128 57.3 128 128l0 32c0 17.7-14.3 32-32 32l-86.7 0zM472 160a72 72 0 1 1 144 0 72 72 0 1 1 -144 0zM160 432c0-88.4 71.6-160 160-160s160 71.6 160 160l0 16c0 17.7-14.3 32-32 32l-256 0c-17.7 0-32-14.3-32-32l0-16z"/></symbol>
+  <symbol id="ic-map-signs" viewBox="0 0 512 512"><path fill="currentColor" d="M256.4 0c-17.7 0-32 14.3-32 32l0 32-160 0c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 0 64-153.4 0c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7l153.4 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 160 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-160 0 0-64 153.4 0c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7l-153.4 0 0-32c0-17.7-14.3-32-32-32z"/></symbol>
+  <symbol id="ic-bullseye" viewBox="0 0 512 512"><path fill="currentColor" d="M448 256a192 192 0 1 0 -384 0 192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></symbol>
+  <symbol id="ic-user-check" viewBox="0 0 640 512"><path fill="currentColor" d="M286 304c98.5 0 178.3 79.8 178.3 178.3 0 16.4-13.3 29.7-29.7 29.7L78 512c-16.4 0-29.7-13.3-29.7-29.7 0-98.5 79.8-178.3 178.3-178.3l59.4 0zM585.7 105.9c7.8-10.7 22.8-13.1 33.5-5.3s13.1 22.8 5.3 33.5L522.1 274.9c-4.2 5.7-10.7 9.4-17.7 9.8s-14-2.2-18.9-7.3l-46.4-48c-9.2-9.5-9-24.7 .6-33.9 9.5-9.2 24.7-8.9 33.9 .6l26.5 27.4 85.6-117.7zM256.3 248a120 120 0 1 1 0-240 120 120 0 1 1 0 240z"/></symbol>
+  <symbol id="ic-code-branch" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 70.7 176 0c26.5 0 48-21.5 48-48l0-22.7c-28.3-12.3-48-40.5-48-73.3 0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 22.7c0 61.9-50.1 112-112 112l-176 0 0 70.7c28.3 12.3 48 40.5 48 73.3 0 44.2-35.8 80-80 80S0 476.2 0 432c0-32.8 19.7-61 48-73.3l0-205.3C19.7 141 0 112.8 0 80 0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></symbol>
+  <symbol id="ic-list-check" viewBox="0 0 512 512"><path fill="currentColor" d="M133.8 36.3c10.9 7.6 13.5 22.6 5.9 33.4l-56 80c-4.1 5.8-10.5 9.5-17.6 10.1S52 158 47 153L7 113C-2.3 103.6-2.3 88.4 7 79S31.6 69.7 41 79l19.8 19.8 39.6-56.6c7.6-10.9 22.6-13.5 33.4-5.9zm0 160c10.9 7.6 13.5 22.6 5.9 33.4l-56 80c-4.1 5.8-10.5 9.5-17.6 10.1S52 318 47 313L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l19.8 19.8 39.6-56.6c7.6-10.9 22.6-13.5 33.4-5.9zM224 96c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-288 0c-17.7 0-32-14.3-32-32zM64 376a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></symbol>
+  <symbol id="ic-scale-balanced" viewBox="0 0 640 512"><path fill="currentColor" d="M384 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L398.4 96c-5.2 25.8-22.9 47.1-46.4 57.3l0 294.7 160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-384 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0 0-294.7c-23.5-10.3-41.2-31.6-46.4-57.3L128 96c-17.7 0-32-14.3-32-32s14.3-32 32-32l128 0c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288L584.4 320 512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9zM126.8 195.8L54.4 320 199.3 320 126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9S11.7 382 .9 337.1z"/></symbol>
+  <symbol id="ic-vials" viewBox="0 0 512 512"><path fill="currentColor" d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64l0 352c0 53 43 96 96 96s96-43 96-96l0-352 64 0 0 352c0 53 43 96 96 96s96-43 96-96l0-352c17.7 0 32-14.3 32-32S497.7 0 480 0L32 0zM160 64l0 128-64 0 0-128 64 0zm256 0l0 128-64 0 0-128 64 0z"/></symbol>
+  <symbol id="ic-user-group" viewBox="0 0 576 512"><path fill="currentColor" d="M64 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zM0 464c0-97.2 78.8-176 176-176s176 78.8 176 176l0 6c0 23.2-18.8 42-42 42L42 512c-23.2 0-42-18.8-42-42l0-6zM432 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240c79.5 0 144 64.5 144 144l0 22.4c0 23-18.6 41.6-41.6 41.6l-144.8 0c6.6-12.5 10.4-26.8 10.4-42l0-6c0-51.5-17.4-98.9-46.5-136.7 22.6-14.7 49.6-23.3 78.5-23.3z"/></symbol>
+  <symbol id="ic-diagram-project" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80C0 53.5 21.5 32 48 32l96 0c26.5 0 48 21.5 48 48l0 16 128 0 0-16c0-26.5 21.5-48 48-48l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-16-128 0 0 16c0 7.3-1.7 14.3-4.6 20.5l68.6 91.5 80 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96c0-7.3 1.7-14.3 4.6-20.5L128 224 48 224c-26.5 0-48-21.5-48-48L0 80z"/></symbol>
+  <symbol id="ic-sack-dollar" viewBox="0 0 512 512"><path fill="currentColor" d="M328 112l-144 0-37.3-74.5c-1.8-3.6-2.7-7.6-2.7-11.6 0-14.3 11.6-25.9 25.9-25.9L342.1 0c14.3 0 25.9 11.6 25.9 25.9 0 4-.9 8-2.7 11.6L328 112zM169.6 160l172.8 0 48.7 40.6C457.6 256 496 338 496 424.5 496 472.8 456.8 512 408.5 512l-305.1 0C55.2 512 16 472.8 16 424.5 16 338 54.4 256 120.9 200.6L169.6 160zM260 224c-11 0-20 9-20 20l0 4c-28.8 .3-52 23.7-52 52.5 0 25.7 18.5 47.6 43.9 51.8l41.7 7c6 1 10.4 6.2 10.4 12.3 0 6.9-5.6 12.5-12.5 12.5L216 384c-11 0-20 9-20 20s9 20 20 20l24 0 0 4c0 11 9 20 20 20s20-9 20-20l0-4.7c25-4.1 44-25.7 44-51.8 0-25.7-18.5-47.6-43.9-51.8l-41.7-7c-6-1-10.4-6.2-10.4-12.3 0-6.9 5.6-12.5 12.5-12.5l47.5 0c11 0 20-9 20-20s-9-20-20-20l-8 0 0-4c0-11-9-20-20-20z"/></symbol>
+  <symbol id="ic-chart-line" viewBox="0 0 512 512"><path fill="currentColor" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7 262.6 153.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l73.4-73.4 57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></symbol>
+  <symbol id="ic-graduation-cap" viewBox="0 0 576 512"><path fill="currentColor" d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"/></symbol>
+  <symbol id="ic-info-circle" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></symbol>
+  <symbol id="ic-user" viewBox="0 0 448 512"><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></symbol>
+  <symbol id="ic-envelope" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></symbol>
+  <symbol id="ic-paper-plane" viewBox="0 0 576 512"><path fill="currentColor" d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9L229.2 276.1c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8l496.9-178z"/></symbol>
+  <symbol id="ic-th" viewBox="0 0 448 512"><path fill="currentColor" d="M384 96l0 64-64 0 0-64 64 0zm0 128l0 64-64 0 0-64 64 0zm0 128l0 64-64 0 0-64 64 0zM256 288l-64 0 0-64 64 0 0 64zm-64 64l64 0 0 64-64 0 0-64zm-64-64l-64 0 0-64 64 0 0 64zM64 352l64 0 0 64-64 0 0-64zm0-192l0-64 64 0 0 64-64 0zm128 0l0-64 64 0 0 64-64 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 512 512"><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol>
+  <symbol id="ic-arrow-up" viewBox="0 0 384 512"><path fill="currentColor" d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></symbol>
+  <symbol id="ic-heart" viewBox="0 0 512 512"><path fill="currentColor" d="M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z"/></symbol>
+  <symbol id="ic-times" viewBox="0 0 384 512"><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></symbol>
+</svg>
+
+    <a class="skip-link" href="#contenido-principal" data-i18n="a11y.skip">Saltar al contenido</a>
+    <!-- Header -->
+    <header id="header">
+      <nav class="container">
+        <a href="../index.html" class="logo">
+          <span>Gabriela OS</span>
+        </a>
+        <ul class="nav-links">
+                    <li> <a href="../index.html#inicio" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+          <li> <a href="../index.html#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a></li>
+          <li> <a href="../todos-proyectos.html" class="nav-link active" data-i18n="nav.proyectos">Proyectos</a></li>
+          <li> <a href="../index.html#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li> <a href="../journey.html" class="nav-link" data-i18n="nav.journey">Journey</a></li>
+          <li> <a href="../index.html#contacto" class="nav-link nav-cta" data-i18n="nav.contacto">Contacto</a></li>
+
+
+          <!-- 🔥 LANGUAGE TOGGLE -->
+          <li>
+            <div class="language-toggle">
+              <button
+                class="language-toggle__btn"
+                type="button"
+                aria-label="Cambiar idioma"
+                title="Switch language"
+                data-lang="es"
+              >
+                <span class="language-toggle__flag">🇪🇸</span>
+                <span class="language-toggle__text">ES</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <i class="fas fa-bars" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-bars"></use></svg></i>
+        </button>
+      </nav>
+
+      <div
+        class="reading-progress"
+        role="progressbar"
+        aria-label="Progreso de lectura"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="reading-progress__bar"></div>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+
+    <!-- Hero Visual -->
+    <section class="project-hero" data-category="ux-ui" id="hero">
+      <div class="container">
+        <a href="../todos-proyectos.html" class="back-link back-link--light">
+          <i class="fas fa-arrow-left" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-arrow-left"></use></svg></i>
+          <span data-i18n="project.back-projects">Volver a proyectos</span>
+        </a>
+
+        <div class="project-hero__content-wrapper">
+          <div class="project-hero__badges">
+            <span class="badge badge--secondary">
+              <i class="fas fa-lightbulb" aria-hidden="true"><svg class="ico" width="0.75em" height="1em" focusable="false"><use href="#ic-lightbulb"></use></svg></i>
+              <span data-i18n="badge.product">Producto</span>
+            </span>
+            <span class="badge badge--secondary">
+              <i class="fas fa-calendar" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-calendar"></use></svg></i> 2020
+            </span>
+            <span class="badge badge--success">
+              <i class="fas fa-flask" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-flask"></use></svg></i>
+              <span data-i18n="badge.validated">Concepto validado</span>
+            </span>
+          </div>
+
+          <h1 class="project-hero__title" data-i18n="project.motiv.hero-title">
+            Motiv — Venture Educación
+          </h1>
+
+          <p class="project-hero__description" data-i18n="project.motiv.hero-subtitle">
+            Un producto edtech desde cero. Trece Jobs To Be Done, dos direcciones de producto contrastadas —una descartada— y un concepto validado en tres sprints, con caso de negocio para financiación pública.
+          </p>
+
+          <a href="#contenido" class="btn btn--hero">
+            <i class="fas fa-book-open" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-book-open"></use></svg></i>
+            <span data-i18n="project-detail.view-case">Ver caso completo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-quick-info">
+      <div class="container">
+        <div class="quick-info__grid">
+          <div class="info-item">
+            <i class="fas fa-calendar-alt" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-calendar-alt"></use></svg></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.year">Año</span>
+              <span class="info-item__value">2020</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-clock"></use></svg></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.duration">Duración</span>
+              <span class="info-item__value">3 sprints de validación</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"><svg class="ico" width="0.75em" height="1em" focusable="false"><use href="#ic-map-marker-alt"></use></svg></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.location">País</span>
+              <span class="info-item__value">Perú</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-briefcase" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-briefcase"></use></svg></i>
+            <div>
+              <span class="info-item__label" data-i18n="project-detail.role">Rol</span>
+              <span class="info-item__value">Producto y research</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-users" aria-hidden="true"><svg class="ico" width="1.25em" height="1em" focusable="false"><use href="#ic-users"></use></svg></i>
+            <div>
+              <span class="info-item__label">Actores</span>
+              <span class="info-item__value">3 perfiles modelados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section id="contenido" class="project-content section">
+      <div class="container">
+        <div class="content-layout">
+          <!-- Main Content -->
+          <div class="main-content">
+            <!-- Contexto -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--primary">
+                <i class="fas fa-map-signs" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-map-signs"></use></svg></i>
+              </div>
+              <h2 data-i18n="project.bid.context-title">Contexto</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.contexto-p1">Motiv nació como producto propio, no como encargo de un cliente: una plataforma de aprendizaje continuo pensada para el punto donde se tocan tres intereses que rara vez están alineados — el de quien coordina la oferta formativa, el de quien imparte las clases y el de quien las recibe.</p>
+              <p data-i18n="project.motiv.contexto-p2">La hipótesis de partida era simple de enunciar y difícil de validar: la formación profesional se compra por catálogo y se consume por obligación, mientras el conocimiento que de verdad se retiene llega en trozos pequeños, fuera del aula, y nadie lo está midiendo.</p>
+              <p data-i18n="project.motiv.contexto-p3">Al no haber cliente, no había brief. Había que construir el problema antes que la solución, y decidir por nuestra cuenta qué merecía la pena construir.</p>
+            </div>
+          </div>
+
+          <!-- El desafío -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--secondary">
+                <i class="fas fa-bullseye" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-bullseye"></use></svg></i>
+              </div>
+              <h2 data-i18n="project-detail.challenge">El desafío</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.desafio-p1">El mercado de plataformas educativas ya estaba lleno. Entrar con «otro LMS» no tenía sentido, y entrar con un agregador de contenido tampoco lo tenía por sí solo. La pregunta no era qué construir primero, sino cuál de las dos direcciones resolvía un problema que alguien estuviese dispuesto a pagar.</p>
+              <p data-i18n="project.motiv.desafio-p2">A eso se sumaba una restricción real: el proyecto se presentó a un fondo público de innovación, lo que obligaba a tener un caso de negocio con números antes de haber escrito una sola línea de código.</p>
+            </div>
+          </div>
+
+          <!-- Mi rol y mis decisiones -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--primary">
+                <i class="fas fa-user-check" aria-hidden="true"><svg class="ico" width="1.25em" height="1em" focusable="false"><use href="#ic-user-check"></use></svg></i>
+              </div>
+              <h2 data-i18n="project.motiv.rol-title">Mi rol y mis decisiones</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.rol-p1">Al no haber cliente que fijara el alcance, las decisiones de producto eran nuestras y tenían consecuencias. Estas son las que tomé:</p>
+              <ul class="content-list">
+                <li data-i18n="project.motiv.rol-item1">Modelar el problema como Jobs To Be Done antes de dibujar nada, y hacerlo para los tres actores a la vez en lugar de para el usuario final solo.</li>
+                <li data-i18n="project.motiv.rol-item2">Llevar dos conceptos opuestos al mismo test en lugar de refinar el que más nos gustaba.</li>
+                <li data-i18n="project.motiv.rol-item3">Escribir las hipótesis numeradas antes de cada ronda, para que el test pudiera desmentirnos.</li>
+                <li data-i18n="project.motiv.rol-item4">Traducir los escenarios en casos de uso paso a paso con el objetivo del usuario declarado, que es lo que un equipo puede estimar.</li>
+                <li data-i18n="project.motiv.rol-item5">Reclutar por pregunta de negocio y no por conveniencia: cada perfil entraba a responder algo concreto.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Decisiones de producto -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--primary">
+                <i class="fas fa-code-branch" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-code-branch"></use></svg></i>
+              </div>
+              <h2 data-i18n="project.motiv.decisiones-title">Decisiones de producto</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.decisiones-p1">Esta es la parte del caso que más me interesa, porque es donde se ve el criterio y no solo el método. Tres sprints, cada uno con una pregunta que cerrar antes de pasar al siguiente.</p>
+              <div class="timeline">
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-list-check" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-list-check"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t1-title">1. Trece Jobs To Be Done, y tres actores en vez de uno</h3>
+                    <p data-i18n="project.motiv.decisiones-t1-text">El problema se modeló con la estructura canónica de Jobs To Be Done —cuándo, qué deseo, para lograr qué, qué me lo impide— y se hizo por separado para el coordinador de formación, el docente y el estudiante. Trece jobs en total. Modelar los tres a la vez fue una decisión deliberada: en una plataforma educativa, quien paga, quien la alimenta y quien la usa son personas distintas con incentivos que chocan. Un job del coordinador era identificar las tendencias del momento para ajustar su oferta; uno del estudiante, no dedicarle más tiempo del pactado. Diseñar solo para el segundo habría dejado el producto sin comprador.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-scale-balanced" aria-hidden="true"><svg class="ico" width="1.25em" height="1em" focusable="false"><use href="#ic-scale-balanced"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t2-title">2. Dos conceptos opuestos al mismo test</h3>
+                    <p data-i18n="project.motiv.decisiones-t2-text">En el primer sprint no llevamos una idea a validar sino dos, deliberadamente incompatibles: un LMS —gestión de clases, materiales y comunicación profesor-alumno— frente a un agregador de contenido orientado a quien quiere mejorar su perfil profesional por su cuenta. Cada uno con su storyboard y sus pantallas, presentados en el mismo orden a los mismos participantes. Contrastar en lugar de refinar es más incómodo, porque obliga a aceptar que tu favorita puede perder, y es la única forma de que la decisión no la tome el sesgo del equipo.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-vials" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-vials"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t3-title">3. Seis hipótesis escritas antes de testear</h3>
+                    <p data-i18n="project.motiv.decisiones-t3-text">El segundo sprint arrancó con seis hipótesis numeradas y escritas: que las plataformas arrastran coste hundido por usuarios que nunca entran, que completar las actividades clave es difícil y pone en riesgo el curso, que el material carece de narrativa y buena parte parece innecesario, que la curva de aprendizaje obliga a formar a profesores y alumnos, que no hay canal oficial ni constancia del progreso, y que la experiencia móvil permite aprovechar contextos que el escritorio no alcanza. Numerarlas sirve para algo muy concreto: al terminar la ronda se puede decir cuál cayó, en vez de quedarse con una impresión general.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-user-group" aria-hidden="true"><svg class="ico" width="1.125em" height="1em" focusable="false"><use href="#ic-user-group"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t4-title">4. Cuatro perfiles, cada uno por una pregunta distinta</h3>
+                    <p data-i18n="project.motiv.decisiones-t4-text">El reclutamiento del segundo sprint no buscó «usuarios» sino cuatro perfiles definidos por lo que cada uno podía responder: el estudiante proactivo que ya consume cursos cortos, quien busca programas largos para cambiar de carrera, el responsable de formación en una empresa y el coordinador de educación superior. A los dos últimos se les preguntó además por los precios que pagan hoy por sus plataformas, porque eran los únicos que podían responder a eso. Definir a quién se recluta por la pregunta que tiene que contestar es lo que separa una muestra de una agenda llena.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-diagram-project" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-diagram-project"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t5-title">5. De escenarios a casos de uso con objetivo declarado</h3>
+                    <p data-i18n="project.motiv.decisiones-t5-text">El tercer sprint convirtió los hallazgos en una matriz de actor por escenario —antes, durante y al terminar la formación— y luego en casos de uso paso a paso, cada uno con el objetivo del usuario escrito al final. Uno de ellos: el supervisor recibe métricas de consumo de contenido, identifica grupos de interés por tema, edita su oferta de cursos, contacta a los profesores, lanza la campaña y los alumnos se matriculan. Objetivo declarado: vender cursos. Escribir el objetivo obliga a comprobar que cada paso lleva a algún sitio, y es el formato que un equipo de desarrollo puede estimar.</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__marker">
+                    <i class="fas fas fa-sack-dollar" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-sack-dollar"></use></svg></i>
+                  </div>
+                  <div class="timeline__content">
+                    <h3 data-i18n="project.motiv.decisiones-t6-title">6. El caso de negocio, antes que el código</h3>
+                    <p data-i18n="project.motiv.decisiones-t6-text">En paralelo al discovery se preparó la postulación a un fondo público de innovación, con modelo de flujo de caja incluido. Tener que defender el producto ante un evaluador que no conoce el sector obliga a una disciplina que el discovery por sí solo no impone: decir cuánto cuesta, de dónde sale el ingreso y en qué plazo. Es la parte que más suele faltar en un portafolio de diseño y la que más se parece al trabajo de un Product Owner.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultados -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--secondary">
+                <i class="fas fa-chart-line" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-chart-line"></use></svg></i>
+              </div>
+              <h2 data-i18n="project-detail.results">Resultados</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.resultados-p1">El producto no llegó a construirse. Lo que sí quedó fue una decisión tomada con evidencia y no con intuición, y un cuerpo de documentación que hoy se sostiene solo:</p>
+              <ul class="content-list">
+                <li data-i18n="project.motiv.resultados-item1">Trece Jobs To Be Done modelados para tres actores con intereses enfrentados.</li>
+                <li data-i18n="project.motiv.resultados-item2">Dos direcciones de producto contrastadas en el mismo test, con una descartada por evidencia.</li>
+                <li data-i18n="project.motiv.resultados-item3">Tres sprints de validación, cada uno con su plan de investigación, sus hipótesis y su guía.</li>
+                <li data-i18n="project.motiv.resultados-item4">Matriz de escenarios y casos de uso paso a paso para los tres actores.</li>
+                <li data-i18n="project.motiv.resultados-item5">Postulación completa a un fondo público de innovación, con modelo de flujo de caja.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Aprendizajes -->
+          <div class="content-block">
+            <div class="block-header">
+              <div class="block-header__icon block-header__icon--secondary">
+                <i class="fas fa-graduation-cap" aria-hidden="true"><svg class="ico" width="1.125em" height="1em" focusable="false"><use href="#ic-graduation-cap"></use></svg></i>
+              </div>
+              <h2 data-i18n="project-detail.learnings">Aprendizajes</h2>
+            </div>
+            <div class="block-content">
+              <p data-i18n="project.motiv.aprendizajes-p1"><strong>Contrastar cuesta más que refinar, y compensa.</strong> La tentación en el primer sprint era llevar el concepto que más nos convencía y pulirlo. Llevar dos opuestos nos costó el doble de preparación y nos dio algo que el refinamiento no da: una razón para descartar.</p>
+              <p data-i18n="project.motiv.aprendizajes-p2"><strong>Modelar al que paga, no solo al que usa.</strong> Si hubiésemos hecho los Jobs To Be Done solo del estudiante, habríamos diseñado algo encantador y sin comprador. El coordinador de formación no aparece en las pantallas, pero es quien firma.</p>
+              <p data-i18n="project.motiv.aprendizajes-p3"><strong>Lo que haría distinto:</strong> cerrar antes la pregunta del precio. La llevamos al segundo sprint y solo a dos de los cuatro perfiles; con un producto que dependía de vender a instituciones, esa conversación tendría que haber sido la primera, no la cuarta.</p>
+            </div>
+          </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar-sticky">
+            <div class="sidebar-card">
+              <h3>
+                <i class="fas fa-info-circle" style="color: var(--secondary)" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-info-circle"></use></svg></i>
+                <span data-i18n="sidebar.project-info">Info del Proyecto</span>
+              </h3>
+              <div class="sidebar-card__list">
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"><i class="fas fa-calendar" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-calendar"></use></svg></i></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="project-detail.year">Año</span>
+                    <span class="sidebar-card__value">2020</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"><i class="fas fa-clock" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-clock"></use></svg></i></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="project-detail.duration">Duración</span>
+                    <span class="sidebar-card__value">3 sprints de validación</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"><i class="fas fa-map-marker-alt" aria-hidden="true"><svg class="ico" width="0.75em" height="1em" focusable="false"><use href="#ic-map-marker-alt"></use></svg></i></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="project-detail.location">País</span>
+                    <span class="sidebar-card__value">Perú</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"><i class="fas fa-user" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-user"></use></svg></i></span>
+                  <div>
+                    <span class="sidebar-card__label" data-i18n="project-detail.role">Rol</span>
+                    <span class="sidebar-card__value">Producto y research</span>
+                  </div>
+                </div>
+                <div class="sidebar-card__item">
+                  <span class="sidebar-card__icon"><i class="fas fa-users" aria-hidden="true"><svg class="ico" width="1.25em" height="1em" focusable="false"><use href="#ic-users"></use></svg></i></span>
+                  <div>
+                    <span class="sidebar-card__label">Actores</span>
+                    <span class="sidebar-card__value">3 perfiles modelados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-card sidebar-card--cta">
+              <h3>
+                <i class="fas fa-envelope" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-envelope"></use></svg></i>
+                <span data-i18n="sidebar.interested-title">¿Te interesó este proyecto?</span>
+              </h3>
+              <p data-i18n="project.motiv.cta-text">
+                Si quieres que te cuente cómo se toma una decisión de producto con evidencia y no con intuición, hablemos.
+              </p>
+              <a href="../index.html#contacto" class="btn btn--primary btn--block">
+                <i class="fas fa-paper-plane" aria-hidden="true"><svg class="ico" width="1.125em" height="1em" focusable="false"><use href="#ic-paper-plane"></use></svg></i>
+                <span data-i18n="contact.btn-email">Contactar</span>
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+      <div class="container">
+        <div class="project-nav__grid">
+          <a href="mincetur.html" class="project-nav__item project-nav__item--prev">
+            <i class="fas fa-arrow-left" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-arrow-left"></use></svg></i>
+            <div>
+              <span class="project-nav__label" data-i18n="nav.previous">Anterior</span>
+              <span class="project-nav__title" data-i18n="project.mincetur.title">Construcción Futura</span>
+            </div>
+          </a>
+
+          <a href="../todos-proyectos.html" class="btn btn--primary">
+            <i class="fas fa-th" aria-hidden="true"><svg class="ico" width="0.875em" height="1em" focusable="false"><use href="#ic-th"></use></svg></i>
+            <span data-i18n="nav.view-all">Ver todos</span>
+          </a>
+
+          <a href="inkia.html" class="project-nav__item project-nav__item--next">
+            <div>
+              <span class="project-nav__label" data-i18n="nav.next">Siguiente</span>
+              <span class="project-nav__title">Inkia Energy — Innovathon</span>
+            </div>
+            <i class="fas fa-arrow-right" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-arrow-right"></use></svg></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-to-top-section">
+      <div class="container">
+        <a href="#hero" class="btn btn--primary btn--lg back-to-top-btn">
+          <i class="fas fa-arrow-up" aria-hidden="true"><svg class="ico" width="0.75em" height="1em" focusable="false"><use href="#ic-arrow-up"></use></svg></i>
+          <span data-i18n="nav.back-to-top">Volver al inicio</span>
+        </a>
+      </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <i class="fas fa-heart" aria-hidden="true"><svg class="ico" width="1.0em" height="1em" focusable="false"><use href="#ic-heart"></use></svg></i>
+          © 2025 Gabriela Ojeda Semidey.
+          <span data-i18n="footer.text">Hecho con código y mucho café ☕</span>
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visor de imagen"
+    >
+      <div class="lightbox__content">
+        <button class="lightbox__close" aria-label="Cerrar visor">
+          <i class="fas fa-times" aria-hidden="true"><svg class="ico" width="0.75em" height="1em" focusable="false"><use href="#ic-times"></use></svg></i>
+        </button>
+        <img class="lightbox__image" src="" alt="" id="lightbox-img" />
+        <div class="lightbox__caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../translations.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>
